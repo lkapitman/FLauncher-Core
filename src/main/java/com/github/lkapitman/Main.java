@@ -37,7 +37,7 @@ public class Main {
             return true;
         }
 
-        File jfxrt =  new File(FileManager.getDIR(), "runtime" + File.separator + "java" + File.separator + "jre" + File.separator + "lib" + File.separator + "ext" + File.separator + "jfxrt.jar");
+        File jfxrt =  new File(FileManager.getGameDIR(), "runtime" + File.separator + "java" + File.separator + "jre" + File.separator + "lib" + File.separator + "ext" + File.separator + "jfxrt.jar");
 
         if(jfxrt.exists())
 
@@ -95,5 +95,9 @@ public class Main {
             System.out.println(localClassNotFoundException.getMessage());
             return false;
         }
+    }
+
+    public AriLogger getLogger() {
+        return LOGGER;
     }
 }
