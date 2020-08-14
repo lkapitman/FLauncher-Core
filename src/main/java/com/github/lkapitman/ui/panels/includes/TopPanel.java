@@ -30,7 +30,7 @@ public class TopPanel extends Panel {
         GridPane.setHgrow(topBarButton, Priority.ALWAYS);
         GridPane.setVgrow(topBarButton, Priority.ALWAYS);
 
-        Label title = new Label(Constants.NAME);
+        Label title = new Label(Constants.TITLE);
         this.layout.getChildren().add(title);
         title.setFont(Font.font("Consolas", FontWeight.THIN, FontPosture.REGULAR, 22.0f));
         title.setStyle("-fx-text-fill: white;");
@@ -69,7 +69,7 @@ public class TopPanel extends Panel {
         hide.setOnMouseExited(e -> hide.setOpacity(0.70f));
         hide.setOnMousePressed(e -> this.panelManager.getStage().setIconified(true));
         hide.setTranslateX(26);
-        topBarButton.getChildren().addAll(close,fullscreen, hide);
+        topBarButton.getChildren().addAll(close,hide);
     }
 
 

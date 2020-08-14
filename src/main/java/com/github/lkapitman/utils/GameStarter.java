@@ -59,11 +59,7 @@ public class GameStarter {
 
             gameDir = gameDir.resolve("AppData").resolve("Roaming").resolve(Constants.NAME).resolve("run1.12.2.bat");
 
-            try {
-                starter.startBat(gameDir);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            starter.startBat(gameDir);
 
         } else {
             if (fileManager.getGameDIR().isDirectory() && Objects.requireNonNull(fileManager.getGameDIR().list()).length == 0) {
@@ -107,7 +103,7 @@ public class GameStarter {
 
                     unzipper.start();
 
-                    JOptionPane.showMessageDialog(null, "Сейчас будет запущена игра. Спасибо за установку!", "Игра будет запущена!", JOptionPane.INFORMATION_MESSAGE);
+                    JOptionPane.showMessageDialog(null, "Перезагрузите лаунчер и нажмите на кнопку играть. Спасибо за установку!", "Игра будет запущена!", JOptionPane.INFORMATION_MESSAGE);
 
 
                 }

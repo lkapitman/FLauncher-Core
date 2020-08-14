@@ -11,6 +11,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class FileManager {
 
@@ -37,17 +38,7 @@ public class FileManager {
         return gameDir.resolve(Constants.NAME).toFile();
     }
 
-    public void changeBAT(Path file) throws IOException {
-        String dir = getGameDIR().toString();
-        logger.getLogger().log(dir);
-        List<String> output = new ArrayList<>();
-        Files.readAllLines(file, Charset.defaultCharset())
-                .forEach(s -> {
-                    logger.getLogger().log(s);
-                    String replaced = s.replace("%CD%", dir);
-                    logger.getLogger().log(replaced);
-                    output.add(replaced);
-                });
-        Files.write(file, output, Charset.defaultCharset());
+    public File getDIR() {
+        return DIR;
     }
 }

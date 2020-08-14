@@ -9,10 +9,10 @@ public class Starter {
 
     private final FileManager fileManager = new FileManager();
 
-    public void startBat(Path path) throws IOException {
-        fileManager.changeBAT(path);
-        try {
+    public void startBat(Path path) {
 
+        try {
+            Runtime.getRuntime().exec("cmd /c set CD=" + fileManager.getDIR().getAbsolutePath());
             Runtime.getRuntime().exec("cmd /c start " + path);
         } catch (IOException e) {
             e.printStackTrace();
