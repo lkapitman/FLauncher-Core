@@ -19,4 +19,5 @@ public class Main {
             JOptionPane.showMessageDialog(null, "JavaFX - не найден!", "Java ошибка", JOptionPane.ERROR_MESSAGE);
         }
     }
+
 }

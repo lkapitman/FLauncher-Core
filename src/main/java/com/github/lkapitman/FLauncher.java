@@ -8,8 +8,10 @@ public class FLauncher {
     private PanelManager panelManager;
 
     public void init(Stage stage) {
+
         this.panelManager = new PanelManager(this, stage);
         this.panelManager.init();
         this.panelManager.showPanel(new PanelLogin());
     }
+
 }

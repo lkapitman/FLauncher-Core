@@ -1,17 +1,25 @@
 package com.github.lkapitman.ui.panels;
 
+import com.github.lkapitman.auth.mineweb.LoginMineWeb;
 import com.github.lkapitman.ui.PanelManager;
 import com.github.lkapitman.ui.panel.Panel;
+import com.github.lkapitman.utils.messages.MessageHelper;
+import javafx.embed.swing.SwingFXUtils;
 import javafx.geometry.HPos;
+import javafx.geometry.Pos;
 import javafx.geometry.VPos;
 import javafx.scene.Cursor;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.RowConstraints;
+import javafx.util.Duration;
+import org.controlsfx.control.Notifications;
 
 import java.awt.*;
 import java.io.IOException;
@@ -23,6 +31,7 @@ public class PanelLogin extends Panel {
 
     @Override
     public void init(PanelManager panelManager) {
+
         super.init(panelManager);
         GridPane loginPanel = new GridPane();
         GridPane mainPanel = new GridPane();
@@ -105,6 +114,7 @@ public class PanelLogin extends Panel {
         connectSeparator.setTranslateY(60);
         connectSeparator.setMinWidth(325);
         connectSeparator.setMaxWidth(325);
+
         connectSeparator.setStyle("-fx-background-color: #fff; -fx-opacity: 50%");
 
         Label usernameLabel = new Label("Имя пользователя");
@@ -228,11 +238,17 @@ public class PanelLogin extends Panel {
         connectionButton.setOnMouseEntered(e->this.layout.setCursor(Cursor.HAND));
         connectionButton.setOnMouseExited(e->this.layout.setCursor(Cursor.DEFAULT));
         connectionButton.setOnMouseClicked(e-> {
-            if (connectWithServer.get()) {
-                //TODO: Connect to minecraft server in rcon and use /login
-            } else {
-                //TODO: Error MSG
-            }
+                LoginMineWeb login = new LoginMineWeb(usernameField.getText(), passwordField.getText());
+                if (login.isConnected()) {
+                    if (login.isReturnValue()) {
+                        // TODO: Вход - успешен! пропустить пользователя дальше.
+                        new MessageHelper("Вы успешно вошли в аккаунт!").showInfoMSG();
+                    } else  {
+                        new MessageHelper("Пароль или Логин - не верны!").showErrorMSG();
+                    }
+                } else {
+
+                }
         });
 
         mainPanel.getChildren().addAll(connectLabel, connectSeparator, usernameLabel, usernameField, usernameSeparator,
