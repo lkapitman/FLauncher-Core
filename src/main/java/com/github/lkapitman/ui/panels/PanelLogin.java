@@ -240,14 +240,14 @@ public class PanelLogin extends Panel {
         connectionButton.setOnMouseClicked(e-> {
                 LoginMineWeb login = new LoginMineWeb(usernameField.getText(), passwordField.getText());
                 if (login.isConnected()) {
-                    if (login.isReturnValue()) {
+                    if (login.isReturnValue().equalsIgnoreCase("success_ok")) {
                         // TODO: Вход - успешен! пропустить пользователя дальше.
                         new MessageHelper("Вы успешно вошли в аккаунт!").showInfoMSG();
                     } else  {
-                        new MessageHelper("Пароль или Логин - не верны!").showErrorMSG();
+                        if (login.isReturnValue().equalsIgnoreCase("success_denied")) {
+                            new MessageHelper("Пароль или Логин - не верны!").showErrorMSG();
+                        }
                     }
-                } else {
-
                 }
         });
 
