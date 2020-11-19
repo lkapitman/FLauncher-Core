@@ -7,10 +7,58 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="FLauncher" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="FLauncher" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="FLauncher" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="launch4j" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="FLauncher" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -33,10 +81,10 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/github/lkapitman/utils/rcon" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15078124" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
@@ -45,8 +93,10 @@
       <recent name="com.github.lkapitman.ui.panels.includes" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Workspace\java\FLauncher\src\main\java" />
+      <recent name="E:\Workspace\java\FLauncher\src\main\java\com\github\lkapitman\utils\rcon" />
+      <recent name="E:\Workspace\java\FLauncher\src\main\java\com\github\lkapitman\utils\database" />
       <recent name="E:\Workspace\java\FLauncher\src\main\resources" />
+      <recent name="E:\Workspace\java\FLauncher\src\main\java" />
       <recent name="E:\Workspace\java\FLauncher\src\test\resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -96,7 +146,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FLauncher [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FLauncher [createAllExecutables]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -107,7 +157,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="jar" />
+            <option value="createAllExecutables" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -136,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.FLauncher [launch4j]" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.FLauncher [createAllExecutables]" />
         <item itemvalue="Application.EldariaLauncher" />
         <item itemvalue="Application.JavaFXTrayIconSample" />
-        <item itemvalue="Gradle.FLauncher [launch4j]" />
-        <item itemvalue="Gradle.FLauncher [jar]" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -191,6 +241,29 @@
       <workItem from="1600198445416" duration="757000" />
       <workItem from="1600201119139" duration="2564000" />
       <workItem from="1600244981979" duration="5000" />
+      <workItem from="1600246206123" duration="1002000" />
+      <workItem from="1600365949236" duration="221000" />
+      <workItem from="1600366182255" duration="798000" />
+      <workItem from="1600382882113" duration="72000" />
+      <workItem from="1600503066190" duration="78000" />
+      <workItem from="1600515284705" duration="168000" />
+      <workItem from="1600610554126" duration="8000" />
+      <workItem from="1604907663700" duration="2595000" />
+      <workItem from="1604947491083" duration="1349000" />
+      <workItem from="1605033352730" duration="1345000" />
+      <workItem from="1605084583909" duration="2728000" />
+      <workItem from="1605132336927" duration="1716000" />
+      <workItem from="1605161110922" duration="1299000" />
+      <workItem from="1605174512287" duration="662000" />
+      <workItem from="1605355347564" duration="3829000" />
+      <workItem from="1605431750703" duration="1976000" />
+      <workItem from="1605442945292" duration="10649000" />
+      <workItem from="1605710961778" duration="113000" />
+      <workItem from="1605711090938" duration="9879000" />
+      <workItem from="1605767387704" duration="361000" />
+      <workItem from="1605776965248" duration="1719000" />
+      <workItem from="1605778996534" duration="15000" />
+      <workItem from="1605779184057" duration="1917000" />
     </task>
     <servers />
   </component>
@@ -198,6 +271,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="417" y="51" key="#SQL_Dialects" timestamp="1605161730772">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="417" y="51" key="#SQL_Dialects/0.0.2048.1122@0.0.2048.1122" timestamp="1605161730772" />
+    <state x="630" y="200" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1605443534338">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="630" y="200" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.2048.1122@0.0.2048.1122" timestamp="1605443534338" />
     <state x="619" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599946407563">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
@@ -206,57 +287,61 @@
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="742" y="135" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1122@0.0.2048.1122" timestamp="1599402660434" />
-    <state x="630" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600102138098">
+    <state x="745" y="366" width="563" height="402" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1605777142376">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state x="630" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2048.1122@0.0.2048.1122" timestamp="1600102138098" />
-    <state x="618" y="180" key="FileChooserDialogImpl" timestamp="1600102049444">
+    <state x="745" y="366" width="563" height="402" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.2048.1122@0.0.2048.1122" timestamp="1605777142376" />
+    <state x="630" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605727022281">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state x="618" y="180" key="FileChooserDialogImpl/0.0.2048.1122@0.0.2048.1122" timestamp="1600102049444" />
-    <state width="1981" height="279" key="GridCell.Tab.0.bottom" timestamp="1600199210222">
+    <state x="630" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2048.1122@0.0.2048.1122" timestamp="1605727022281" />
+    <state x="618" y="180" key="FileChooserDialogImpl" timestamp="1605711039264">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="279" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1600199210222" />
-    <state width="1981" height="279" key="GridCell.Tab.0.center" timestamp="1600199210222">
+    <state x="618" y="180" key="FileChooserDialogImpl/0.0.2048.1122@0.0.2048.1122" timestamp="1605711039264" />
+    <state width="1981" height="347" key="GridCell.Tab.0.bottom" timestamp="1605782508633">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="279" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1600199210222" />
-    <state width="1981" height="279" key="GridCell.Tab.0.left" timestamp="1600199210222">
+    <state width="1981" height="347" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1605782508633" />
+    <state width="1981" height="347" key="GridCell.Tab.0.center" timestamp="1605782508633">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="279" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1600199210222" />
-    <state width="1981" height="279" key="GridCell.Tab.0.right" timestamp="1600199210222">
+    <state width="1981" height="347" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1605782508633" />
+    <state width="1981" height="347" key="GridCell.Tab.0.left" timestamp="1605782508633">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="279" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1600199210222" />
-    <state width="1981" height="347" key="GridCell.Tab.1.bottom" timestamp="1599562328623">
+    <state width="1981" height="347" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1605782508633" />
+    <state width="1981" height="347" key="GridCell.Tab.0.right" timestamp="1605782508633">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="347" key="GridCell.Tab.1.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1599562328623" />
-    <state width="1981" height="347" key="GridCell.Tab.1.center" timestamp="1599562328623">
+    <state width="1981" height="347" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1605782508633" />
+    <state width="1981" height="347" key="GridCell.Tab.1.bottom" timestamp="1605782508633">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="347" key="GridCell.Tab.1.center/0.0.2048.1122@0.0.2048.1122" timestamp="1599562328623" />
-    <state width="1981" height="347" key="GridCell.Tab.1.left" timestamp="1599562328623">
+    <state width="1981" height="347" key="GridCell.Tab.1.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1605782508633" />
+    <state width="1981" height="347" key="GridCell.Tab.1.center" timestamp="1605782508633">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="347" key="GridCell.Tab.1.left/0.0.2048.1122@0.0.2048.1122" timestamp="1599562328623" />
-    <state width="1981" height="347" key="GridCell.Tab.1.right" timestamp="1599562328623">
+    <state width="1981" height="347" key="GridCell.Tab.1.center/0.0.2048.1122@0.0.2048.1122" timestamp="1605782508633" />
+    <state width="1981" height="347" key="GridCell.Tab.1.left" timestamp="1605782508633">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="347" key="GridCell.Tab.1.right/0.0.2048.1122@0.0.2048.1122" timestamp="1599562328623" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1600102054179">
+    <state width="1981" height="347" key="GridCell.Tab.1.left/0.0.2048.1122@0.0.2048.1122" timestamp="1605782508633" />
+    <state width="1981" height="347" key="GridCell.Tab.1.right" timestamp="1605782508633">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.2048.1122@0.0.2048.1122" timestamp="1600102054179" />
+    <state width="1981" height="347" key="GridCell.Tab.1.right/0.0.2048.1122@0.0.2048.1122" timestamp="1605782508633" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1605779371862">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.2048.1122@0.0.2048.1122" timestamp="1605779371862" />
     <state x="713" y="119" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1599560424353">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="713" y="119" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2048.1122@0.0.2048.1122" timestamp="1599560424353" />
-    <state x="513" y="253" key="run.anything.popup" timestamp="1600070045188">
+    <state x="513" y="253" key="run.anything.popup" timestamp="1605778472643">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state x="513" y="253" key="run.anything.popup/0.0.2048.1122@0.0.2048.1122" timestamp="1600070045188" />
+    <state x="513" y="253" key="run.anything.popup/0.0.2048.1122@0.0.2048.1122" timestamp="1605778472643" />
   </component>
 </project>

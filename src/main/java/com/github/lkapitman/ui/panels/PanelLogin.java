@@ -1,31 +1,22 @@
 package com.github.lkapitman.ui.panels;
 
-import com.github.lkapitman.auth.mineweb.LoginMineWeb;
 import com.github.lkapitman.ui.PanelManager;
 import com.github.lkapitman.ui.panel.Panel;
 import com.github.lkapitman.utils.messages.MessageHelper;
-import javafx.embed.swing.SwingFXUtils;
+import com.google.common.hash.Hashing;
 import javafx.geometry.HPos;
-import javafx.geometry.Pos;
 import javafx.geometry.VPos;
 import javafx.scene.Cursor;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.control.*;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.RowConstraints;
-import javafx.util.Duration;
-import org.controlsfx.control.Notifications;
 
-import java.awt.*;
-import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.concurrent.atomic.AtomicBoolean;
+import java.nio.charset.StandardCharsets;
+import java.sql.*;
 
 public class PanelLogin extends Panel {
 
@@ -36,7 +27,6 @@ public class PanelLogin extends Panel {
         GridPane loginPanel = new GridPane();
         GridPane mainPanel = new GridPane();
         GridPane buttonPanel = new GridPane();
-        AtomicBoolean connectWithServer = new AtomicBoolean(false);
 
         loginPanel.setMaxWidth(400);
         loginPanel.setMinWidth(400);
@@ -199,28 +189,6 @@ public class PanelLogin extends Panel {
 
         passwordSeparator.setStyle("-fx-opacity: 40%");
 
-        Label forgotPasswordLabel = new Label("Забыли пароль?");
-        GridPane.setVgrow(forgotPasswordLabel, Priority.ALWAYS);
-        GridPane.setHgrow(forgotPasswordLabel, Priority.ALWAYS);
-        GridPane.setValignment(forgotPasswordLabel, VPos.CENTER);
-        GridPane.setHalignment(forgotPasswordLabel, HPos.LEFT);
-
-        forgotPasswordLabel.setStyle("-fx-text-fill: #69a7ed; -fx-font-size: 12px;");
-        forgotPasswordLabel.setUnderline(true);
-
-        forgotPasswordLabel.setTranslateX(37.5);
-        forgotPasswordLabel.setTranslateY(30);
-
-        forgotPasswordLabel.setOnMouseEntered(e->this.layout.setCursor(Cursor.HAND));
-        forgotPasswordLabel.setOnMouseExited(e->this.layout.setCursor(Cursor.DEFAULT));
-        forgotPasswordLabel.setOnMouseClicked(e-> {
-            if (connectWithServer.get()) {
-                openURL("https://my.minecraft.net/ru-ru/password/forgot");
-            } else {
-                openURL("https://natribu.org");
-            }
-        });
-
         Button connectionButton = new Button("ВОЙТИ");
 
         GridPane.setVgrow(connectionButton, Priority.ALWAYS);
@@ -238,32 +206,45 @@ public class PanelLogin extends Panel {
         connectionButton.setOnMouseEntered(e->this.layout.setCursor(Cursor.HAND));
         connectionButton.setOnMouseExited(e->this.layout.setCursor(Cursor.DEFAULT));
         connectionButton.setOnMouseClicked(e-> {
-                LoginMineWeb login = new LoginMineWeb(usernameField.getText(), passwordField.getText());
-                if (login.isConnected()) {
-                    if (login.isReturnValue().equalsIgnoreCase("success_ok")) {
-                        // TODO: Вход - успешен! пропустить пользователя дальше.
-                        new MessageHelper("Вы успешно вошли в аккаунт!").showInfoMSG();
-                    } else  {
-                        if (login.isReturnValue().equalsIgnoreCase("success_denied")) {
-                            new MessageHelper("Пароль или Логин - не верны!").showErrorMSG();
-                        }
+            String pass = Hashing.sha512().hashString(passwordField.getText(), StandardCharsets.UTF_8).toString();
+
+            try {
+                Class.forName("com.mysql.jdbc.Driver");
+                String JdbcURL = "jdbc:mysql://localhost/authme";
+                String Username = "authme";
+                String password = "authme1234";
+                Connection con = null;
+                PreparedStatement pstmt = null;
+                ResultSet rst = null;
+                String myQuery = "select id,realname,password from authme";
+                con = DriverManager.getConnection(JdbcURL, Username, password);
+                pstmt = con.prepareStatement(myQuery);
+                rst = pstmt.executeQuery();
+                System.out.println("id\t\trealname\t\tpassword\n");
+                while(rst.next()) {
+                    System.out.print(rst.getInt(1));
+                    System.out.print("\t\t"+rst.getString(2));
+                    System.out.print("\t\t"+rst.getString(3));
+                    System.out.println();
+                    if (rst.getString(2).equals(usernameField.getText()) && rst.getString(3).equalsIgnoreCase(pass)) {
+                        new MessageHelper("Хорошей игры!").showErrorMSG();
+                        // TODO:
+                        return;
+                    } else {
+                        new MessageHelper("Логин или пароль - не верны!").showErrorMSG();
+                        return;
                     }
                 }
+
+            } catch (ClassNotFoundException | SQLException ex) {
+                ex.printStackTrace();
+            }
+
         });
 
         mainPanel.getChildren().addAll(connectLabel, connectSeparator, usernameLabel, usernameField, usernameSeparator,
-                passwordLabel, passwordField, passwordSeparator,
-                forgotPasswordLabel, connectionButton
+                passwordLabel, passwordField, passwordSeparator, connectionButton
         );
     }
 
-    private void openURL(String URL) {
-        try {
-            Desktop.getDesktop().browse(new URI(URL));
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
-        }
-    }
 }

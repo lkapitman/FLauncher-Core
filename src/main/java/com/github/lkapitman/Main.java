@@ -4,6 +4,7 @@ import fr.arinonia.arilibfx.utils.AriLogger;
 import javafx.application.Application;
 
 import javax.swing.*;
+import java.sql.*;
 
 public class Main {
 
@@ -11,6 +12,7 @@ public class Main {
 
     public static void main(String[] args) {
         logger = new AriLogger("Heaven Launcher");
+
         try {
             Class.forName("javafx.application.Application");
             Application.launch(FxApplication.class, args);

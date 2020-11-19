@@ -1,7 +1,13 @@
 package com.github.lkapitman.ui.panels;
 
+import com.github.lkapitman.Main;
+import com.github.lkapitman.file.Saver;
 import com.github.lkapitman.ui.PanelManager;
 import com.github.lkapitman.ui.panel.Panel;
+import com.github.lkapitman.utils.messages.MessageHelper;
+import com.github.lkapitman.utils.rcon.Rcon;
+import com.github.lkapitman.utils.rcon.ex.AuthenticationException;
+import com.google.common.hash.Hashing;
 import javafx.geometry.HPos;
 import javafx.geometry.VPos;
 import javafx.scene.Cursor;
@@ -10,9 +16,27 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.RowConstraints;
 
-import java.util.concurrent.atomic.AtomicBoolean;
+import java.io.IOException;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+import java.nio.charset.StandardCharsets;
+import java.sql.*;
 
 public class PanelRegister extends Panel {
+
+    private String name;
+    private String realname;
+    private String pass;
+    private String ip;
+    private int lastlogin = 0;
+    private double x;
+    private double y;
+    private double z;
+    private String world;
+    private String email;
+    private int isLogged;
+    private float yaw;
+    private float pitch;
 
     @Override
     public void init(PanelManager panelManager) {
@@ -20,7 +44,6 @@ public class PanelRegister extends Panel {
         GridPane loginPanel = new GridPane();
         GridPane mainPanel = new GridPane();
         GridPane buttonPanel = new GridPane();
-        AtomicBoolean connectWithServer = new AtomicBoolean(false);
 
         loginPanel.setMaxWidth(400);
         loginPanel.setMinWidth(400);
@@ -242,10 +265,21 @@ public class PanelRegister extends Panel {
         connectionButton.setOnMouseEntered(e->this.layout.setCursor(Cursor.HAND));
         connectionButton.setOnMouseExited(e->this.layout.setCursor(Cursor.DEFAULT));
         connectionButton.setOnMouseClicked(e-> {
-            if (connectWithServer.get()) {
-                //TODO: Connect to minecraft server in rcon and use /register
+            if ((passwordField.getText().equals(RepasswordField.getText()))) {
+                try {
+                    Rcon rcon = new Rcon("localhost", 25575, "putin125".getBytes());
+                    rcon.command("authme register " + usernameField.getText() + " " + RepasswordField.getText());
+                    rcon.disconnect();
+                    return;
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                } catch (AuthenticationException ex) {
+                    ex.printStackTrace();
+                }
+                this.panelManager.showPanel(new PanelLogin());
             } else {
-                //TODO: Error MSG
+                new MessageHelper("Повтор пароля - не соответствует паролю!").showErrorMSG();
+                return;
             }
         });
 
@@ -255,4 +289,7 @@ public class PanelRegister extends Panel {
         );
     }
 
+    private String getIP() throws UnknownHostException {
+        return InetAddress.getLocalHost().toString();
+    }
 }

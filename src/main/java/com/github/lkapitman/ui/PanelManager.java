@@ -2,7 +2,6 @@ package com.github.lkapitman.ui;
 
 import com.github.lkapitman.FLauncher;
 import com.github.lkapitman.ui.panel.IPanel;
-import com.github.lkapitman.ui.panel.Panel;
 import com.github.lkapitman.ui.panels.includes.TopPanel;
 import fr.arinonia.arilibfx.AriLibFX;
 import fr.arinonia.arilibfx.ui.utils.ResizeHelper;
@@ -40,7 +39,7 @@ public class PanelManager {
         this.stage.show();
 
         this.layout = new GridPane();
-        this.layout.setStyle(AriLibFX.setResponsiveBackground("bg.png"));
+        this.layout.setStyle(AriLibFX.setResponsiveBackground("bg.jpg"));
         this.stage.setScene(new Scene(this.layout));
 
         RowConstraints topPanelConstrains = new RowConstraints();

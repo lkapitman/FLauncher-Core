@@ -1,7 +1,6 @@
 plugins {
     id 'java'
     id 'edu.sc.seis.launch4j' version '2.4.6'
-    id 'org.openjfx.javafxplugin' version '0.0.9'
 }
 
 group 'com.github.lkapitman'
@@ -22,8 +21,10 @@ dependencies {
 
     implementation 'org.to2mbn:jmccc-mcdownloader:2.4'
     implementation 'org.to2mbn:jmccc:2.4'
-    compile group: 'org.apache.httpcomponents', name: 'httpasyncclient', version: '4.1.4'
     compile group: 'org.controlsfx', name: 'controlsfx', version: '8.40.12'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.22'
+    implementation("com.google.guava:guava:30.0-jre")
+
     compile fileTree(dir: 'libs', include: '*.jar')
 }
 
