@@ -40,7 +40,7 @@ jar {
 }
 launch4j {
     jar = "${projectDir}/build/libs/FLauncher.jar"
-    outfile = 'FLauncher(Login Preview).exe'
+    outfile = 'FLauncher.exe'
     mainClassName = 'com.github.lkapitman.Main'
     //icon = "${projectDir}/src/main/resources/img/icon.ico"
     jreMinVersion = '1.8.0'

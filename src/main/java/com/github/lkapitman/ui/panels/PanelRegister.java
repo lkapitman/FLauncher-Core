@@ -270,13 +270,13 @@ public class PanelRegister extends Panel {
                     Rcon rcon = new Rcon("localhost", 25575, "putin125".getBytes());
                     rcon.command("authme register " + usernameField.getText() + " " + RepasswordField.getText());
                     rcon.disconnect();
+                    panelManager.showPanel(new PanelLogin());
                     return;
                 } catch (IOException ex) {
                     ex.printStackTrace();
                 } catch (AuthenticationException ex) {
                     ex.printStackTrace();
                 }
-                this.panelManager.showPanel(new PanelLogin());
             } else {
                 new MessageHelper("Повтор пароля - не соответствует паролю!").showErrorMSG();
                 return;

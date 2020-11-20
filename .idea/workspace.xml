@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b8948d3-e538-41e9-b1e9-8514c66e2a00" name="Default Changelist" comment="" />
+    <list default="true" id="9b8948d3-e538-41e9-b1e9-8514c66e2a00" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/PanelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/PanelManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelRegister.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,6 +84,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1h8ngBeuBRIxoCqEKmmjwzANApO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -76,12 +94,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/github/lkapitman/utils/rcon" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15078124" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -92,21 +112,21 @@
       <recent name="com.github.lkapitman.ui.panel" />
       <recent name="com.github.lkapitman.ui.panels.includes" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Workspace\java\FLauncher\src\main\java\com\github\lkapitman\utils\rcon" />
-      <recent name="E:\Workspace\java\FLauncher\src\main\java\com\github\lkapitman\utils\database" />
-      <recent name="E:\Workspace\java\FLauncher\src\main\resources" />
-      <recent name="E:\Workspace\java\FLauncher\src\main\java" />
-      <recent name="E:\Workspace\java\FLauncher\src\test\resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Workspace\java\FLauncher\libs" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Workspace\java\FLauncher\libs" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Workspace\java\FLauncher\src\main\resources" />
+      <recent name="E:\Workspace\java\FLauncher\src\main\java\com\github\lkapitman\utils\rcon" />
+      <recent name="E:\Workspace\java\FLauncher\src\main\java\com\github\lkapitman\utils\database" />
+      <recent name="E:\Workspace\java\FLauncher\src\main\java" />
+      <recent name="E:\Workspace\java\FLauncher\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Gradle.FLauncher [launch4j]">
     <configuration name="EldariaLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fr.dabsunter.eldaria.launcher.EldariaLauncher" />
       <module name="FLauncher.main" />
@@ -264,6 +284,8 @@
       <workItem from="1605776965248" duration="1719000" />
       <workItem from="1605778996534" duration="15000" />
       <workItem from="1605779184057" duration="1917000" />
+      <workItem from="1605811767449" duration="1020000" />
+      <workItem from="1605884642984" duration="9555000" />
     </task>
     <servers />
   </component>
@@ -299,22 +321,22 @@
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="618" y="180" key="FileChooserDialogImpl/0.0.2048.1122@0.0.2048.1122" timestamp="1605711039264" />
-    <state width="1981" height="347" key="GridCell.Tab.0.bottom" timestamp="1605782508633">
+    <state width="1981" height="257" key="GridCell.Tab.0.bottom" timestamp="1605898166705">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="347" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1605782508633" />
-    <state width="1981" height="347" key="GridCell.Tab.0.center" timestamp="1605782508633">
+    <state width="1981" height="257" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1605898166705" />
+    <state width="1981" height="257" key="GridCell.Tab.0.center" timestamp="1605898166705">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="347" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1605782508633" />
-    <state width="1981" height="347" key="GridCell.Tab.0.left" timestamp="1605782508633">
+    <state width="1981" height="257" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1605898166705" />
+    <state width="1981" height="257" key="GridCell.Tab.0.left" timestamp="1605898166705">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="347" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1605782508633" />
-    <state width="1981" height="347" key="GridCell.Tab.0.right" timestamp="1605782508633">
+    <state width="1981" height="257" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1605898166705" />
+    <state width="1981" height="257" key="GridCell.Tab.0.right" timestamp="1605898166705">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="347" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1605782508633" />
+    <state width="1981" height="257" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1605898166705" />
     <state width="1981" height="347" key="GridCell.Tab.1.bottom" timestamp="1605782508633">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
@@ -331,10 +353,10 @@
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state width="1981" height="347" key="GridCell.Tab.1.right/0.0.2048.1122@0.0.2048.1122" timestamp="1605782508633" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1605779371862">
+    <state x="249" y="0" key="SettingsEditor" timestamp="1605885952290">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.2048.1122@0.0.2048.1122" timestamp="1605779371862" />
+    <state x="249" y="0" key="SettingsEditor/0.0.2048.1122@0.0.2048.1122" timestamp="1605885952290" />
     <state x="713" y="119" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1599560424353">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>

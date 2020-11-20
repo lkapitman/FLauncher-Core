@@ -206,7 +206,9 @@ public class PanelLogin extends Panel {
         connectionButton.setOnMouseEntered(e->this.layout.setCursor(Cursor.HAND));
         connectionButton.setOnMouseExited(e->this.layout.setCursor(Cursor.DEFAULT));
         connectionButton.setOnMouseClicked(e-> {
-            String pass = Hashing.sha512().hashString(passwordField.getText(), StandardCharsets.UTF_8).toString();
+            panelManager.showPanel(new HomePanel());
+
+/*            String pass = Hashing.sha512().hashString(passwordField.getText(), StandardCharsets.UTF_8).toString();
 
             try {
                 Class.forName("com.mysql.jdbc.Driver");
@@ -227,7 +229,8 @@ public class PanelLogin extends Panel {
                     System.out.print("\t\t"+rst.getString(3));
                     System.out.println();
                     if (rst.getString(2).equals(usernameField.getText()) && rst.getString(3).equalsIgnoreCase(pass)) {
-                        new MessageHelper("Хорошей игры!").showErrorMSG();
+                        new MessageHelper("Хорошей игры!").showInfoMSG();
+                        panelManager.showPanel(new HomePanel());
                         // TODO:
                         return;
                     } else {
@@ -239,7 +242,7 @@ public class PanelLogin extends Panel {
             } catch (ClassNotFoundException | SQLException ex) {
                 ex.printStackTrace();
             }
-
+*/
         });
 
         mainPanel.getChildren().addAll(connectLabel, connectSeparator, usernameLabel, usernameField, usernameSeparator,
