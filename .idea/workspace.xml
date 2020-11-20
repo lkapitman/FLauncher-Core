@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b8948d3-e538-41e9-b1e9-8514c66e2a00" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/PanelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/PanelManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelRegister.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,6 +282,8 @@
       <workItem from="1605779184057" duration="1917000" />
       <workItem from="1605811767449" duration="1020000" />
       <workItem from="1605884642984" duration="9555000" />
+      <workItem from="1605898188007" duration="566000" />
+      <workItem from="1605902497487" duration="3257000" />
     </task>
     <servers />
   </component>
@@ -321,22 +319,22 @@
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="618" y="180" key="FileChooserDialogImpl/0.0.2048.1122@0.0.2048.1122" timestamp="1605711039264" />
-    <state width="1981" height="257" key="GridCell.Tab.0.bottom" timestamp="1605898166705">
+    <state width="1981" height="256" key="GridCell.Tab.0.bottom" timestamp="1605906072614">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="257" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1605898166705" />
-    <state width="1981" height="257" key="GridCell.Tab.0.center" timestamp="1605898166705">
+    <state width="1981" height="256" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1605906072614" />
+    <state width="1981" height="256" key="GridCell.Tab.0.center" timestamp="1605906072614">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="257" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1605898166705" />
-    <state width="1981" height="257" key="GridCell.Tab.0.left" timestamp="1605898166705">
+    <state width="1981" height="256" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1605906072614" />
+    <state width="1981" height="256" key="GridCell.Tab.0.left" timestamp="1605906072614">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="257" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1605898166705" />
-    <state width="1981" height="257" key="GridCell.Tab.0.right" timestamp="1605898166705">
+    <state width="1981" height="256" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1605906072614" />
+    <state width="1981" height="256" key="GridCell.Tab.0.right" timestamp="1605906072614">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="257" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1605898166705" />
+    <state width="1981" height="256" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1605906072614" />
     <state width="1981" height="347" key="GridCell.Tab.1.bottom" timestamp="1605782508633">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>

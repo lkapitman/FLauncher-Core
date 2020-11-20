@@ -3,10 +3,15 @@ package com.github.lkapitman.ui.panels;
 import com.github.lkapitman.Main;
 import com.github.lkapitman.ui.PanelManager;
 import com.github.lkapitman.ui.panel.Panel;
+import com.sun.webkit.WebPage;
+import javafx.collections.ListChangeListener;
 import javafx.geometry.HPos;
 import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
 import javafx.geometry.VPos;
+import javafx.scene.Cursor;
+import javafx.scene.Node;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.Separator;
@@ -16,8 +21,13 @@ import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebView;
 
+import javax.swing.*;
 import java.awt.*;
+import java.lang.reflect.Field;
+import java.util.Set;
 
 public class HomePanel extends Panel {
 
@@ -99,7 +109,7 @@ public class HomePanel extends Panel {
     }
 
     private void addTopPanel(GridPane pane) {
-        Label valkyriaTitle = new Label("Heaven Launcher");
+        Label valkyriaTitle = new Label("Heaven Project");
         GridPane.setVgrow(valkyriaTitle, Priority.ALWAYS);
         GridPane.setHgrow(valkyriaTitle, Priority.ALWAYS);
         GridPane.setValignment(valkyriaTitle, VPos.TOP);
@@ -128,8 +138,65 @@ public class HomePanel extends Panel {
         desc.setStyle("-fx-font-size: 14px; -fx-text-fill: #bcc6e7; -fx-opacity: 70%;");
         desc.setTranslateY(130);
 
+        GridPane bigVideo = new GridPane();
 
-        pane.getChildren().addAll(valkyriaTitle, rolePlay, complet, desc);
+        GridPane.setVgrow(bigVideo, Priority.ALWAYS);
+        GridPane.setHgrow(bigVideo, Priority.ALWAYS);
+        GridPane.setValignment(bigVideo, VPos.TOP);
+        GridPane.setHalignment(bigVideo, HPos.RIGHT);
+        bigVideo.setMinWidth(430);
+        bigVideo.setMaxWidth(430);
+        bigVideo.setMinHeight(320);
+        bigVideo.setMaxHeight(320);
+
+        String content_url =
+                "<iframe style='background : rgba(0,0,0,0);' width=\"420\" height=\"320\"" +
+                " src=\"http://arinonia.chaun14.fr/pages/video.html\" frameborder=\"0\" allow=\"accelerometer; autoplay=1; encrypted-media; gyroscope; picture-in-picture\"" +
+                " allowfullscreen></iframe>";
+        WebView webView = new WebView();
+        webView.setStyle("overflow-x: hidden; overflow-y: hidden");
+
+        WebEngine webEngine = webView.getEngine();
+
+        webEngine.loadContent(content_url);
+
+        bigVideo.getChildren().addAll(webView);
+        webView.getChildrenUnmodifiable().addListener((ListChangeListener< Node >) change -> {
+            Set<Node> deadSeaScrolls = webView.lookupAll(".scroll-bar");
+            for (Node scroll : deadSeaScrolls) {
+                scroll.setVisible(false);
+            }
+        });
+
+        try {
+            Field field = webEngine.getClass().getDeclaredField("page");
+            field.setAccessible(true);
+            WebPage page = (WebPage)field.get(webEngine);
+            SwingUtilities.invokeLater(() -> {
+                page.setBackgroundColor(new Color(255, 255, 255, 0).getRGB());
+            });
+        } catch (Exception e) {
+
+        }
+
+        Button installButton = new Button("Установить!");
+        GridPane.setVgrow(installButton, Priority.ALWAYS);
+        GridPane.setHgrow(installButton, Priority.ALWAYS);
+        GridPane.setValignment(installButton, VPos.TOP);
+        GridPane.setHalignment(installButton, HPos.LEFT);
+        installButton.setTranslateY(260);
+        installButton.setMinWidth(140);
+        installButton.setMaxHeight(40);
+        installButton.setStyle("-fx-background-color: #115ffa; -fx-border-radius: 0; -fx-background-insets: 0; -fx-font-size: 14px; -fx-text-fill: #fff; ");
+
+        installButton.setOnMouseEntered(e->this.layout.setCursor(Cursor.HAND));
+        installButton.setOnMouseExited(e->this.layout.setCursor(Cursor.DEFAULT));
+        installButton.setOnMouseClicked(e-> {
+            // TODO: JMCC LIB
+
+        });
+
+        pane.getChildren().addAll(valkyriaTitle, rolePlay, complet, desc, bigVideo, installButton);
     }
 
     private void showleftBar(GridPane pane) {
@@ -142,7 +209,6 @@ public class HomePanel extends Panel {
         blueLeftSeparator.setMinHeight(40);
         blueLeftSeparator.setMaxHeight(40);
         blueLeftSeparator.setStyle("-fx-background-color: rgb(5,179,242); -fx-border-width: 3 3 3 0; -fx-border-color: rgb(5,179,242)");
-
         Image logoImage = new Image(Main.class.getResource("/valkyria.png").toExternalForm());
         ImageView imageViewLogo = new ImageView(logoImage);
 

@@ -207,7 +207,6 @@ public class PanelLogin extends Panel {
         connectionButton.setOnMouseExited(e->this.layout.setCursor(Cursor.DEFAULT));
         connectionButton.setOnMouseClicked(e-> {
             panelManager.showPanel(new HomePanel());
-
 /*            String pass = Hashing.sha512().hashString(passwordField.getText(), StandardCharsets.UTF_8).toString();
 
             try {
