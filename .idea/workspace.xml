@@ -2,19 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b8948d3-e538-41e9-b1e9-8514c66e2a00" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/FLauncher.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/FLauncher.exe" beforeDir="false" afterPath="$PROJECT_DIR$/build/launch4j/FLauncher.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/FLauncher.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/launch4j/lib/FLauncher.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/FLauncher.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/FLauncher.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +124,7 @@
       <recent name="E:\Workspace\java\FLauncher\src\main\java\com\github\lkapitman\utils\database" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Program">
+  <component name="RunManager" selected="Gradle.FLauncher [launch4j]">
     <configuration name="DownloaderExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.to2mbn.jmccc.mcdownloader.gui.DownloaderExample" />
       <module name="FLauncher.main" />
@@ -293,6 +291,7 @@
       <workItem from="1605947996850" duration="1960000" />
       <workItem from="1605977567566" duration="4000" />
       <workItem from="1605981390250" duration="1800000" />
+      <workItem from="1605989331957" duration="57000" />
     </task>
     <servers />
   </component>
@@ -328,22 +327,22 @@
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="618" y="180" key="FileChooserDialogImpl/0.0.2048.1122@0.0.2048.1122" timestamp="1605711039264" />
-    <state width="1981" height="255" key="GridCell.Tab.0.bottom" timestamp="1605983289450">
+    <state width="1981" height="255" key="GridCell.Tab.0.bottom" timestamp="1605989388187">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1605983289450" />
-    <state width="1981" height="255" key="GridCell.Tab.0.center" timestamp="1605983289450">
+    <state width="1981" height="255" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1605989388187" />
+    <state width="1981" height="255" key="GridCell.Tab.0.center" timestamp="1605989388187">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1605983289450" />
-    <state width="1981" height="255" key="GridCell.Tab.0.left" timestamp="1605983289450">
+    <state width="1981" height="255" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1605989388187" />
+    <state width="1981" height="255" key="GridCell.Tab.0.left" timestamp="1605989388187">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1605983289450" />
-    <state width="1981" height="255" key="GridCell.Tab.0.right" timestamp="1605983289450">
+    <state width="1981" height="255" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1605989388187" />
+    <state width="1981" height="255" key="GridCell.Tab.0.right" timestamp="1605989388187">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1605983289450" />
+    <state width="1981" height="255" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1605989388187" />
     <state width="1981" height="347" key="GridCell.Tab.1.bottom" timestamp="1605946747597">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
