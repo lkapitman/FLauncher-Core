@@ -21,9 +21,12 @@ dependencies {
 
     implementation 'org.to2mbn:jmccc-mcdownloader:2.4'
     implementation 'org.to2mbn:jmccc:2.4'
+    implementation 'org.to2mbn:jmccc-yggdrasil-authenticator:2.4'
+
     compile group: 'org.controlsfx', name: 'controlsfx', version: '8.40.12'
     compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.22'
     implementation("com.google.guava:guava:30.0-jre")
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
 
     compile fileTree(dir: 'libs', include: '*.jar')
 }

@@ -4,7 +4,7 @@ import fr.arinonia.arilibfx.utils.AriLogger;
 import javafx.application.Application;
 
 import javax.swing.*;
-import java.sql.*;
+
 
 public class Main {
 

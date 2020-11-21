@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b8948d3-e538-41e9-b1e9-8514c66e2a00" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/FLauncher.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelLogin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +100,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15078124" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -109,39 +112,27 @@
       <recent name="com.github.lkapitman.ui.panels.includes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Workspace\java\FLauncher\src\main\resources\test" />
       <recent name="E:\Workspace\java\FLauncher\libs" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Workspace\java\FLauncher\src\main\java" />
+      <recent name="E:\Workspace\java\FLauncher\src\main\java\com\github\lkapitman\test" />
       <recent name="E:\Workspace\java\FLauncher\src\main\resources" />
       <recent name="E:\Workspace\java\FLauncher\src\main\java\com\github\lkapitman\utils\rcon" />
       <recent name="E:\Workspace\java\FLauncher\src\main\java\com\github\lkapitman\utils\database" />
-      <recent name="E:\Workspace\java\FLauncher\src\main\java" />
-      <recent name="E:\Workspace\java\FLauncher\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.FLauncher [launch4j]">
-    <configuration name="EldariaLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fr.dabsunter.eldaria.launcher.EldariaLauncher" />
+  <component name="RunManager" selected="Application.Program">
+    <configuration name="DownloaderExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.to2mbn.jmccc.mcdownloader.gui.DownloaderExample" />
       <module name="FLauncher.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="fr.dabsunter.eldaria.launcher.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JavaFXTrayIconSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.lkapitman.JavaFXTrayIconSample" />
-      <module name="FLauncher.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.lkapitman.*" />
+          <option name="PATTERN" value="org.to2mbn.jmccc.mcdownloader.gui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,6 +146,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.github.lkapitman.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="net.tpc.mcdownloader.Program" />
+      <module name="FLauncher.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.tpc.mcdownloader.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -203,10 +207,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.FLauncher [launch4j]" />
+        <item itemvalue="Application.DownloaderExample" />
+        <item itemvalue="Application.Program" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.FLauncher [createAllExecutables]" />
-        <item itemvalue="Application.EldariaLauncher" />
-        <item itemvalue="Application.JavaFXTrayIconSample" />
       </list>
     </recent_temporary>
   </component>
@@ -284,6 +288,11 @@
       <workItem from="1605884642984" duration="9555000" />
       <workItem from="1605898188007" duration="566000" />
       <workItem from="1605902497487" duration="3257000" />
+      <workItem from="1605910623889" duration="1161000" />
+      <workItem from="1605943637504" duration="3267000" />
+      <workItem from="1605947996850" duration="1960000" />
+      <workItem from="1605977567566" duration="4000" />
+      <workItem from="1605981390250" duration="1800000" />
     </task>
     <servers />
   </component>
@@ -319,42 +328,42 @@
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="618" y="180" key="FileChooserDialogImpl/0.0.2048.1122@0.0.2048.1122" timestamp="1605711039264" />
-    <state width="1981" height="256" key="GridCell.Tab.0.bottom" timestamp="1605906072614">
+    <state width="1981" height="255" key="GridCell.Tab.0.bottom" timestamp="1605983289450">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="256" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1605906072614" />
-    <state width="1981" height="256" key="GridCell.Tab.0.center" timestamp="1605906072614">
+    <state width="1981" height="255" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1605983289450" />
+    <state width="1981" height="255" key="GridCell.Tab.0.center" timestamp="1605983289450">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="256" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1605906072614" />
-    <state width="1981" height="256" key="GridCell.Tab.0.left" timestamp="1605906072614">
+    <state width="1981" height="255" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1605983289450" />
+    <state width="1981" height="255" key="GridCell.Tab.0.left" timestamp="1605983289450">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="256" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1605906072614" />
-    <state width="1981" height="256" key="GridCell.Tab.0.right" timestamp="1605906072614">
+    <state width="1981" height="255" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1605983289450" />
+    <state width="1981" height="255" key="GridCell.Tab.0.right" timestamp="1605983289450">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="256" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1605906072614" />
-    <state width="1981" height="347" key="GridCell.Tab.1.bottom" timestamp="1605782508633">
+    <state width="1981" height="255" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1605983289450" />
+    <state width="1981" height="347" key="GridCell.Tab.1.bottom" timestamp="1605946747597">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="347" key="GridCell.Tab.1.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1605782508633" />
-    <state width="1981" height="347" key="GridCell.Tab.1.center" timestamp="1605782508633">
+    <state width="1981" height="347" key="GridCell.Tab.1.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1605946747597" />
+    <state width="1981" height="347" key="GridCell.Tab.1.center" timestamp="1605946747597">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="347" key="GridCell.Tab.1.center/0.0.2048.1122@0.0.2048.1122" timestamp="1605782508633" />
-    <state width="1981" height="347" key="GridCell.Tab.1.left" timestamp="1605782508633">
+    <state width="1981" height="347" key="GridCell.Tab.1.center/0.0.2048.1122@0.0.2048.1122" timestamp="1605946747597" />
+    <state width="1981" height="347" key="GridCell.Tab.1.left" timestamp="1605946747597">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="347" key="GridCell.Tab.1.left/0.0.2048.1122@0.0.2048.1122" timestamp="1605782508633" />
-    <state width="1981" height="347" key="GridCell.Tab.1.right" timestamp="1605782508633">
+    <state width="1981" height="347" key="GridCell.Tab.1.left/0.0.2048.1122@0.0.2048.1122" timestamp="1605946747597" />
+    <state width="1981" height="347" key="GridCell.Tab.1.right" timestamp="1605946747597">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="347" key="GridCell.Tab.1.right/0.0.2048.1122@0.0.2048.1122" timestamp="1605782508633" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1605885952290">
+    <state width="1981" height="347" key="GridCell.Tab.1.right/0.0.2048.1122@0.0.2048.1122" timestamp="1605946747597" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1605946678313">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.2048.1122@0.0.2048.1122" timestamp="1605885952290" />
+    <state x="249" y="0" key="SettingsEditor/0.0.2048.1122@0.0.2048.1122" timestamp="1605946678313" />
     <state x="713" y="119" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1599560424353">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
