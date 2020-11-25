@@ -15,10 +15,16 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.RowConstraints;
 
+import java.awt.*;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
 import java.sql.*;
 
 public class PanelLogin extends Panel {
+
+    private HomePanel homePanel;
 
     @Override
     public void init(PanelManager panelManager) {
@@ -77,7 +83,7 @@ public class PanelLogin extends Panel {
         registerHere.setOnMouseEntered(e->this.layout.setCursor(Cursor.HAND));
         registerHere.setOnMouseExited(e->this.layout.setCursor(Cursor.DEFAULT));
         registerHere.setOnMouseClicked(e-> {
-            this.panelManager.showPanel(new PanelRegister());
+            openURL();
         });
 
         buttonPanel.getChildren().addAll(noAccount, registerHere);
@@ -206,7 +212,7 @@ public class PanelLogin extends Panel {
         connectionButton.setOnMouseEntered(e->this.layout.setCursor(Cursor.HAND));
         connectionButton.setOnMouseExited(e->this.layout.setCursor(Cursor.DEFAULT));
         connectionButton.setOnMouseClicked(e-> {
-            panelManager.showPanel(new HomePanel());
+            panelManager.showPanel(homePanel = new HomePanel());
 /*            String pass = Hashing.sha512().hashString(passwordField.getText(), StandardCharsets.UTF_8).toString();
 
             try {
@@ -229,7 +235,7 @@ public class PanelLogin extends Panel {
                     System.out.println();
                     if (rst.getString(2).equals(usernameField.getText()) && rst.getString(3).equalsIgnoreCase(pass)) {
                         new MessageHelper("Хорошей игры!").showInfoMSG();
-                        panelManager.showPanel(new HomePanel());
+                        panelManager.showPanel(homePanel = new HomePanel());
                         // TODO:
                         return;
                     } else {
@@ -249,4 +255,17 @@ public class PanelLogin extends Panel {
         );
     }
 
+    private void openURL() {
+        try {
+            Desktop.getDesktop().browse(new URI("https://vk.com/oldroleplayminecraftserver"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public HomePanel getHomePanel() {
+        return homePanel;
+    }
 }

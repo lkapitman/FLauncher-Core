@@ -1,13 +1,12 @@
 package com.github.lkapitman.ui.panels;
 
 import com.github.lkapitman.Main;
-import com.github.lkapitman.file.FileManager;
 import com.github.lkapitman.ui.PanelManager;
 import com.github.lkapitman.ui.panel.Panel;
 import com.sun.webkit.WebPage;
-import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIcon;
-import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView;
 import fr.arinonia.arilibfx.ui.component.AProgressBar;
+import fr.arinonia.arilibfx.updater.DownloadJob;
+import fr.arinonia.arilibfx.updater.DownloadListener;
 import javafx.collections.ListChangeListener;
 import javafx.geometry.HPos;
 import javafx.geometry.Orientation;
@@ -30,28 +29,17 @@ import javafx.scene.paint.LinearGradient;
 import javafx.scene.paint.Stop;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
-import jdk.nashorn.internal.runtime.Version;
-import org.to2mbn.jmccc.mcdownloader.MinecraftDownloader;
-import org.to2mbn.jmccc.mcdownloader.MinecraftDownloaderBuilder;
-import org.to2mbn.jmccc.mcdownloader.download.DownloadCallback;
-import org.to2mbn.jmccc.mcdownloader.download.DownloadTask;
-import org.to2mbn.jmccc.mcdownloader.download.concurrent.CallbackAdapter;
-import org.to2mbn.jmccc.mcdownloader.provider.forge.ForgeDownloadProvider;
-import org.to2mbn.jmccc.mcdownloader.provider.forge.ForgeVersionList;
-import org.to2mbn.jmccc.mcdownloader.provider.liteloader.LiteloaderDownloadProvider;
-import org.to2mbn.jmccc.mcdownloader.provider.liteloader.LiteloaderVersionList;
-import org.to2mbn.jmccc.option.MinecraftDirectory;
 
 import javax.swing.*;
 import java.awt.*;
 import java.lang.reflect.Field;
 import java.util.Set;
 
-public class HomePanel extends Panel {
+public class HomePanel extends Panel implements DownloadListener {
 
     private GridPane centerPane = new GridPane();
     private AProgressBar leftDownloadBar;
-
+    private AProgressBar aBigDownloadBar;
 
     @Override
     public void init(PanelManager panelManager) {
@@ -211,43 +199,17 @@ public class HomePanel extends Panel {
 
         installButton.setOnMouseEntered(e->this.layout.setCursor(Cursor.HAND));
         installButton.setOnMouseExited(e->this.layout.setCursor(Cursor.DEFAULT));
-        installButton.setOnMouseClicked(e-> {
-            // TODO Install
-        });
+        installButton.setOnMouseClicked(e-> this.panelManager.getfLauncher().launchGame());
 
-        Button settingsButton = new Button();
-        GridPane.setVgrow(settingsButton, Priority.ALWAYS);
-        GridPane.setHgrow(settingsButton, Priority.ALWAYS);
-        GridPane.setValignment(settingsButton, VPos.TOP);
-        GridPane.setHalignment(settingsButton, HPos.LEFT);
-        MaterialDesignIconView settingIcon = new MaterialDesignIconView(MaterialDesignIcon.SETTINGS);
-        settingIcon.setSize("18px");
-        settingIcon.setFill(javafx.scene.paint.Color.rgb(17,95,170));
-        settingsButton.setStyle("-fx-background-color:  rgb(255,255,255,0.0); -fx-border-color: #115faa; -fx-border-radius: 2px;");
-        settingsButton.setTranslateX(150);
-        settingsButton.setTranslateY(266);
-        settingsButton.setMinWidth(26);
-        settingsButton.setMaxWidth(26);
-        settingsButton.setMinHeight(26);
-        settingsButton.setMaxHeight(26);
-        settingsButton.setGraphic(settingIcon);
-
-        settingsButton.setOnMouseEntered(e->this.layout.setCursor(Cursor.HAND));
-        settingsButton.setOnMouseExited(e->this.layout.setCursor(Cursor.DEFAULT));
-        settingsButton.setOnMouseClicked(e-> {
-            // TODO Settings
-        });
-
-        AProgressBar abigDownloadBar = new AProgressBar(400,20);
-        abigDownloadBar.setBackgroundColor(javafx.scene.paint.Color.rgb(3,48,90));
+        aBigDownloadBar = new AProgressBar(400,20);
+        aBigDownloadBar.setBackgroundColor(javafx.scene.paint.Color.rgb(3,48,90));
         Stop[] stops = new Stop[]{new Stop(0, javafx.scene.paint.Color.rgb(7,85,136)), new Stop(1, javafx.scene.paint.Color.rgb(3,163,219))};
 
         LinearGradient lg = new LinearGradient(0,0,1,0,true, CycleMethod.NO_CYCLE, stops);
-        abigDownloadBar.setForegroundColor(lg);
-        abigDownloadBar.setTranslateY(150);
-        abigDownloadBar.setProgress(100, 150);
-        
-        pane.getChildren().addAll(valkyriaTitle, rolePlay, complet, desc, bigVideo, installButton, settingsButton, abigDownloadBar);
+        aBigDownloadBar.setForegroundColor(lg);
+        aBigDownloadBar.setTranslateY(150);
+
+        pane.getChildren().addAll(valkyriaTitle, rolePlay, complet, desc, bigVideo, installButton, aBigDownloadBar);
     }
 
     private void showleftBar(GridPane pane) {
@@ -282,9 +244,24 @@ public class HomePanel extends Panel {
         leftDownloadBar.setForegroundColor(javafx.scene.paint.Color.rgb(255,255,255));
         leftDownloadBar.setTranslateX(90.0d);
         leftDownloadBar.setTranslateY(12.0d);
-        leftDownloadBar.setProgress(24, 142);
 
         pane.getChildren().addAll(blueLeftSeparator, imageViewLogo, valkyria, leftDownloadBar);
     }
 
+    @Override
+    public void onDownloadJobFinished(DownloadJob job) {
+        Main.logger.log(job.getName() + " finished!");
+    }
+
+    @Override
+    public void onDownloadJobProgressChanged(DownloadJob job) {
+        this.leftDownloadBar.setProgress(job.getAllFiles().size() - job.getRemainingFiles().size(), job.getAllFiles().size());
+        this.aBigDownloadBar.setProgress(job.getAllFiles().size() - job.getRemainingFiles().size(), job.getAllFiles().size());
+
+    }
+
+    @Override
+    public void onDownloadJobStarted(DownloadJob job) {
+        Main.logger.log("'" + job.getName() + "' started to download!");
+    }
 }

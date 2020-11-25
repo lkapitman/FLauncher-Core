@@ -6,13 +6,43 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/FLauncher.main.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/FLauncher.exe" beforeDir="false" afterPath="$PROJECT_DIR$/build/launch4j/FLauncher.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/FLauncher.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/launch4j/lib/FLauncher.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/FLauncher.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/FLauncher.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/AriLibFX-1.0.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/fontawesomefx-8.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-2.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/FLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/FLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/file/FileManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/file/Saver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/PanelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/PanelManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelRegister.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/tpc/mcdownloader/FileDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/tpc/mcdownloader/IconLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/tpc/mcdownloader/JarExtractor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/tpc/mcdownloader/MinecraftDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/tpc/mcdownloader/Program.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/tpc/mcdownloader/ProgressListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/tpc/mcdownloader/Resource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/tpc/mcdownloader/gui/DownloaderWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/background.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test/icon_128x128.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test/icon_16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test/icon_24x24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test/icon_256x256.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test/icon_32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test/icon_48x48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test/icon_64x64.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +108,7 @@
         <option value="Interface" />
         <option value="Arquillian JUnit Test Class" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -98,7 +129,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15078124" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -109,19 +140,20 @@
       <recent name="com.github.lkapitman.ui.panel" />
       <recent name="com.github.lkapitman.ui.panels.includes" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Workspace\java\FLauncher\src\main\resources\test" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Workspace\java\FLauncher\libs" />
+      <recent name="E:\Workspace\java\FLauncher\src\main\java" />
+      <recent name="E:\Workspace\java\FLauncher\src\main\resources" />
+      <recent name="E:\Workspace\java\FLauncher\src\main\java\com\github\lkapitman\test" />
+      <recent name="E:\Workspace\java\FLauncher\src\main\java\com\github\lkapitman\utils\rcon" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Workspace\java\FLauncher\src\main\java" />
-      <recent name="E:\Workspace\java\FLauncher\src\main\java\com\github\lkapitman\test" />
-      <recent name="E:\Workspace\java\FLauncher\src\main\resources" />
-      <recent name="E:\Workspace\java\FLauncher\src\main\java\com\github\lkapitman\utils\rcon" />
-      <recent name="E:\Workspace\java\FLauncher\src\main\java\com\github\lkapitman\utils\database" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Workspace\java\FLauncher\src\main\java\fr\nemixcraft\launcher" />
+      <recent name="E:\Workspace\java\FLauncher\src\main\resources\test" />
+      <recent name="E:\Workspace\java\FLauncher\libs" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.FLauncher [launch4j]">
@@ -131,6 +163,32 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.to2mbn.jmccc.mcdownloader.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GUISetAccount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="eu.hostcode.mclauncher.gui.GUISetAccount" />
+      <module name="FLauncher.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eu.hostcode.mclauncher.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="eu.hostcode.mclauncher.Main" />
+      <module name="FLauncher.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="eu.hostcode.mclauncher.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,38 +208,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="net.tpc.mcdownloader.Program" />
-      <module name="FLauncher.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.tpc.mcdownloader.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FLauncher [createAllExecutables]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="createAllExecutables" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
     </configuration>
     <configuration name="FLauncher [launch4j]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -205,10 +231,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.FLauncher [launch4j]" />
-        <item itemvalue="Application.DownloaderExample" />
-        <item itemvalue="Application.Program" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Gradle.FLauncher [createAllExecutables]" />
+        <item itemvalue="Application.GUISetAccount" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.DownloaderExample" />
       </list>
     </recent_temporary>
   </component>
@@ -292,6 +318,16 @@
       <workItem from="1605977567566" duration="4000" />
       <workItem from="1605981390250" duration="1800000" />
       <workItem from="1605989331957" duration="57000" />
+      <workItem from="1605992611931" duration="47000" />
+      <workItem from="1606061261283" duration="28000" />
+      <workItem from="1606068844014" duration="3264000" />
+      <workItem from="1606125075965" duration="705000" />
+      <workItem from="1606137253698" duration="1808000" />
+      <workItem from="1606158131712" duration="9449000" />
+      <workItem from="1606210704422" duration="704000" />
+      <workItem from="1606215999948" duration="838000" />
+      <workItem from="1606217023496" duration="55000" />
+      <workItem from="1606223670542" duration="955000" />
     </task>
     <servers />
   </component>
@@ -299,6 +335,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="417" y="51" key="#Notifications" timestamp="1606070939707">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="417" y="51" key="#Notifications/0.0.2048.1122@0.0.2048.1122" timestamp="1606070939707" />
     <state x="417" y="51" key="#SQL_Dialects" timestamp="1605161730772">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
@@ -311,38 +351,42 @@
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="619" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2048.1122@0.0.2048.1122" timestamp="1599946407563" />
-    <state x="742" y="135" key="#com.intellij.ide.util.MemberChooser" timestamp="1599402660434">
+    <state x="742" y="135" key="#com.intellij.ide.util.MemberChooser" timestamp="1606168596198">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state x="742" y="135" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1122@0.0.2048.1122" timestamp="1599402660434" />
+    <state x="742" y="135" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1122@0.0.2048.1122" timestamp="1606168596198" />
+    <state x="568" y="456" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1606070448140">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="568" y="456" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.2048.1122@0.0.2048.1122" timestamp="1606070448140" />
     <state x="745" y="366" width="563" height="402" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1605777142376">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="745" y="366" width="563" height="402" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.2048.1122@0.0.2048.1122" timestamp="1605777142376" />
-    <state x="630" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605727022281">
+    <state x="630" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606125107158">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state x="630" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2048.1122@0.0.2048.1122" timestamp="1605727022281" />
+    <state x="630" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2048.1122@0.0.2048.1122" timestamp="1606125107158" />
     <state x="618" y="180" key="FileChooserDialogImpl" timestamp="1605711039264">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="618" y="180" key="FileChooserDialogImpl/0.0.2048.1122@0.0.2048.1122" timestamp="1605711039264" />
-    <state width="1981" height="255" key="GridCell.Tab.0.bottom" timestamp="1605989388187">
+    <state width="1981" height="255" key="GridCell.Tab.0.bottom" timestamp="1606225197107">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1605989388187" />
-    <state width="1981" height="255" key="GridCell.Tab.0.center" timestamp="1605989388187">
+    <state width="1981" height="255" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1606225197107" />
+    <state width="1981" height="255" key="GridCell.Tab.0.center" timestamp="1606225197107">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1605989388187" />
-    <state width="1981" height="255" key="GridCell.Tab.0.left" timestamp="1605989388187">
+    <state width="1981" height="255" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1606225197107" />
+    <state width="1981" height="255" key="GridCell.Tab.0.left" timestamp="1606225197106">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1605989388187" />
-    <state width="1981" height="255" key="GridCell.Tab.0.right" timestamp="1605989388187">
+    <state width="1981" height="255" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1606225197106" />
+    <state width="1981" height="255" key="GridCell.Tab.0.right" timestamp="1606225197107">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1605989388187" />
+    <state width="1981" height="255" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1606225197107" />
     <state width="1981" height="347" key="GridCell.Tab.1.bottom" timestamp="1605946747597">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
@@ -359,10 +403,10 @@
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state width="1981" height="347" key="GridCell.Tab.1.right/0.0.2048.1122@0.0.2048.1122" timestamp="1605946747597" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1605946678313">
+    <state x="249" y="0" key="SettingsEditor" timestamp="1606071239638">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.2048.1122@0.0.2048.1122" timestamp="1605946678313" />
+    <state x="249" y="0" key="SettingsEditor/0.0.2048.1122@0.0.2048.1122" timestamp="1606071239638" />
     <state x="713" y="119" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1599560424353">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
