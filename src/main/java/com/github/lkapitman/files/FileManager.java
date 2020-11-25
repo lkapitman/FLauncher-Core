@@ -47,5 +47,7 @@ public class FileManager {
         return new File(createGameDir(), "runtime");
     }
 
-    
+    public File getBatFile() {
+        return new File(createGameDir(), "start.bat");
+    }
 }

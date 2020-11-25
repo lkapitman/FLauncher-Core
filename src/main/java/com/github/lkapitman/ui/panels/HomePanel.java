@@ -1,8 +1,12 @@
 package com.github.lkapitman.ui.panels;
 
+import com.github.lkapitman.FLauncher;
 import com.github.lkapitman.Main;
+import com.github.lkapitman.files.FileManager;
 import com.github.lkapitman.ui.PanelManager;
 import com.github.lkapitman.ui.panel.Panel;
+import com.github.lkapitman.utils.ReplaceFile;
+import com.github.lkapitman.utils.messages.MessageHelper;
 import com.sun.webkit.WebPage;
 import fr.arinonia.arilibfx.ui.component.AProgressBar;
 import fr.arinonia.arilibfx.updater.DownloadJob;
@@ -32,7 +36,12 @@ import javafx.scene.web.WebView;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.*;
 import java.lang.reflect.Field;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Set;
 
 public class HomePanel extends Panel implements DownloadListener {
@@ -40,6 +49,8 @@ public class HomePanel extends Panel implements DownloadListener {
     private GridPane centerPane = new GridPane();
     private AProgressBar leftDownloadBar;
     private AProgressBar aBigDownloadBar;
+    private Button resultButton;
+    private String s = "java -Djava.net.preferIPv4Stack=true -Xmn128M -Xmx512M -Djava.library.path=C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\versions\\1.12.2\\natives -cp C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\net\\minecraftforge\\forge\\1.12.2-14.23.5.2854\\forge-1.12.2-14.23.5.2854.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\org\\ow2\\asm\\asm-debug-all\\5.2\\asm-debug-all-5.2.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\net\\minecraft\\launchwrapper\\1.12\\launchwrapper-1.12.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\org\\jline\\jline\\3.5.1\\jline-3.5.1.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\com\\typesafe\\akka\\akka-actor_2.11\\2.3.3\\akka-actor_2.11-2.3.3.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\com\\typesafe\\config\\1.2.1\\config-1.2.1.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\org\\scala-lang\\scala-actors-migration_2.11\\1.1.0\\scala-actors-migration_2.11-1.1.0.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\org\\scala-lang\\scala-compiler\\2.11.1\\scala-compiler-2.11.1.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\org\\scala-lang\\plugins\\scala-continuations-library_2.11\\1.0.2_mc\\scala-continuations-library_2.11-1.0.2_mc.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\org\\scala-lang\\plugins\\scala-continuations-plugin_2.11.1\\1.0.2_mc\\scala-continuations-plugin_2.11.1-1.0.2_mc.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\org\\scala-lang\\scala-library\\2.11.1\\scala-library-2.11.1.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\org\\scala-lang\\scala-parser-combinators_2.11\\1.0.1\\scala-parser-combinators_2.11-1.0.1.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\org\\scala-lang\\scala-reflect\\2.11.1\\scala-reflect-2.11.1.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\org\\scala-lang\\scala-swing_2.11\\1.0.1\\scala-swing_2.11-1.0.1.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\org\\scala-lang\\scala-xml_2.11\\1.0.2\\scala-xml_2.11-1.0.2.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\lzma\\lzma\\0.0.1\\lzma-0.0.1.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\java3d\\vecmath\\1.5.2\\vecmath-1.5.2.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\net\\sf\\trove4j\\trove4j\\3.0.3\\trove4j-3.0.3.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\org\\apache\\maven\\maven-artifact\\3.5.3\\maven-artifact-3.5.3.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\net\\sf\\jopt-simple\\jopt-simple\\5.0.3\\jopt-simple-5.0.3.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\org\\tlauncher\\patchy\\1.1\\patchy-1.1.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\oshi-project\\oshi-core\\1.1\\oshi-core-1.1.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\net\\java\\dev\\jna\\jna\\4.4.0\\jna-4.4.0.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\net\\java\\dev\\jna\\platform\\3.4.0\\platform-3.4.0.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\com\\ibm\\icu\\icu4j-core-mojang\\51.2\\icu4j-core-mojang-51.2.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\net\\sf\\jopt-simple\\jopt-simple\\5.0.3\\jopt-simple-5.0.3.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\com\\paulscode\\codecjorbis\\20101023\\codecjorbis-20101023.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\com\\paulscode\\codecwav\\20101023\\codecwav-20101023.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\com\\paulscode\\libraryjavasound\\20101123\\libraryjavasound-20101123.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\com\\paulscode\\librarylwjglopenal\\20100824\\librarylwjglopenal-20100824.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\com\\paulscode\\soundsystem\\20120107\\soundsystem-20120107.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\io\\netty\\netty-all\\4.1.9.Final\\netty-all-4.1.9.Final.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\com\\google\\guava\\guava\\21.0\\guava-21.0.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\org\\apache\\commons\\commons-lang3\\3.5\\commons-lang3-3.5.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\commons-io\\commons-io\\2.5\\commons-io-2.5.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\commons-codec\\commons-codec\\1.10\\commons-codec-1.10.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\net\\java\\jinput\\jinput\\2.0.5\\jinput-2.0.5.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\net\\java\\jutils\\jutils\\1.0.0\\jutils-1.0.0.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\com\\google\\code\\gson\\gson\\2.8.0\\gson-2.8.0.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\org\\tlauncher\\authlib\\1.6.25\\authlib-1.6.25.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\com\\mojang\\realms\\1.10.22\\realms-1.10.22.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\org\\apache\\commons\\commons-compress\\1.8.1\\commons-compress-1.8.1.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\org\\apache\\httpcomponents\\httpclient\\4.3.3\\httpclient-4.3.3.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\commons-logging\\commons-logging\\1.1.3\\commons-logging-1.1.3.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\org\\apache\\httpcomponents\\httpcore\\4.3.2\\httpcore-4.3.2.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\it\\unimi\\dsi\\fastutil\\7.1.0\\fastutil-7.1.0.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\org\\apache\\logging\\log4j\\log4j-api\\2.8.1\\log4j-api-2.8.1.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\org\\apache\\logging\\log4j\\log4j-core\\2.8.1\\log4j-core-2.8.1.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\org\\lwjgl\\lwjgl\\lwjgl\\2.9.4-nightly-20150209\\lwjgl-2.9.4-nightly-20150209.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\org\\lwjgl\\lwjgl\\lwjgl_util\\2.9.4-nightly-20150209\\lwjgl_util-2.9.4-nightly-20150209.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\libraries\\com\\mojang\\text2speech\\1.10.3\\text2speech-1.10.3.jar;C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\versions\\1.12.2\\1.12.2.jar -Dminecraft.applet.TargetDirectory=C:\\Users\\Lion\\AppData\\Roaming\\.minecraft -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M -Dfml.ignoreInvalidMinecraftCertificates=true -Dfml.ignorePatchDiscrepancies=true net.minecraft.launchwrapper.Launch --username Aziat --version 1.12.2 --gameDir C:\\Users\\Lion\\AppData\\Roaming\\.minecraft --assetsDir C:\\Users\\Lion\\AppData\\Roaming\\.minecraft\\assets --assetIndex 1.12 --uuid 00000000-0000-0000-0000-000000000000 --accessToken null --userType legacy --tweakClass net.minecraftforge.fml.common.launcher.FMLTweaker --versionType Forge --width 1920 --height 720 --server migosmc.ru";
 
     @Override
     public void init(PanelManager panelManager) {
@@ -186,20 +197,33 @@ public class HomePanel extends Panel implements DownloadListener {
         } catch (Exception e) {
 
         }
+        if (FLauncher.isDownloaded())
+            resultButton = new Button("Играть!");
+        else
+            resultButton = new Button("Установить!");
 
-        Button installButton = new Button("Установить!");
-        GridPane.setVgrow(installButton, Priority.ALWAYS);
-        GridPane.setHgrow(installButton, Priority.ALWAYS);
-        GridPane.setValignment(installButton, VPos.TOP);
-        GridPane.setHalignment(installButton, HPos.LEFT);
-        installButton.setTranslateY(260);
-        installButton.setMinWidth(140);
-        installButton.setMaxHeight(40);
-        installButton.setStyle("-fx-background-color: #115ffa; -fx-border-radius: 0; -fx-background-insets: 0; -fx-font-size: 14px; -fx-text-fill: #fff; ");
+        GridPane.setVgrow(resultButton, Priority.ALWAYS);
+        GridPane.setHgrow(resultButton, Priority.ALWAYS);
+        GridPane.setValignment(resultButton, VPos.TOP);
+        GridPane.setHalignment(resultButton, HPos.LEFT);
+        resultButton.setTranslateY(260);
+        resultButton.setMinWidth(140);
+        resultButton.setMaxHeight(40);
+        resultButton.setStyle("-fx-background-color: #115ffa; -fx-border-radius: 0; -fx-background-insets: 0; -fx-font-size: 14px; -fx-text-fill: #fff; ");
 
-        installButton.setOnMouseEntered(e->this.layout.setCursor(Cursor.HAND));
-        installButton.setOnMouseExited(e->this.layout.setCursor(Cursor.DEFAULT));
-        installButton.setOnMouseClicked(e-> this.panelManager.getfLauncher().launchGame());
+        resultButton.setOnMouseEntered(e->this.layout.setCursor(Cursor.HAND));
+        resultButton.setOnMouseExited(e->this.layout.setCursor(Cursor.DEFAULT));
+        resultButton.setOnMouseClicked(e-> {
+            if (FLauncher.isDownloaded()) {
+                try {
+                    Runtime.getRuntime().exec(s.replaceAll("C:/Users/Lion/AppData/Roaming/.minecraft", this.panelManager.getfLauncher().getFileManager().getGameFolder().getAbsolutePath()));
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+            } else {
+                this.panelManager.getfLauncher().launchGame();
+            }
+        });
 
         aBigDownloadBar = new AProgressBar(400,20);
         aBigDownloadBar.setBackgroundColor(javafx.scene.paint.Color.rgb(3,48,90));
@@ -209,7 +233,7 @@ public class HomePanel extends Panel implements DownloadListener {
         aBigDownloadBar.setForegroundColor(lg);
         aBigDownloadBar.setTranslateY(150);
 
-        pane.getChildren().addAll(valkyriaTitle, rolePlay, complet, desc, bigVideo, installButton, aBigDownloadBar);
+        pane.getChildren().addAll(valkyriaTitle, rolePlay, complet, desc, bigVideo, resultButton, aBigDownloadBar);
     }
 
     private void showleftBar(GridPane pane) {
@@ -264,4 +288,5 @@ public class HomePanel extends Panel implements DownloadListener {
     public void onDownloadJobStarted(DownloadJob job) {
         Main.logger.log("'" + job.getName() + "' started to download!");
     }
+
 }

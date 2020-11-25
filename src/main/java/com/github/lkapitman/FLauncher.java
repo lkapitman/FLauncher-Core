@@ -8,12 +8,17 @@ import fr.arinonia.arilibfx.updater.DownloadManager;
 import fr.arinonia.arilibfx.updater.Updater;
 import javafx.stage.Stage;
 
+import java.io.File;
+import java.io.IOException;
+
 public class FLauncher {
 
-    private final FileManager fileManager = new FileManager("HeavenLauncher");
+    private static final FileManager fileManager = new FileManager("HeavenLauncher");
 
     private PanelManager panelManager;
     private PanelLogin panelLogin;
+    private static boolean downloaded;
+
     public void init(Stage stage) {
 
         this.panelManager = new PanelManager(this, stage);
@@ -29,5 +34,24 @@ public class FLauncher {
         updater.setFileDeleter(true);
         Thread thread = new Thread(updater::start);
         thread.start();
+
+        if (game.isComplete()) {
+            downloaded = true;
+            thread.stop();
+        } else {
+            downloaded = false;
+        }
+
+    }
+
+    public static boolean isDownloaded() {
+        return downloaded;
+    }
+    public static File getGameFolder() {
+        return fileManager.getGameFolder();
+    }
+
+    public FileManager getFileManager() {
+        return fileManager;
     }
 }

@@ -6,43 +6,126 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/FLauncher.main.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/AriLibFX-1.0.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/fontawesomefx-8.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/gson-2.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/FLauncher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/FxApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/files/FileManager$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/files/FileManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/ui/PanelManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/ui/panel/IPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/ui/panel/Panel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/ui/panels/HomePanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/ui/panels/PanelLogin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/ui/panels/includes/TopPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/utils/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/utils/OperatingSystem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/utils/messages/MessageHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/utils/messages/TypeMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/utils/rcon/Rcon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/utils/rcon/RconPacket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/utils/rcon/ex/AuthenticationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/utils/rcon/ex/MalformedPacketException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/FLauncher.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/FLauncher.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/arilibfx-1.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/checker-qual-3.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/commons-io-2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/controlsfx-8.40.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/error_prone_annotations-2.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/failureaccess-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/fontawesomefx-8.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/gson-2.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/guava-30.0-jre.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/j2objc-annotations-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/jmccc-2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/jmccc-mcdownloader-2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/jmccc-yggdrasil-authenticator-2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/json-20140107.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/jsr305-3.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/mysql-connector-java-8.0.22.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/protobuf-java-3.11.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/xz-1.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/FLauncher.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/css/scrollbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/error-msg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/info-msg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/valkyria.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/bin/COPYING" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/bin/ld.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/bin/windres.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/head/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/head/consolehead.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/head/guihead.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/head/head.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/head_jni_BETA/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/head_jni_BETA/head.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/head_jni_BETA/jniconsolehead.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/head_jni_BETA/jniguihead.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/head_jni_BETA/jnihead.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api/MinGW.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api/crt2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api/libadvapi32.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api/libgcc.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api/libkernel32.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api/libmingw32.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api/libmsvcrt.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api/libshell32.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api/libuser32.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api_jni/MinGW.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api_jni/crt2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api_jni/libadvapi32.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api_jni/libgcc.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api_jni/libkernel32.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api_jni/libmingw32.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api_jni/libmingwex.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api_jni/libmoldname.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api_jni/libmsvcrt.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api_jni/libshell32.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api_jni/libuser32.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/bin/COPYING" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/bin/ld.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/bin/windres.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/created" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/head/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/head/consolehead.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/head/guihead.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/head/head.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/head_jni_BETA/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/head_jni_BETA/head.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/head_jni_BETA/jniconsolehead.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/head_jni_BETA/jniguihead.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/head_jni_BETA/jnihead.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api/MinGW.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api/crt2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api/libadvapi32.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api/libgcc.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api/libkernel32.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api/libmingw32.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api/libmsvcrt.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api/libshell32.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api/libuser32.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api_jni/MinGW.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api_jni/crt2.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api_jni/libadvapi32.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api_jni/libgcc.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api_jni/libkernel32.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api_jni/libmingw32.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api_jni/libmingwex.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api_jni/libmoldname.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api_jni/libmsvcrt.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api_jni/libshell32.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api_jni/libuser32.a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/FLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/FLauncher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/file/FileManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/file/Saver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/PanelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/PanelManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/files/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/files/FileManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelRegister.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/tpc/mcdownloader/FileDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/tpc/mcdownloader/IconLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/tpc/mcdownloader/JarExtractor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/tpc/mcdownloader/MinecraftDownloader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/tpc/mcdownloader/Program.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/tpc/mcdownloader/ProgressListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/tpc/mcdownloader/Resource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/tpc/mcdownloader/gui/DownloaderWindow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/background.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/test/icon_128x128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/test/icon_16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/test/icon_24x24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/test/icon_256x256.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/test/icon_32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/test/icon_48x48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/test/icon_64x64.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,8 +190,8 @@
       <list>
         <option value="Interface" />
         <option value="Arquillian JUnit Test Class" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -328,6 +411,8 @@
       <workItem from="1606215999948" duration="838000" />
       <workItem from="1606217023496" duration="55000" />
       <workItem from="1606223670542" duration="955000" />
+      <workItem from="1606337672356" duration="5479000" />
+      <workItem from="1606345400440" duration="307000" />
     </task>
     <servers />
   </component>
@@ -371,22 +456,22 @@
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="618" y="180" key="FileChooserDialogImpl/0.0.2048.1122@0.0.2048.1122" timestamp="1605711039264" />
-    <state width="1981" height="255" key="GridCell.Tab.0.bottom" timestamp="1606225197107">
+    <state width="1981" height="255" key="GridCell.Tab.0.bottom" timestamp="1606344858122">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1606225197107" />
-    <state width="1981" height="255" key="GridCell.Tab.0.center" timestamp="1606225197107">
+    <state width="1981" height="255" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1606344858122" />
+    <state width="1981" height="255" key="GridCell.Tab.0.center" timestamp="1606344858122">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1606225197107" />
-    <state width="1981" height="255" key="GridCell.Tab.0.left" timestamp="1606225197106">
+    <state width="1981" height="255" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1606344858122" />
+    <state width="1981" height="255" key="GridCell.Tab.0.left" timestamp="1606344858122">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1606225197106" />
-    <state width="1981" height="255" key="GridCell.Tab.0.right" timestamp="1606225197107">
+    <state width="1981" height="255" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1606344858122" />
+    <state width="1981" height="255" key="GridCell.Tab.0.right" timestamp="1606344858122">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1606225197107" />
+    <state width="1981" height="255" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1606344858122" />
     <state width="1981" height="347" key="GridCell.Tab.1.bottom" timestamp="1605946747597">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
