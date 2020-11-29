@@ -3,4 +3,4 @@
 ## Зависимости
 AuthMe Reloaded
 MySQL 8
-Java 8
+JDK 15 (ORACLE)

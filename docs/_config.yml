@@ -1,9 +1,9 @@
 title: Wiki
-description: "Wiki Pages"
+description: "Wiki of FLauncher"
 author:
-  name: "zhoulifu"
-  email: ""
-  url: "https://zhoulifu.github.io/wiki"
+  name: "CarryLove"
+  email: "l.kapitman@gmail.com"
+  url: "https://lkapitman.github.io/"
 
 baseurl: /
 source: .
@@ -27,5 +27,5 @@ plugins:
   - jekyll-sitemap
 
 # Custom variables
-owner : "zhoulifu"
+owner : "CarryLove"
 year : "2020"

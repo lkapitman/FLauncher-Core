@@ -2,7 +2,6 @@ package com.github.lkapitman.ui;
 
 import com.github.lkapitman.FLauncher;
 import com.github.lkapitman.ui.panel.IPanel;
-import com.github.lkapitman.ui.panels.includes.TopPanel;
 import fr.arinonia.arilibfx.AriLibFX;
 import fr.arinonia.arilibfx.ui.utils.ResizeHelper;
 import javafx.geometry.VPos;
@@ -18,7 +17,6 @@ public class PanelManager {
     private final FLauncher fLauncher;
     private final Stage stage;
     private GridPane layout;
-    private TopPanel topPanel = new TopPanel();
     private GridPane centerPanel = new GridPane();
 
     public PanelManager(FLauncher fLauncher, Stage stage) {
@@ -28,12 +26,13 @@ public class PanelManager {
 
     public void init() {
         this.stage.setTitle("FLauncher");
-        this.stage.setMinWidth(1280);
-        this.stage.setWidth(1280);
-        this.stage.setMinHeight(720);
-        this.stage.setHeight(720);
+        this.stage.setWidth(1613);
+        this.stage.setMinWidth(1612);
+        this.stage.setHeight(870);
+        this.stage.setMinHeight(869);
 
-        this.stage.initStyle(StageStyle.UNDECORATED);
+        // TODO
+        this.stage.initStyle(StageStyle.DECORATED);
         this.stage.centerOnScreen();
 
         this.stage.show();
@@ -49,9 +48,7 @@ public class PanelManager {
         topPanelConstrains.setMaxHeight(25);
 
         this.layout.getRowConstraints().addAll(topPanelConstrains, new RowConstraints());
-        this.layout.add(this.topPanel.getLayout(), 0,0);
 
-        this.topPanel.init(this);
         this.layout.add(centerPanel, 0,1);
 
         GridPane.setVgrow(this.centerPanel, Priority.ALWAYS);
@@ -74,10 +71,6 @@ public class PanelManager {
 
     public FLauncher getfLauncher() {
         return fLauncher;
-    }
-
-    public TopPanel getTopPanel() {
-        return topPanel;
     }
 
 }

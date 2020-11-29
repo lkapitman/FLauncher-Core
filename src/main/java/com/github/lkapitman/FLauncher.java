@@ -35,13 +35,6 @@ public class FLauncher {
         Thread thread = new Thread(updater::start);
         thread.start();
 
-        if (game.isComplete()) {
-            downloaded = true;
-            thread.stop();
-        } else {
-            downloaded = false;
-        }
-
     }
 
     public static boolean isDownloaded() {

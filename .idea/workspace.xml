@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b8948d3-e538-41e9-b1e9-8514c66e2a00" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/composerJson.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -9,128 +12,40 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/FLauncher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/FxApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/files/FileManager$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/files/FileManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/ui/PanelManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/ui/panel/IPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/ui/panel/Panel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/ui/panels/HomePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/ui/panels/PanelLogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/ui/panels/includes/TopPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/utils/Constants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/utils/OperatingSystem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/utils/messages/MessageHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/utils/messages/TypeMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/utils/rcon/Rcon.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/utils/rcon/RconPacket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/utils/rcon/ex/AuthenticationException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/github/lkapitman/utils/rcon/ex/MalformedPacketException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/FLauncher.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/FLauncher.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/arilibfx-1.0.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/checker-qual-3.5.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/commons-io-2.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/controlsfx-8.40.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/error_prone_annotations-2.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/failureaccess-1.0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/fontawesomefx-8.9.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/gson-2.8.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/guava-30.0-jre.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/j2objc-annotations-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/jmccc-2.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/jmccc-mcdownloader-2.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/jmccc-yggdrasil-authenticator-2.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/json-20140107.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/jsr305-3.0.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/mysql-connector-java-8.0.22.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/protobuf-java-3.11.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/launch4j/lib/xz-1.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/FLauncher.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/css/scrollbar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/error-msg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/info-msg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/valkyria.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/bin/COPYING" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/bin/ld.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/bin/windres.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/head/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/head/consolehead.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/head/guihead.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/head/head.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/head_jni_BETA/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/head_jni_BETA/head.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/head_jni_BETA/jniconsolehead.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/head_jni_BETA/jniguihead.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/head_jni_BETA/jnihead.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api/MinGW.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api/crt2.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api/libadvapi32.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api/libgcc.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api/libkernel32.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api/libmingw32.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api/libmsvcrt.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api/libshell32.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api/libuser32.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api_jni/MinGW.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api_jni/crt2.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api_jni/libadvapi32.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api_jni/libgcc.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api_jni/libkernel32.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api_jni/libmingw32.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api_jni/libmingwex.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api_jni/libmoldname.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api_jni/libmsvcrt.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api_jni/libshell32.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/expandedArchives/launch4j-3.12-workdir-win32.jar_5a58e3865cb968306131aae3a28747bf/launch4j-3.12-workdir-win32/w32api_jni/libuser32.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/bin/COPYING" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/bin/ld.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/bin/windres.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/created" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/head/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/head/consolehead.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/head/guihead.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/head/head.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/head_jni_BETA/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/head_jni_BETA/head.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/head_jni_BETA/jniconsolehead.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/head_jni_BETA/jniguihead.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/head_jni_BETA/jnihead.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api/MinGW.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api/crt2.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api/libadvapi32.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api/libgcc.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api/libkernel32.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api/libmingw32.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api/libmsvcrt.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api/libshell32.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api/libuser32.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api_jni/MinGW.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api_jni/crt2.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api_jni/libadvapi32.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api_jni/libgcc.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api_jni/libkernel32.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api_jni/libmingw32.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api_jni/libmingwex.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api_jni/libmoldname.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api_jni/libmsvcrt.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api_jni/libshell32.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/launch4j/bin-launch4j-3.12/w32api_jni/libuser32.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/404.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/404.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_includes/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_includes/links.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_includes/links.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/about.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/FLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/FLauncher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/files/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/files/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/PanelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/PanelManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/includes/TopPanel.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -162,18 +77,18 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="FLauncher" type="f1a62948:ProjectNode" />
+                <item name="FLauncher-Core" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="FLauncher" type="f1a62948:ProjectNode" />
+                <item name="FLauncher-Core" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="FLauncher" type="f1a62948:ProjectNode" />
+                <item name="FLauncher-Core" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="launch4j" type="c8890929:TasksNode$1" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -212,7 +127,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15078124" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -224,11 +139,11 @@
       <recent name="com.github.lkapitman.ui.panels.includes" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Workspace\java\FLauncher\src\main\resources\img" />
       <recent name="E:\Workspace\java\FLauncher\libs" />
       <recent name="E:\Workspace\java\FLauncher\src\main\java" />
       <recent name="E:\Workspace\java\FLauncher\src\main\resources" />
       <recent name="E:\Workspace\java\FLauncher\src\main\java\com\github\lkapitman\test" />
-      <recent name="E:\Workspace\java\FLauncher\src\main\java\com\github\lkapitman\utils\rcon" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -239,49 +154,10 @@
       <recent name="E:\Workspace\java\FLauncher\libs" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.FLauncher [launch4j]">
-    <configuration name="DownloaderExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.to2mbn.jmccc.mcdownloader.gui.DownloaderExample" />
-      <module name="FLauncher.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.to2mbn.jmccc.mcdownloader.gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GUISetAccount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="eu.hostcode.mclauncher.gui.GUISetAccount" />
-      <module name="FLauncher.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="eu.hostcode.mclauncher.gui.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="eu.hostcode.mclauncher.Main" />
-      <module name="FLauncher.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="eu.hostcode.mclauncher.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.lkapitman.Main" />
-      <module name="FLauncher.main" />
+  <component name="RunManager" selected="Gradle.FLauncher [jpackage]">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.lkapitman.App" />
+      <module name="FLauncher-Core.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.github.lkapitman.*" />
@@ -291,6 +167,44 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="FLauncher [jpackageImage]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jpackageImage" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="FLauncher [jpackage]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jpackage" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="FLauncher [launch4j]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -311,13 +225,32 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="FLauncher [runtime]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runtime" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.FLauncher [jpackage]" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="Gradle.FLauncher [runtime]" />
+        <item itemvalue="Gradle.FLauncher [jpackageImage]" />
         <item itemvalue="Gradle.FLauncher [launch4j]" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.GUISetAccount" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.DownloaderExample" />
       </list>
     </recent_temporary>
   </component>
@@ -413,6 +346,14 @@
       <workItem from="1606223670542" duration="955000" />
       <workItem from="1606337672356" duration="5479000" />
       <workItem from="1606345400440" duration="307000" />
+      <workItem from="1606345835107" duration="1000" />
+      <workItem from="1606370412533" duration="25000" />
+      <workItem from="1606370448969" duration="743000" />
+      <workItem from="1606384657952" duration="659000" />
+      <workItem from="1606385619672" duration="48000" />
+      <workItem from="1606662997193" duration="1121000" />
+      <workItem from="1606664768828" duration="1437000" />
+      <workItem from="1606667948178" duration="3610000" />
     </task>
     <servers />
   </component>
@@ -448,50 +389,50 @@
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="745" y="366" width="563" height="402" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.2048.1122@0.0.2048.1122" timestamp="1605777142376" />
-    <state x="630" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606125107158">
+    <state x="630" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606670057022">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state x="630" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2048.1122@0.0.2048.1122" timestamp="1606125107158" />
-    <state x="618" y="180" key="FileChooserDialogImpl" timestamp="1605711039264">
+    <state x="630" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2048.1122@0.0.2048.1122" timestamp="1606670057022" />
+    <state x="618" y="180" key="FileChooserDialogImpl" timestamp="1606667979028">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state x="618" y="180" key="FileChooserDialogImpl/0.0.2048.1122@0.0.2048.1122" timestamp="1605711039264" />
-    <state width="1981" height="255" key="GridCell.Tab.0.bottom" timestamp="1606344858122">
+    <state x="618" y="180" key="FileChooserDialogImpl/0.0.2048.1122@0.0.2048.1122" timestamp="1606667979028" />
+    <state width="1981" height="255" key="GridCell.Tab.0.bottom" timestamp="1606671589199">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1606344858122" />
-    <state width="1981" height="255" key="GridCell.Tab.0.center" timestamp="1606344858122">
+    <state width="1981" height="255" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1606671589199" />
+    <state width="1981" height="255" key="GridCell.Tab.0.center" timestamp="1606671589198">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1606344858122" />
-    <state width="1981" height="255" key="GridCell.Tab.0.left" timestamp="1606344858122">
+    <state width="1981" height="255" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1606671589198" />
+    <state width="1981" height="255" key="GridCell.Tab.0.left" timestamp="1606671589198">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1606344858122" />
-    <state width="1981" height="255" key="GridCell.Tab.0.right" timestamp="1606344858122">
+    <state width="1981" height="255" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1606671589198" />
+    <state width="1981" height="255" key="GridCell.Tab.0.right" timestamp="1606671589199">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1606344858122" />
-    <state width="1981" height="347" key="GridCell.Tab.1.bottom" timestamp="1605946747597">
+    <state width="1981" height="255" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1606671589199" />
+    <state width="1981" height="347" key="GridCell.Tab.1.bottom" timestamp="1606671589197">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="347" key="GridCell.Tab.1.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1605946747597" />
-    <state width="1981" height="347" key="GridCell.Tab.1.center" timestamp="1605946747597">
+    <state width="1981" height="347" key="GridCell.Tab.1.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1606671589197" />
+    <state width="1981" height="347" key="GridCell.Tab.1.center" timestamp="1606671589196">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="347" key="GridCell.Tab.1.center/0.0.2048.1122@0.0.2048.1122" timestamp="1605946747597" />
-    <state width="1981" height="347" key="GridCell.Tab.1.left" timestamp="1605946747597">
+    <state width="1981" height="347" key="GridCell.Tab.1.center/0.0.2048.1122@0.0.2048.1122" timestamp="1606671589196" />
+    <state width="1981" height="347" key="GridCell.Tab.1.left" timestamp="1606671589196">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="347" key="GridCell.Tab.1.left/0.0.2048.1122@0.0.2048.1122" timestamp="1605946747597" />
-    <state width="1981" height="347" key="GridCell.Tab.1.right" timestamp="1605946747597">
+    <state width="1981" height="347" key="GridCell.Tab.1.left/0.0.2048.1122@0.0.2048.1122" timestamp="1606671589196" />
+    <state width="1981" height="347" key="GridCell.Tab.1.right" timestamp="1606671589197">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="347" key="GridCell.Tab.1.right/0.0.2048.1122@0.0.2048.1122" timestamp="1605946747597" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1606071239638">
+    <state width="1981" height="347" key="GridCell.Tab.1.right/0.0.2048.1122@0.0.2048.1122" timestamp="1606671589197" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1606671003835">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.2048.1122@0.0.2048.1122" timestamp="1606071239638" />
+    <state x="249" y="0" key="SettingsEditor/0.0.2048.1122@0.0.2048.1122" timestamp="1606671003835" />
     <state x="713" y="119" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1599560424353">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>

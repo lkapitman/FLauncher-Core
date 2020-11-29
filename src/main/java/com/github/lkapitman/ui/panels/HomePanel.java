@@ -1,23 +1,17 @@
 package com.github.lkapitman.ui.panels;
 
 import com.github.lkapitman.FLauncher;
-import com.github.lkapitman.Main;
-import com.github.lkapitman.files.FileManager;
+import com.github.lkapitman.App;
 import com.github.lkapitman.ui.PanelManager;
 import com.github.lkapitman.ui.panel.Panel;
-import com.github.lkapitman.utils.ReplaceFile;
-import com.github.lkapitman.utils.messages.MessageHelper;
-import com.sun.webkit.WebPage;
 import fr.arinonia.arilibfx.ui.component.AProgressBar;
 import fr.arinonia.arilibfx.updater.DownloadJob;
 import fr.arinonia.arilibfx.updater.DownloadListener;
-import javafx.collections.ListChangeListener;
 import javafx.geometry.HPos;
 import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
 import javafx.geometry.VPos;
 import javafx.scene.Cursor;
-import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
@@ -31,18 +25,8 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.CycleMethod;
 import javafx.scene.paint.LinearGradient;
 import javafx.scene.paint.Stop;
-import javafx.scene.web.WebEngine;
-import javafx.scene.web.WebView;
 
-import javax.swing.*;
-import java.awt.*;
-import java.io.*;
-import java.lang.reflect.Field;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Set;
+import java.io.IOException;
 
 public class HomePanel extends Panel implements DownloadListener {
 
@@ -100,7 +84,7 @@ public class HomePanel extends Panel implements DownloadListener {
         ScrollPane scrollPane = new ScrollPane();
         GridPane.setVgrow(scrollPane, Priority.ALWAYS);
         GridPane.setHgrow(scrollPane, Priority.ALWAYS);
-        scrollPane.getStylesheets().addAll(Main.class.getResource("/css/scrollbar.css").toExternalForm());
+        scrollPane.getStylesheets().addAll(App.class.getResource("/css/scrollbar.css").toExternalForm());
 
         VBox vBox = new VBox();
         GridPane.setVgrow(vBox, Priority.ALWAYS);
@@ -168,35 +152,6 @@ public class HomePanel extends Panel implements DownloadListener {
         bigVideo.setMinHeight(320);
         bigVideo.setMaxHeight(320);
 
-        String content_url =
-                "<iframe style='background : rgba(0,0,0,0);' width=\"420\" height=\"320\"" +
-                " src=\"http://arinonia.chaun14.fr/pages/video.html\" frameborder=\"0\" allow=\"accelerometer; autoplay=1; encrypted-media; gyroscope; picture-in-picture\"" +
-                " allowfullscreen></iframe>";
-        WebView webView = new WebView();
-        webView.setStyle("overflow-x: hidden; overflow-y: hidden");
-
-        WebEngine webEngine = webView.getEngine();
-
-        webEngine.loadContent(content_url);
-
-        bigVideo.getChildren().addAll(webView);
-        webView.getChildrenUnmodifiable().addListener((ListChangeListener< Node >) change -> {
-            Set<Node> deadSeaScrolls = webView.lookupAll(".scroll-bar");
-            for (Node scroll : deadSeaScrolls) {
-                scroll.setVisible(false);
-            }
-        });
-
-        try {
-            Field field = webEngine.getClass().getDeclaredField("page");
-            field.setAccessible(true);
-            WebPage page = (WebPage)field.get(webEngine);
-            SwingUtilities.invokeLater(() -> {
-                page.setBackgroundColor(new Color(255, 255, 255, 0).getRGB());
-            });
-        } catch (Exception e) {
-
-        }
         if (FLauncher.isDownloaded())
             resultButton = new Button("Играть!");
         else
@@ -214,15 +169,12 @@ public class HomePanel extends Panel implements DownloadListener {
         resultButton.setOnMouseEntered(e->this.layout.setCursor(Cursor.HAND));
         resultButton.setOnMouseExited(e->this.layout.setCursor(Cursor.DEFAULT));
         resultButton.setOnMouseClicked(e-> {
-            if (FLauncher.isDownloaded()) {
-                try {
-                    Runtime.getRuntime().exec(s.replaceAll("C:/Users/Lion/AppData/Roaming/.minecraft", this.panelManager.getfLauncher().getFileManager().getGameFolder().getAbsolutePath()));
-                } catch (IOException ex) {
-                    ex.printStackTrace();
-                }
-            } else {
-                this.panelManager.getfLauncher().launchGame();
+            try {
+                Runtime.getRuntime().exec(s.replaceAll("C:/Users/Lion/AppData/Roaming/.minecraft", this.panelManager.getfLauncher().getFileManager().getGameFolder().getAbsolutePath()));
+            } catch (IOException ex) {
+                ex.printStackTrace();
             }
+            this.panelManager.getfLauncher().launchGame();
         });
 
         aBigDownloadBar = new AProgressBar(400,20);
@@ -246,7 +198,7 @@ public class HomePanel extends Panel implements DownloadListener {
         blueLeftSeparator.setMinHeight(40);
         blueLeftSeparator.setMaxHeight(40);
         blueLeftSeparator.setStyle("-fx-background-color: rgb(5,179,242); -fx-border-width: 3 3 3 0; -fx-border-color: rgb(5,179,242)");
-        Image logoImage = new Image(Main.class.getResource("/valkyria.png").toExternalForm());
+        Image logoImage = new Image(App.class.getResource("/valkyria.png").toExternalForm());
         ImageView imageViewLogo = new ImageView(logoImage);
 
         GridPane.setHgrow(imageViewLogo, Priority.ALWAYS);
@@ -274,7 +226,7 @@ public class HomePanel extends Panel implements DownloadListener {
 
     @Override
     public void onDownloadJobFinished(DownloadJob job) {
-        Main.logger.log(job.getName() + " finished!");
+        App.logger.log(job.getName() + " finished!");
     }
 
     @Override
@@ -286,7 +238,7 @@ public class HomePanel extends Panel implements DownloadListener {
 
     @Override
     public void onDownloadJobStarted(DownloadJob job) {
-        Main.logger.log("'" + job.getName() + "' started to download!");
+        App.logger.log("'" + job.getName() + "' started to download!");
     }
 
 }

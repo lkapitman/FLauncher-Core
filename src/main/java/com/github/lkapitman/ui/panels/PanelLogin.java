@@ -91,7 +91,6 @@ public class PanelLogin extends Panel {
         this.layout.getChildren().add(loginPanel);
 
         Label connectLabel = new Label("ВХОД В АККАУНТ");
-
         GridPane.setVgrow(connectLabel, Priority.ALWAYS);
         GridPane.setHgrow(connectLabel, Priority.ALWAYS);
         GridPane.setValignment(connectLabel, VPos.TOP);
