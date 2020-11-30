@@ -2,40 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b8948d3-e538-41e9-b1e9-8514c66e2a00" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/composerJson.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/404.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/404.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_includes/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/_includes/links.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/_includes/links.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/about.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/FLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/FLauncher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/PanelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/PanelManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/includes/TopPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/utils/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/utils/messages/MessageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/utils/messages/MessageHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/utils/messages/TypeMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/visual/bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/css/scrollbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/visual/css/scrollbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/error-msg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/visual/error-msg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/icon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/visual/img/icon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/info-msg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/visual/info-msg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/valkyria.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/visual/valkyria.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,23 +58,7 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="FLauncher-Core" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="FLauncher-Core" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="FLauncher-Core" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -138,6 +106,15 @@
       <recent name="com.github.lkapitman.ui.panel" />
       <recent name="com.github.lkapitman.ui.panels.includes" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Workspace\java\FLauncher-Core\src\main\resources\visual" />
+      <recent name="E:\Workspace\java\FLauncher\src\main\java\fr\nemixcraft\launcher" />
+      <recent name="E:\Workspace\java\FLauncher\src\main\resources\test" />
+      <recent name="E:\Workspace\java\FLauncher\libs" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Workspace\java\FLauncher\src\main\resources\img" />
       <recent name="E:\Workspace\java\FLauncher\libs" />
@@ -145,19 +122,12 @@
       <recent name="E:\Workspace\java\FLauncher\src\main\resources" />
       <recent name="E:\Workspace\java\FLauncher\src\main\java\com\github\lkapitman\test" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Workspace\java\FLauncher\src\main\java\fr\nemixcraft\launcher" />
-      <recent name="E:\Workspace\java\FLauncher\src\main\resources\test" />
-      <recent name="E:\Workspace\java\FLauncher\libs" />
-    </key>
   </component>
-  <component name="RunManager" selected="Gradle.FLauncher [jpackage]">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.lkapitman.App" />
       <module name="FLauncher-Core.main" />
+      <option name="VM_PARAMETERS" value="-Dfile.encoding=UTF-8" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.github.lkapitman.*" />
@@ -244,6 +214,13 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="Gradle.FLauncher [jpackage]" />
+      <item itemvalue="Gradle.FLauncher [jpackageImage]" />
+      <item itemvalue="Gradle.FLauncher [launch4j]" />
+      <item itemvalue="Gradle.FLauncher [runtime]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.FLauncher [jpackage]" />
@@ -354,6 +331,10 @@
       <workItem from="1606662997193" duration="1121000" />
       <workItem from="1606664768828" duration="1437000" />
       <workItem from="1606667948178" duration="3610000" />
+      <workItem from="1606680889091" duration="594000" />
+      <workItem from="1606686365181" duration="2449000" />
+      <workItem from="1606723677381" duration="21000" />
+      <workItem from="1606723726923" duration="1358000" />
     </task>
     <servers />
   </component>
@@ -365,6 +346,10 @@
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="417" y="51" key="#Notifications/0.0.2048.1122@0.0.2048.1122" timestamp="1606070939707" />
+    <state x="417" y="51" key="#Project_Structure" timestamp="1606688452993">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="417" y="51" key="#Project_Structure/0.0.2048.1122@0.0.2048.1122" timestamp="1606688452993" />
     <state x="417" y="51" key="#SQL_Dialects" timestamp="1605161730772">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
@@ -373,6 +358,10 @@
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="630" y="200" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.2048.1122@0.0.2048.1122" timestamp="1605443534338" />
+    <state x="479" y="189" width="1090" height="781" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606688703607">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="479" y="189" width="1090" height="781" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1122@0.0.2048.1122" timestamp="1606688703607" />
     <state x="619" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599946407563">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
@@ -397,22 +386,22 @@
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="618" y="180" key="FileChooserDialogImpl/0.0.2048.1122@0.0.2048.1122" timestamp="1606667979028" />
-    <state width="1981" height="255" key="GridCell.Tab.0.bottom" timestamp="1606671589199">
+    <state width="1981" height="255" key="GridCell.Tab.0.bottom" timestamp="1606725621671">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1606671589199" />
-    <state width="1981" height="255" key="GridCell.Tab.0.center" timestamp="1606671589198">
+    <state width="1981" height="255" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1606725621671" />
+    <state width="1981" height="255" key="GridCell.Tab.0.center" timestamp="1606725621671">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1606671589198" />
-    <state width="1981" height="255" key="GridCell.Tab.0.left" timestamp="1606671589198">
+    <state width="1981" height="255" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1606725621671" />
+    <state width="1981" height="255" key="GridCell.Tab.0.left" timestamp="1606725621671">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1606671589198" />
-    <state width="1981" height="255" key="GridCell.Tab.0.right" timestamp="1606671589199">
+    <state width="1981" height="255" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1606725621671" />
+    <state width="1981" height="255" key="GridCell.Tab.0.right" timestamp="1606725621671">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1606671589199" />
+    <state width="1981" height="255" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1606725621671" />
     <state width="1981" height="347" key="GridCell.Tab.1.bottom" timestamp="1606671589197">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
@@ -429,10 +418,10 @@
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state width="1981" height="347" key="GridCell.Tab.1.right/0.0.2048.1122@0.0.2048.1122" timestamp="1606671589197" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1606671003835">
+    <state x="249" y="0" key="SettingsEditor" timestamp="1606688612591">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.2048.1122@0.0.2048.1122" timestamp="1606671003835" />
+    <state x="249" y="0" key="SettingsEditor/0.0.2048.1122@0.0.2048.1122" timestamp="1606688612591" />
     <state x="713" y="119" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1599560424353">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
@@ -441,5 +430,9 @@
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="513" y="253" key="run.anything.popup/0.0.2048.1122@0.0.2048.1122" timestamp="1605778472643" />
+    <state x="513" y="0" width="1005" height="1118" key="search.everywhere.popup" timestamp="1606725433251">
+      <screen x="0" y="0" width="2048" height="1122" />
+    </state>
+    <state x="513" y="0" width="1005" height="1118" key="search.everywhere.popup/0.0.2048.1122@0.0.2048.1122" timestamp="1606725433251" />
   </component>
 </project>

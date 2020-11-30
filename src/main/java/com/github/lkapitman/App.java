@@ -18,7 +18,7 @@ public class App {
             Application.launch(FxApplication.class, args);
         } catch (ClassNotFoundException e) {
             logger.warn("JavaFX - Not Found!");
-            JOptionPane.showMessageDialog(null, "JavaFX - не найден!", "Java ошибка", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, FLauncher.getRes().getString("javafx.not.found"), FLauncher.getRes().getString("javafx.not.found.title"), JOptionPane.ERROR_MESSAGE);
         }
     }
 

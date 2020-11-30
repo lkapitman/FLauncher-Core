@@ -1,5 +1,6 @@
 package com.github.lkapitman.utils.messages;
 
+import com.github.lkapitman.FLauncher;
 import javafx.geometry.Pos;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -16,36 +17,24 @@ public class MessageHelper {
     }
 
     public void showInfoMSG() {
-        javafx.scene.image.Image error = new Image("/info-msg.png");
+        javafx.scene.image.Image error = new Image("/visual/info-msg.png");
         ImageView imageView = new ImageView(error);
         imageView.setFitWidth(20);
         imageView.setFitHeight(20);
 
-        Notifications notificationsBuilder = Notifications.create().title("Информация!").text(textMSG).graphic(imageView).hideAfter(Duration.seconds(1000)).position(Pos.CENTER);
-        notificationsBuilder.darkStyle();
-        notificationsBuilder.show();
-
-    }
-
-    public void showWarnMSG() {
-        javafx.scene.image.Image error = new Image("/warn-msg.png");
-        ImageView imageView = new ImageView(error);
-        imageView.setFitWidth(20);
-        imageView.setFitHeight(20);
-
-        Notifications notificationsBuilder = Notifications.create().title("Предупреждение!").text(textMSG).graphic(imageView).hideAfter(Duration.seconds(1000)).position(Pos.CENTER);
+        Notifications notificationsBuilder = Notifications.create().title(FLauncher.getRes().getString("message.helper.info")).text(textMSG).graphic(imageView).hideAfter(Duration.seconds(1000)).position(Pos.CENTER);
         notificationsBuilder.darkStyle();
         notificationsBuilder.show();
 
     }
 
     public void showErrorMSG() {
-        javafx.scene.image.Image error = new Image("/error-msg.png");
+        javafx.scene.image.Image error = new Image("/visual/error-msg.png");
         ImageView imageView = new ImageView(error);
         imageView.setFitWidth(20);
         imageView.setFitHeight(20);
 
-        Notifications notificationsBuilder = Notifications.create().title("Ошибка!").text(textMSG).graphic(imageView).hideAfter(Duration.seconds(1000)).position(Pos.CENTER);
+        Notifications notificationsBuilder = Notifications.create().title(FLauncher.getRes().getString("message.helper.error")).text(textMSG).graphic(imageView).hideAfter(Duration.seconds(1000)).position(Pos.CENTER);
         notificationsBuilder.darkStyle();
         notificationsBuilder.show();
 

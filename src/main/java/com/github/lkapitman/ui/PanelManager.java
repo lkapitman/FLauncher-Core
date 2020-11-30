@@ -38,7 +38,7 @@ public class PanelManager {
         this.stage.show();
 
         this.layout = new GridPane();
-        this.layout.setStyle(AriLibFX.setResponsiveBackground("bg.png"));
+        this.layout.setStyle(AriLibFX.setResponsiveBackground("visual/bg.png"));
         this.stage.setScene(new Scene(this.layout));
 
         RowConstraints topPanelConstrains = new RowConstraints();

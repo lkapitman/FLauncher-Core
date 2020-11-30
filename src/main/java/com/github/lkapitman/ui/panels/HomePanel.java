@@ -72,7 +72,6 @@ public class HomePanel extends Panel implements DownloadListener {
         buttonGridPane.setMaxHeight(40);
         buttonGridPane.setMinWidth(300);
         buttonGridPane.setMaxWidth(300);
-        //TODO: SHOW LEFT BAR
         showleftBar(buttonGridPane);
         leftBarPane.getChildren().addAll(rightSeparator, buttonGridPane);
         this.layout.add(leftBarPane,0,0);
@@ -84,7 +83,7 @@ public class HomePanel extends Panel implements DownloadListener {
         ScrollPane scrollPane = new ScrollPane();
         GridPane.setVgrow(scrollPane, Priority.ALWAYS);
         GridPane.setHgrow(scrollPane, Priority.ALWAYS);
-        scrollPane.getStylesheets().addAll(App.class.getResource("/css/scrollbar.css").toExternalForm());
+        scrollPane.getStylesheets().addAll(App.class.getResource("/visual/css/scrollbar.css").toExternalForm());
 
         VBox vBox = new VBox();
         GridPane.setVgrow(vBox, Priority.ALWAYS);
@@ -126,15 +125,15 @@ public class HomePanel extends Panel implements DownloadListener {
         rolePlay.setStyle("-fx-font-size: 14px; -fx-text-fill:  #fff; -fx-opacity: 70%;");
         rolePlay.setTranslateY(70);
 
-        Label complet = new Label("Complete");
-        GridPane.setVgrow(complet, Priority.ALWAYS);
-        GridPane.setHgrow(complet, Priority.ALWAYS);
-        GridPane.setValignment(complet, VPos.TOP);
-        complet.setStyle("-fx-font-size: 14px; -fx-text-fill:  #fff; -fx-opacity: 70%;");
-        complet.setTranslateY(70);
-        complet.setTranslateX(80);
+        Label complete = new Label(FLauncher.getRes().getString("home.complete"));
+        GridPane.setVgrow(complete, Priority.ALWAYS);
+        GridPane.setHgrow(complete, Priority.ALWAYS);
+        GridPane.setValignment(complete, VPos.TOP);
+        complete.setStyle("-fx-font-size: 14px; -fx-text-fill:  #fff; -fx-opacity: 70%;");
+        complete.setTranslateY(70);
+        complete.setTranslateX(80);
 
-        Label desc = new Label("Какое-то описание сервера...");
+        Label desc = new Label(FLauncher.getRes().getString("home.description"));
         GridPane.setVgrow(desc, Priority.ALWAYS);
         GridPane.setHgrow(desc, Priority.ALWAYS);
         GridPane.setValignment(desc, VPos.TOP);
@@ -153,9 +152,9 @@ public class HomePanel extends Panel implements DownloadListener {
         bigVideo.setMaxHeight(320);
 
         if (FLauncher.isDownloaded())
-            resultButton = new Button("Играть!");
+            resultButton = new Button(FLauncher.getRes().getString("home.play"));
         else
-            resultButton = new Button("Установить!");
+            resultButton = new Button(FLauncher.getRes().getString("home.install"));
 
         GridPane.setVgrow(resultButton, Priority.ALWAYS);
         GridPane.setHgrow(resultButton, Priority.ALWAYS);
@@ -170,7 +169,9 @@ public class HomePanel extends Panel implements DownloadListener {
         resultButton.setOnMouseExited(e->this.layout.setCursor(Cursor.DEFAULT));
         resultButton.setOnMouseClicked(e-> {
             try {
-                Runtime.getRuntime().exec(s.replaceAll("C:/Users/Lion/AppData/Roaming/.minecraft", this.panelManager.getfLauncher().getFileManager().getGameFolder().getAbsolutePath()));
+                String cmd = s.replaceAll("C:/Users/Lion/AppData/Roaming/.minecraft", this.panelManager.getfLauncher().getFileManager().getGameFolder().getAbsolutePath());
+                cmd = s.replaceAll("Aziat", this.panelManager.getfLauncher().getFileManager().getGameFolder().getAbsolutePath());
+                Runtime.getRuntime().exec(cmd);
             } catch (IOException ex) {
                 ex.printStackTrace();
             }
@@ -185,7 +186,7 @@ public class HomePanel extends Panel implements DownloadListener {
         aBigDownloadBar.setForegroundColor(lg);
         aBigDownloadBar.setTranslateY(150);
 
-        pane.getChildren().addAll(valkyriaTitle, rolePlay, complet, desc, bigVideo, resultButton, aBigDownloadBar);
+        pane.getChildren().addAll(valkyriaTitle, rolePlay, complete, desc, bigVideo, resultButton, aBigDownloadBar);
     }
 
     private void showleftBar(GridPane pane) {
@@ -198,7 +199,7 @@ public class HomePanel extends Panel implements DownloadListener {
         blueLeftSeparator.setMinHeight(40);
         blueLeftSeparator.setMaxHeight(40);
         blueLeftSeparator.setStyle("-fx-background-color: rgb(5,179,242); -fx-border-width: 3 3 3 0; -fx-border-color: rgb(5,179,242)");
-        Image logoImage = new Image(App.class.getResource("/valkyria.png").toExternalForm());
+        Image logoImage = new Image(App.class.getResource("/visual/valkyria.png").toExternalForm());
         ImageView imageViewLogo = new ImageView(logoImage);
 
         GridPane.setHgrow(imageViewLogo, Priority.ALWAYS);

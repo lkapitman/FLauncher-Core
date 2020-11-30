@@ -1,5 +1,6 @@
 package com.github.lkapitman.ui.panels;
 
+import com.github.lkapitman.FLauncher;
 import com.github.lkapitman.ui.PanelManager;
 import com.github.lkapitman.ui.panel.Panel;
 import com.github.lkapitman.utils.messages.MessageHelper;
@@ -61,8 +62,8 @@ public class PanelLogin extends Panel {
         mainPanel.setStyle("-fx-background-color: #181818;");
         buttonPanel.setStyle("-fx-background-color: #181818; -fx-opacity: 50%");
 
-        Label noAccount = new Label("Нет аккаунта?");
-        Label registerHere = new Label("Зарегестрируйтесь здесь!");
+        Label noAccount = new Label(FLauncher.getRes().getString("login.noAccount"));
+        Label registerHere = new Label(FLauncher.getRes().getString("login.registerHere"));
 
         GridPane.setVgrow(noAccount, Priority.ALWAYS);
         GridPane.setHgrow(noAccount, Priority.ALWAYS);
@@ -90,7 +91,7 @@ public class PanelLogin extends Panel {
 
         this.layout.getChildren().add(loginPanel);
 
-        Label connectLabel = new Label("ВХОД В АККАУНТ");
+        Label connectLabel = new Label(FLauncher.getRes().getString("login.login.into.account"));
         GridPane.setVgrow(connectLabel, Priority.ALWAYS);
         GridPane.setHgrow(connectLabel, Priority.ALWAYS);
         GridPane.setValignment(connectLabel, VPos.TOP);
@@ -112,7 +113,7 @@ public class PanelLogin extends Panel {
 
         connectSeparator.setStyle("-fx-background-color: #fff; -fx-opacity: 50%");
 
-        Label usernameLabel = new Label("Имя пользователя");
+        Label usernameLabel = new Label(FLauncher.getRes().getString("login.username"));
 
         GridPane.setVgrow(usernameLabel, Priority.ALWAYS);
         GridPane.setHgrow(usernameLabel, Priority.ALWAYS);
@@ -151,11 +152,7 @@ public class PanelLogin extends Panel {
 
         usernameSeparator.setStyle("-fx-opacity: 40%");
 
-        /*
-
-         */
-
-        Label passwordLabel = new Label("Пароль");
+        Label passwordLabel = new Label(FLauncher.getRes().getString("login.password"));
 
         GridPane.setVgrow(passwordLabel, Priority.ALWAYS);
         GridPane.setHgrow(passwordLabel, Priority.ALWAYS);
@@ -194,7 +191,7 @@ public class PanelLogin extends Panel {
 
         passwordSeparator.setStyle("-fx-opacity: 40%");
 
-        Button connectionButton = new Button("ВОЙТИ");
+        Button connectionButton = new Button(FLauncher.getRes().getString("login.login"));
 
         GridPane.setVgrow(connectionButton, Priority.ALWAYS);
         GridPane.setHgrow(connectionButton, Priority.ALWAYS);
@@ -232,12 +229,11 @@ public class PanelLogin extends Panel {
                     System.out.print("\t\t"+rst.getString(3));
                     System.out.println();
                     if (rst.getString(2).equals(usernameField.getText()) && rst.getString(3).equalsIgnoreCase(pass)) {
-                        new MessageHelper("Хорошей игры!").showInfoMSG();
+                        new MessageHelper(FLauncher.getRes().getString("login.goodgame")).showInfoMSG();
                         panelManager.showPanel(homePanel = new HomePanel());
-                        // TODO:
                         return;
                     } else {
-                        new MessageHelper("Логин или пароль - не верны!").showErrorMSG();
+                        new MessageHelper(FLauncher.getRes().getString("login.errorlogin")).showErrorMSG();
                         return;
                     }
                 }

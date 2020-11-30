@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ResourceBundle;
 
 public class FLauncher {
 
@@ -18,6 +19,7 @@ public class FLauncher {
     private PanelManager panelManager;
     private PanelLogin panelLogin;
     private static boolean downloaded;
+    private static ResourceBundle res = ResourceBundle.getBundle("data");
 
     public void init(Stage stage) {
 
@@ -40,11 +42,12 @@ public class FLauncher {
     public static boolean isDownloaded() {
         return downloaded;
     }
-    public static File getGameFolder() {
-        return fileManager.getGameFolder();
-    }
 
     public FileManager getFileManager() {
         return fileManager;
+    }
+
+    public static ResourceBundle getRes() {
+        return res;
     }
 }
