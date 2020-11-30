@@ -208,6 +208,8 @@ public class PanelLogin extends Panel {
         connectionButton.setOnMouseEntered(e->this.layout.setCursor(Cursor.HAND));
         connectionButton.setOnMouseExited(e->this.layout.setCursor(Cursor.DEFAULT));
         connectionButton.setOnMouseClicked(e-> {
+            // TODO: сделать проверку на аунтификацию.
+
             String pass = Hashing.sha512().hashString(passwordField.getText(), StandardCharsets.UTF_8).toString();
 
             try {

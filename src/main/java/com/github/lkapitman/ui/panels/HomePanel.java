@@ -4,6 +4,7 @@ import com.github.lkapitman.FLauncher;
 import com.github.lkapitman.App;
 import com.github.lkapitman.ui.PanelManager;
 import com.github.lkapitman.ui.panel.Panel;
+import com.github.lkapitman.utils.Constants;
 import fr.arinonia.arilibfx.ui.component.AProgressBar;
 import fr.arinonia.arilibfx.updater.DownloadJob;
 import fr.arinonia.arilibfx.updater.DownloadListener;
@@ -111,12 +112,12 @@ public class HomePanel extends Panel implements DownloadListener {
     }
 
     private void addTopPanel(GridPane pane) {
-        Label valkyriaTitle = new Label("Heaven Project");
-        GridPane.setVgrow(valkyriaTitle, Priority.ALWAYS);
-        GridPane.setHgrow(valkyriaTitle, Priority.ALWAYS);
-        GridPane.setValignment(valkyriaTitle, VPos.TOP);
-        valkyriaTitle.setStyle("-fx-font-size: 26px; -fx-text-fill:  #fff; -fx-font-weight: bold;");
-        valkyriaTitle.setTranslateY(20);
+        Label projectTitle = new Label(Constants.PROJECT_NAME);
+        GridPane.setVgrow(projectTitle, Priority.ALWAYS);
+        GridPane.setHgrow(projectTitle, Priority.ALWAYS);
+        GridPane.setValignment(projectTitle, VPos.TOP);
+        projectTitle.setStyle("-fx-font-size: 26px; -fx-text-fill:  #fff; -fx-font-weight: bold;");
+        projectTitle.setTranslateY(20);
 
         Label rolePlay = new Label("RolePlay");
         GridPane.setVgrow(rolePlay, Priority.ALWAYS);
@@ -171,6 +172,7 @@ public class HomePanel extends Panel implements DownloadListener {
             try {
                 String cmd = s.replaceAll("C:/Users/Lion/AppData/Roaming/.minecraft", this.panelManager.getfLauncher().getFileManager().getGameFolder().getAbsolutePath());
                 cmd = s.replaceAll("Aziat", this.panelManager.getfLauncher().getFileManager().getGameFolder().getAbsolutePath());
+                cmd = s.replaceAll("migosmc.ru", Constants.SERVER_IP);
                 Runtime.getRuntime().exec(cmd);
             } catch (IOException ex) {
                 ex.printStackTrace();
@@ -186,7 +188,7 @@ public class HomePanel extends Panel implements DownloadListener {
         aBigDownloadBar.setForegroundColor(lg);
         aBigDownloadBar.setTranslateY(150);
 
-        pane.getChildren().addAll(valkyriaTitle, rolePlay, complete, desc, bigVideo, resultButton, aBigDownloadBar);
+        pane.getChildren().addAll(projectTitle, rolePlay, complete, desc, bigVideo, resultButton, aBigDownloadBar);
     }
 
     private void showleftBar(GridPane pane) {

@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="9b8948d3-e538-41e9-b1e9-8514c66e2a00" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/lkapitman/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/FLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/FLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelLogin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,6 +325,7 @@
       <workItem from="1606723677381" duration="21000" />
       <workItem from="1606723726923" duration="1358000" />
       <workItem from="1606726268838" duration="104000" />
+      <workItem from="1606736604387" duration="1792000" />
     </task>
     <servers />
   </component>
@@ -366,30 +369,30 @@
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="745" y="366" width="563" height="402" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.2048.1122@0.0.2048.1122" timestamp="1605777142376" />
-    <state x="630" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606670057022">
+    <state x="630" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606738078203">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state x="630" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2048.1122@0.0.2048.1122" timestamp="1606670057022" />
+    <state x="630" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2048.1122@0.0.2048.1122" timestamp="1606738078203" />
     <state x="618" y="180" key="FileChooserDialogImpl" timestamp="1606667979028">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="618" y="180" key="FileChooserDialogImpl/0.0.2048.1122@0.0.2048.1122" timestamp="1606667979028" />
-    <state width="1981" height="255" key="GridCell.Tab.0.bottom" timestamp="1606725621671">
+    <state width="1981" height="255" key="GridCell.Tab.0.bottom" timestamp="1606738412338">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1606725621671" />
-    <state width="1981" height="255" key="GridCell.Tab.0.center" timestamp="1606725621671">
+    <state width="1981" height="255" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1606738412338" />
+    <state width="1981" height="255" key="GridCell.Tab.0.center" timestamp="1606738412338">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1606725621671" />
-    <state width="1981" height="255" key="GridCell.Tab.0.left" timestamp="1606725621671">
+    <state width="1981" height="255" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1606738412338" />
+    <state width="1981" height="255" key="GridCell.Tab.0.left" timestamp="1606738412338">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1606725621671" />
-    <state width="1981" height="255" key="GridCell.Tab.0.right" timestamp="1606725621671">
+    <state width="1981" height="255" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1606738412338" />
+    <state width="1981" height="255" key="GridCell.Tab.0.right" timestamp="1606738412338">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1606725621671" />
+    <state width="1981" height="255" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1606738412338" />
     <state width="1981" height="347" key="GridCell.Tab.1.bottom" timestamp="1606671589197">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
