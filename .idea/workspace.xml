@@ -2,18 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b8948d3-e538-41e9-b1e9-8514c66e2a00" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.tml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.tml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/FLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/FLauncher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/files/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/files/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data_en_US.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data_en_US.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data_ru_RU.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data_ru_RU.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ComposerSettings">
     <execution>
@@ -88,7 +92,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15078124" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -326,6 +330,8 @@
       <workItem from="1606723726923" duration="1358000" />
       <workItem from="1606726268838" duration="104000" />
       <workItem from="1606736604387" duration="1792000" />
+      <workItem from="1606752395677" duration="54000" />
+      <workItem from="1606754827139" duration="5462000" />
     </task>
     <servers />
   </component>
@@ -409,10 +415,10 @@
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state width="1981" height="347" key="GridCell.Tab.1.right/0.0.2048.1122@0.0.2048.1122" timestamp="1606671589197" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1606688612591">
+    <state x="249" y="0" key="SettingsEditor" timestamp="1606761579166">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.2048.1122@0.0.2048.1122" timestamp="1606688612591" />
+    <state x="249" y="0" key="SettingsEditor/0.0.2048.1122@0.0.2048.1122" timestamp="1606761579166" />
     <state x="713" y="119" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1599560424353">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
@@ -421,9 +427,9 @@
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="513" y="253" key="run.anything.popup/0.0.2048.1122@0.0.2048.1122" timestamp="1605778472643" />
-    <state x="513" y="0" width="1005" height="1118" key="search.everywhere.popup" timestamp="1606725433251">
+    <state x="513" y="0" width="1009" height="1118" key="search.everywhere.popup" timestamp="1606762689316">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state x="513" y="0" width="1005" height="1118" key="search.everywhere.popup/0.0.2048.1122@0.0.2048.1122" timestamp="1606725433251" />
+    <state x="513" y="0" width="1009" height="1118" key="search.everywhere.popup/0.0.2048.1122@0.0.2048.1122" timestamp="1606762689316" />
   </component>
 </project>

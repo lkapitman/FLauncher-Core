@@ -27,27 +27,26 @@ public class FileManager {
 
     }
 
-    public File getAssetsFolder() {
-        return new File(createGameDir(), "assets");
-    }
-
-    public File getNativesFolder() {
-        return new File(createGameDir(), "natives");
-    }
-
-    public File getLibsFolder() {
-        return new File(createGameDir(), "libs");
-    }
-
     public File getGameFolder() {
         return createGameDir();
     }
 
-    public File getRuntimeFolder() {
-        return new File(createGameDir(), "runtime");
+    private File getSettingsFolder() {
+        return new File(createGameDir(), "settings");
     }
 
-    public File getBatFile() {
-        return new File(createGameDir(), "start.bat");
+    public File getSettingsFile() {
+        if (getSettingsFolder().exists() && getSettingsFolder().isDirectory()) {
+            for (File file : getSettingsFolder().listFiles()) {
+                if (file.getName().equalsIgnoreCase("launcher.properties")) {
+                    return file;
+                } else {
+                    new File(getSettingsFolder(), "launcher.settings");
+
+                }
+            }
+        }
+        return null;
     }
+
 }
