@@ -1,3 +1,9 @@
-language: java
-jdk:
-  - oraclejdk15
+{
+  "language": "java",
+  "os": [
+    "windows"
+  ],
+  "jdk": [
+    "oraclejdk15"
+  ]
+}
