@@ -4,22 +4,9 @@
     <list default="true" id="9b8948d3-e538-41e9-b1e9-8514c66e2a00" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/FLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/FLauncher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/PanelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/PanelManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/utils/Constants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/utils/messages/MessageHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/utils/messages/MessageHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/utils/messages/TypeMessage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/visual/bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/scrollbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/visual/css/scrollbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/error-msg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/visual/error-msg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/img/icon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/visual/img/icon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/info-msg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/visual/info-msg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/valkyria.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/visual/valkyria.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/lkapitman/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/bg.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -335,6 +322,7 @@
       <workItem from="1606686365181" duration="2449000" />
       <workItem from="1606723677381" duration="21000" />
       <workItem from="1606723726923" duration="1358000" />
+      <workItem from="1606726268838" duration="104000" />
     </task>
     <servers />
   </component>
