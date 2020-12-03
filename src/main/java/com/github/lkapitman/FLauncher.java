@@ -21,7 +21,9 @@ public class FLauncher {
     private PanelManager panelManager;
     private PanelLogin panelLogin;
     private static boolean downloaded;
-    private Properties settings = new Properties();
+
+    private static Properties settings = new Properties();
+    private static Properties downloadedSettings = new Properties();
 
     private static ResourceBundle res = ResourceBundle.getBundle("data");
 
@@ -37,10 +39,11 @@ public class FLauncher {
         Updater updater = new Updater();
         DownloadJob game = new DownloadJob("game", this.panelLogin.getHomePanel());
         game.setExecutorService(5);
-        updater.addJobToDownload(new DownloadManager(settings.getProperty("GAME_URL"), game, fileManager.getGameFolder()));
+        updater.addJobToDownload(new DownloadManager(settings.getProperty("GAME_URL"), game, fileManager.getSettingsFolder()));
         updater.setFileDeleter(true);
         Thread thread = new Thread(updater::start);
         thread.start();
+
     }
 
     public static boolean isDownloaded() {
@@ -55,7 +58,7 @@ public class FLauncher {
         return res;
     }
 
-    public void checkSettings() {
+    public int checkSettings() {
         if (fileManager.getSettingsFile().canRead()) {
             try {
                 settings.load(new FileReader(fileManager.getSettingsFile()));
@@ -66,6 +69,30 @@ public class FLauncher {
                         settings.setProperty("GAME_URL", "http://localhost/instance.json");
                         settings.setProperty("SERVER_IP", "localhost");
                         settings.setProperty("AUTHENTICATOR", "VK_BOT");
+                        return 0;
+                    } else {
+                        App.logger.warn(res.getString("java.error.write.config"));
+                        System.exit(1);
+                        return 1;
+                    }
+                }
+            } catch (IOException e) {
+                App.logger.warn(res.getString("java.error.cant.load.config"));
+                System.exit(1);
+                return 2;
+            }
+        }
+        return 3;
+    }
+
+    public void checkDownloadedSettings() {
+        if (fileManager.getDownloadedSettingsFile().canRead()) {
+            try {
+                downloadedSettings.load(new FileReader(fileManager.getDownloadedSettingsFile()));
+                if (downloadedSettings.values().isEmpty()) {
+                    if (fileManager.getDownloadedSettingsFile().canWrite()) {
+                        App.logger.log(res.getString("java.setting.not.found"));
+                        settings.setProperty("GAME_URL", downloadedSettings.getProperty("GAME_URL"));
                     } else {
                         App.logger.warn(res.getString("java.error.write.config"));
                         System.exit(1);
@@ -76,6 +103,10 @@ public class FLauncher {
                 System.exit(1);
             }
         }
+        return;
     }
 
+    public Properties getSettings() {
+        return settings;
+    }
 }

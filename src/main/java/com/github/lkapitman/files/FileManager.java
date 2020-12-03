@@ -31,7 +31,7 @@ public class FileManager {
         return createGameDir();
     }
 
-    private File getSettingsFolder() {
+    public File getSettingsFolder() {
         return new File(createGameDir(), "settings");
     }
 
@@ -49,4 +49,14 @@ public class FileManager {
         return null;
     }
 
+    public File getDownloadedSettingsFile() {
+        if (getSettingsFolder().exists() && getSettingsFolder().isDirectory()) {
+            for (File file : getSettingsFolder().listFiles()) {
+                if (file.getName().equalsIgnoreCase("instance.properties")) {
+                    return file;
+                }
+            }
+        }
+        return null;
+    }
 }

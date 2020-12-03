@@ -1,4 +1,0 @@
-language: java
-os: linux
-jdk:
-  - oraclejdk15

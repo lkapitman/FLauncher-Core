@@ -172,7 +172,7 @@ public class HomePanel extends Panel implements DownloadListener {
             try {
                 String cmd = s.replaceAll("C:/Users/Lion/AppData/Roaming/.minecraft", this.panelManager.getfLauncher().getFileManager().getGameFolder().getAbsolutePath());
                 cmd = s.replaceAll("Aziat", this.panelManager.getfLauncher().getFileManager().getGameFolder().getAbsolutePath());
-                cmd = s.replaceAll("migosmc.ru", Constants.SERVER_IP);
+                cmd = s.replaceAll("migosmc.ru", this.panelManager.getfLauncher().getSettings().getProperty("SERVER_IP"));
                 Runtime.getRuntime().exec(cmd);
             } catch (IOException ex) {
                 ex.printStackTrace();

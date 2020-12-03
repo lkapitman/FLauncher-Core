@@ -1,2 +1,0 @@
-# FLauncher-Core
-Ядро лаунчера!

@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b8948d3-e538-41e9-b1e9-8514c66e2a00" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.tml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.tml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/FLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/FLauncher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/files/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/files/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/utils/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data_en_US.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data_en_US.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data_ru_RU.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data_ru_RU.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -332,6 +330,10 @@
       <workItem from="1606736604387" duration="1792000" />
       <workItem from="1606752395677" duration="54000" />
       <workItem from="1606754827139" duration="5462000" />
+      <workItem from="1606771058502" duration="18000" />
+      <workItem from="1606803478518" duration="753000" />
+      <workItem from="1607013246141" duration="7000" />
+      <workItem from="1607017443675" duration="3000" />
     </task>
     <servers />
   </component>
