@@ -29,3 +29,5 @@ plugins:
 # Custom variables
 owner : "CarryLove"
 year : "2020"
+
+theme: jekyll-theme-cayman
