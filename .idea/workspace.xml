@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b8948d3-e538-41e9-b1e9-8514c66e2a00" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/FLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/FLauncher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/files/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/files/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data_en_US.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data_en_US.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data_ru_RU.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data_ru_RU.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -335,7 +330,7 @@
       <workItem from="1607013246141" duration="7000" />
       <workItem from="1607017443675" duration="3000" />
       <workItem from="1607034543921" duration="6000" />
-      <workItem from="1607074470499" duration="1234000" />
+      <workItem from="1607074470499" duration="1484000" />
     </task>
     <servers />
   </component>
