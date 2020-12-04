@@ -3,7 +3,7 @@ package com.github.lkapitman.ui.panels;
 import com.github.lkapitman.FLauncher;
 import com.github.lkapitman.ui.PanelManager;
 import com.github.lkapitman.ui.panel.Panel;
-import com.github.lkapitman.utils.messages.MessageHelper;
+import com.github.lkapitman.utils.Constants;
 import com.google.common.hash.Hashing;
 import javafx.geometry.HPos;
 import javafx.geometry.VPos;
@@ -208,8 +208,6 @@ public class PanelLogin extends Panel {
         connectionButton.setOnMouseEntered(e->this.layout.setCursor(Cursor.HAND));
         connectionButton.setOnMouseExited(e->this.layout.setCursor(Cursor.DEFAULT));
         connectionButton.setOnMouseClicked(e-> {
-            // TODO: сделать проверку на аунтификацию.
-
             String pass = Hashing.sha512().hashString(passwordField.getText(), StandardCharsets.UTF_8).toString();
 
             try {
@@ -231,11 +229,11 @@ public class PanelLogin extends Panel {
                     System.out.print("\t\t"+rst.getString(3));
                     System.out.println();
                     if (rst.getString(2).equals(usernameField.getText()) && rst.getString(3).equalsIgnoreCase(pass)) {
-                        new MessageHelper(FLauncher.getRes().getString("login.goodgame")).showInfoMSG();
+                        this.panelManager.getTrayIcon().displayMessage(Constants.PROJECT_NAME,FLauncher.getRes().getString("login.goodgame"), TrayIcon.MessageType.INFO);
                         panelManager.showPanel(homePanel = new HomePanel());
                         return;
                     } else {
-                        new MessageHelper(FLauncher.getRes().getString("login.errorlogin")).showErrorMSG();
+                        this.panelManager.getTrayIcon().displayMessage(Constants.PROJECT_NAME,FLauncher.getRes().getString("login.errorlogin"), TrayIcon.MessageType.ERROR);
                         return;
                     }
                 }

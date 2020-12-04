@@ -27,6 +27,7 @@ import javafx.scene.paint.CycleMethod;
 import javafx.scene.paint.LinearGradient;
 import javafx.scene.paint.Stop;
 
+import java.awt.*;
 import java.io.IOException;
 
 public class HomePanel extends Panel implements DownloadListener {
@@ -230,6 +231,7 @@ public class HomePanel extends Panel implements DownloadListener {
     @Override
     public void onDownloadJobFinished(DownloadJob job) {
         App.logger.log(job.getName() + " finished!");
+        this.panelManager.getTrayIcon().displayMessage(Constants.PROJECT_NAME, FLauncher.getRes().getString("javafx.download.stop"), TrayIcon.MessageType.INFO);
     }
 
     @Override
@@ -242,6 +244,7 @@ public class HomePanel extends Panel implements DownloadListener {
     @Override
     public void onDownloadJobStarted(DownloadJob job) {
         App.logger.log("'" + job.getName() + "' started to download!");
+        this.panelManager.getTrayIcon().displayMessage(Constants.PROJECT_NAME, FLauncher.getRes().getString("javafx.download.start"), TrayIcon.MessageType.INFO);
     }
 
 }

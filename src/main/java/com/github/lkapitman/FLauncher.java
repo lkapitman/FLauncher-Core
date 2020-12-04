@@ -9,6 +9,7 @@ import fr.arinonia.arilibfx.updater.DownloadManager;
 import fr.arinonia.arilibfx.updater.Updater;
 import javafx.stage.Stage;
 
+import java.awt.*;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
@@ -33,6 +34,8 @@ public class FLauncher {
         this.panelManager.init();
         this.panelManager.showPanel(panelLogin = new PanelLogin());
 
+
+
     }
 
     public void launchGame() {
@@ -42,10 +45,10 @@ public class FLauncher {
 
         if (checkSettings() != 0) {
             if (checkSettings() == 1) {
-                // TODO: Отправить уведомление о том что недостаточно прав на запись, закрыть окно!
+                this.panelManager.getTrayIcon().displayMessage(Constants.PROJECT_NAME, res.getString("javafx.error.cant.write"), TrayIcon.MessageType.ERROR);
             }
             if (checkSettings() == 2) {
-                // TODO: Отправить уведомление о том что недостаточно прав на чтение, закрыть окно!
+                this.panelManager.getTrayIcon().displayMessage(Constants.PROJECT_NAME, res.getString("javafx.error.cant.read"), TrayIcon.MessageType.ERROR);
             }
         } else {
             updater.addJobToDownload(new DownloadManager(settings.getProperty("GAME_URL"), game, fileManager.getSettingsFolder()));

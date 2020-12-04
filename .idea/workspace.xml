@@ -2,7 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b8948d3-e538-41e9-b1e9-8514c66e2a00" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/404.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_includes/analytics.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_includes/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_includes/head.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_includes/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_includes/links.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_layouts/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_layouts/page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_layouts/post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_sass/_default_colors.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_sass/base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/_sass/rouge-base16-dark.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/about.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/archive.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/bkg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/assets/bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/atom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/css/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/FLauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/FLauncher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/FxApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/FxApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/PanelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/PanelManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/HomePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/ui/panels/PanelLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/lkapitman/utils/messages/MessageHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data_en_US.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data_en_US.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data_ru_RU.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data_ru_RU.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +113,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/visual/img" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15078124" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -92,21 +124,21 @@
       <recent name="com.github.lkapitman.ui.panel" />
       <recent name="com.github.lkapitman.ui.panels.includes" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Workspace\java\FLauncher-Core\src\main\resources\visual\img" />
+      <recent name="E:\Workspace\java\FLauncher\src\main\resources\img" />
+      <recent name="E:\Workspace\java\FLauncher\libs" />
+      <recent name="E:\Workspace\java\FLauncher\src\main\java" />
+      <recent name="E:\Workspace\java\FLauncher\src\main\resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Workspace\java\FLauncher-Core\src\main\resources\visual" />
       <recent name="E:\Workspace\java\FLauncher\src\main\java\fr\nemixcraft\launcher" />
       <recent name="E:\Workspace\java\FLauncher\src\main\resources\test" />
       <recent name="E:\Workspace\java\FLauncher\libs" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Workspace\java\FLauncher\src\main\resources\img" />
-      <recent name="E:\Workspace\java\FLauncher\libs" />
-      <recent name="E:\Workspace\java\FLauncher\src\main\java" />
-      <recent name="E:\Workspace\java\FLauncher\src\main\resources" />
-      <recent name="E:\Workspace\java\FLauncher\src\main\java\com\github\lkapitman\test" />
     </key>
   </component>
   <component name="RunManager" selected="Application.App">
@@ -124,24 +156,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FLauncher [jpackageImage]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="jpackageImage" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
+    <configuration name="IconTray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.lkapitman.utils.IconTray" />
+      <module name="FLauncher-Core.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.lkapitman.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainApp2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.lkapitman.MainApp2" />
+      <module name="FLauncher-Core.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.lkapitman.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Up7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="up7.Up7" />
+      <module name="FLauncher-Core.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="up7.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="FLauncher [jpackage]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -162,58 +214,20 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="FLauncher [launch4j]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="launch4j" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="FLauncher [runtime]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="runtime" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Application.App" />
+      <item itemvalue="Application.IconTray" />
+      <item itemvalue="Application.Up7" />
+      <item itemvalue="Application.MainApp2" />
       <item itemvalue="Gradle.FLauncher [jpackage]" />
-      <item itemvalue="Gradle.FLauncher [jpackageImage]" />
-      <item itemvalue="Gradle.FLauncher [launch4j]" />
-      <item itemvalue="Gradle.FLauncher [runtime]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainApp2" />
+        <item itemvalue="Application.Up7" />
+        <item itemvalue="Application.IconTray" />
         <item itemvalue="Gradle.FLauncher [jpackage]" />
         <item itemvalue="Application.App" />
-        <item itemvalue="Gradle.FLauncher [runtime]" />
-        <item itemvalue="Gradle.FLauncher [jpackageImage]" />
-        <item itemvalue="Gradle.FLauncher [launch4j]" />
       </list>
     </recent_temporary>
   </component>
@@ -330,7 +344,9 @@
       <workItem from="1607013246141" duration="7000" />
       <workItem from="1607017443675" duration="3000" />
       <workItem from="1607034543921" duration="6000" />
-      <workItem from="1607074470499" duration="1484000" />
+      <workItem from="1607074470499" duration="3414000" />
+      <workItem from="1607109528741" duration="2237000" />
+      <workItem from="1607122219294" duration="1603000" />
     </task>
     <servers />
   </component>
@@ -362,10 +378,10 @@
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="619" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2048.1122@0.0.2048.1122" timestamp="1599946407563" />
-    <state x="742" y="135" key="#com.intellij.ide.util.MemberChooser" timestamp="1606168596198">
+    <state x="742" y="135" key="#com.intellij.ide.util.MemberChooser" timestamp="1607122809628">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state x="742" y="135" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1122@0.0.2048.1122" timestamp="1606168596198" />
+    <state x="742" y="135" key="#com.intellij.ide.util.MemberChooser/0.0.2048.1122@0.0.2048.1122" timestamp="1607122809628" />
     <state x="568" y="456" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1606070448140">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
@@ -382,22 +398,22 @@
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="618" y="180" key="FileChooserDialogImpl/0.0.2048.1122@0.0.2048.1122" timestamp="1606667979028" />
-    <state width="1981" height="255" key="GridCell.Tab.0.bottom" timestamp="1606738412338">
+    <state width="1981" height="254" key="GridCell.Tab.0.bottom" timestamp="1607123839192">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1606738412338" />
-    <state width="1981" height="255" key="GridCell.Tab.0.center" timestamp="1606738412338">
+    <state width="1981" height="254" key="GridCell.Tab.0.bottom/0.0.2048.1122@0.0.2048.1122" timestamp="1607123839192" />
+    <state width="1981" height="254" key="GridCell.Tab.0.center" timestamp="1607123839192">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1606738412338" />
-    <state width="1981" height="255" key="GridCell.Tab.0.left" timestamp="1606738412338">
+    <state width="1981" height="254" key="GridCell.Tab.0.center/0.0.2048.1122@0.0.2048.1122" timestamp="1607123839192" />
+    <state width="1981" height="254" key="GridCell.Tab.0.left" timestamp="1607123839192">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1606738412338" />
-    <state width="1981" height="255" key="GridCell.Tab.0.right" timestamp="1606738412338">
+    <state width="1981" height="254" key="GridCell.Tab.0.left/0.0.2048.1122@0.0.2048.1122" timestamp="1607123839192" />
+    <state width="1981" height="254" key="GridCell.Tab.0.right" timestamp="1607123839192">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state width="1981" height="255" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1606738412338" />
+    <state width="1981" height="254" key="GridCell.Tab.0.right/0.0.2048.1122@0.0.2048.1122" timestamp="1607123839192" />
     <state width="1981" height="347" key="GridCell.Tab.1.bottom" timestamp="1606671589197">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
@@ -426,9 +442,9 @@
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
     <state x="513" y="253" key="run.anything.popup/0.0.2048.1122@0.0.2048.1122" timestamp="1605778472643" />
-    <state x="513" y="0" width="1009" height="1118" key="search.everywhere.popup" timestamp="1606762689316">
+    <state x="513" y="0" width="1009" height="1118" key="search.everywhere.popup" timestamp="1607122704244">
       <screen x="0" y="0" width="2048" height="1122" />
     </state>
-    <state x="513" y="0" width="1009" height="1118" key="search.everywhere.popup/0.0.2048.1122@0.0.2048.1122" timestamp="1606762689316" />
+    <state x="513" y="0" width="1009" height="1118" key="search.everywhere.popup/0.0.2048.1122@0.0.2048.1122" timestamp="1607122704244" />
   </component>
 </project>
