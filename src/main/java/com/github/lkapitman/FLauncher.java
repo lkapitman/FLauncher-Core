@@ -9,6 +9,7 @@ import fr.arinonia.arilibfx.updater.DownloadManager;
 import fr.arinonia.arilibfx.updater.Updater;
 import javafx.stage.Stage;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
@@ -23,7 +24,6 @@ public class FLauncher {
     private static boolean downloaded;
 
     private static Properties settings = new Properties();
-    private static Properties downloadedSettings = new Properties();
 
     private static ResourceBundle res = ResourceBundle.getBundle("data");
 
@@ -39,11 +39,20 @@ public class FLauncher {
         Updater updater = new Updater();
         DownloadJob game = new DownloadJob("game", this.panelLogin.getHomePanel());
         game.setExecutorService(5);
-        updater.addJobToDownload(new DownloadManager(settings.getProperty("GAME_URL"), game, fileManager.getSettingsFolder()));
-        updater.setFileDeleter(true);
-        Thread thread = new Thread(updater::start);
-        thread.start();
 
+        if (checkSettings() != 0) {
+            if (checkSettings() == 1) {
+                // TODO: Отправить уведомление о том что недостаточно прав на запись, закрыть окно!
+            }
+            if (checkSettings() == 2) {
+                // TODO: Отправить уведомление о том что недостаточно прав на чтение, закрыть окно!
+            }
+        } else {
+            updater.addJobToDownload(new DownloadManager(settings.getProperty("GAME_URL"), game, fileManager.getSettingsFolder()));
+            updater.setFileDeleter(true);
+            Thread thread = new Thread(updater::start);
+            thread.start();
+        }
     }
 
     public static boolean isDownloaded() {
@@ -62,49 +71,25 @@ public class FLauncher {
         if (fileManager.getSettingsFile().canRead()) {
             try {
                 settings.load(new FileReader(fileManager.getSettingsFile()));
-                if (settings.values().isEmpty()) {
-                    if (fileManager.getSettingsFile().canWrite()) {
-                        App.logger.log(res.getString("java.setting.not.found"));
-
-                        settings.setProperty("GAME_URL", "http://localhost/instance.json");
-                        settings.setProperty("SERVER_IP", "localhost");
-                        settings.setProperty("AUTHENTICATOR", "VK_BOT");
-                        return 0;
-                    } else {
-                        App.logger.warn(res.getString("java.error.write.config"));
-                        System.exit(1);
-                        return 1;
-                    }
+                if (fileManager.getSettingsFile().canWrite()) {
+                    App.logger.log(res.getString("java.setting.not.found"));
+                    settings.setProperty("GAME_URL", "http://localhost/instance.json");
+                    settings.setProperty("SERVER_IP", "localhost");
+                    settings.setProperty("AUTHENTICATOR", "VK_BOT");
+                } else {
+                    App.logger.warn(res.getString("java.error.write.config"));
+                    return 1;
                 }
             } catch (IOException e) {
+                new File(fileManager.getSettingsFolder(), "launcher.properties");
+                checkSettings();
                 App.logger.warn(res.getString("java.error.cant.load.config"));
-                System.exit(1);
-                return 2;
+                App.logger.log(res.getString("java.info.create.config"));
             }
         }
-        return 3;
+        return 2;
     }
 
-    public void checkDownloadedSettings() {
-        if (fileManager.getDownloadedSettingsFile().canRead()) {
-            try {
-                downloadedSettings.load(new FileReader(fileManager.getDownloadedSettingsFile()));
-                if (downloadedSettings.values().isEmpty()) {
-                    if (fileManager.getDownloadedSettingsFile().canWrite()) {
-                        App.logger.log(res.getString("java.setting.not.found"));
-                        settings.setProperty("GAME_URL", downloadedSettings.getProperty("GAME_URL"));
-                    } else {
-                        App.logger.warn(res.getString("java.error.write.config"));
-                        System.exit(1);
-                    }
-                }
-            } catch (IOException e) {
-                App.logger.warn(res.getString("java.error.cant.load.config"));
-                System.exit(1);
-            }
-        }
-        return;
-    }
 
     public Properties getSettings() {
         return settings;

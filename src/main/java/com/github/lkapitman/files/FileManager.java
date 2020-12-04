@@ -41,7 +41,7 @@ public class FileManager {
                 if (file.getName().equalsIgnoreCase("launcher.properties")) {
                     return file;
                 } else {
-                    new File(getSettingsFolder(), "launcher.settings");
+                    new File(getSettingsFolder(), "launcher.properties");
 
                 }
             }
@@ -49,14 +49,4 @@ public class FileManager {
         return null;
     }
 
-    public File getDownloadedSettingsFile() {
-        if (getSettingsFolder().exists() && getSettingsFolder().isDirectory()) {
-            for (File file : getSettingsFolder().listFiles()) {
-                if (file.getName().equalsIgnoreCase("instance.properties")) {
-                    return file;
-                }
-            }
-        }
-        return null;
-    }
 }
