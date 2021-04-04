@@ -1,10 +1,13 @@
 dependencies {
-    implementation project(':LauncherLogger')
+    implementation project(':LauncherFileManager')
+    implementation project(':LauncherVisual')
+    implementation project(':LauncherDownloader')
 
     implementation 'com.google.code.gson:gson:2.8.6'
     implementation("com.google.guava:guava:30.0-jre")
 
     compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.22'
+    compile 'commons-net:commons-net:3.8.0'
 
 }
 

@@ -26,6 +26,7 @@ import java.sql.*;
 public class PanelLogin extends Panel {
 
     private HomePanel homePanel;
+    private static String playername;
 
     @Override
     public void init(PanelManager panelManager) {
@@ -243,6 +244,8 @@ public class PanelLogin extends Panel {
             }
         });
 
+        playername = usernameField.getText();
+
         mainPanel.getChildren().addAll(connectLabel, connectSeparator, usernameLabel, usernameField, usernameSeparator,
                 passwordLabel, passwordField, passwordSeparator, connectionButton
         );
@@ -258,5 +261,9 @@ public class PanelLogin extends Panel {
 
     public HomePanel getHomePanel() {
         return homePanel;
+    }
+
+    public static String getPlayerName() {
+        return playername;
     }
 }

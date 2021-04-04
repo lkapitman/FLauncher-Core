@@ -2,9 +2,10 @@ rootProject.name = 'Launcher'
 
 String[] modules = [
     'LauncherCore',
-    'LauncherLogger',
     'LauncherStarter',
-    'LauncherResources'
+    'LauncherFileManager',
+    'LauncherDownloader',
+    'LauncherVisual',
 ]
 
 include modules

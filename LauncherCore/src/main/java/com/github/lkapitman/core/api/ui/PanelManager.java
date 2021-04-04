@@ -2,8 +2,9 @@ package com.github.lkapitman.core.api.ui;
 
 import com.github.lkapitman.core.Core;
 import com.github.lkapitman.core.api.Constants;
-import com.github.lkapitman.core.api.elements.background.AppBackground;
-import com.github.lkapitman.core.api.elements.background.ResizeHelper;
+import com.github.lkapitman.filemanager.FileManager;
+import com.github.lkapitman.visual.elements.background.AppBackground;
+import com.github.lkapitman.visual.elements.background.ResizeHelper;
 import com.github.lkapitman.core.api.ui.panel.IPanel;
 import javafx.application.Platform;
 import javafx.geometry.VPos;
@@ -19,6 +20,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 public class PanelManager {
@@ -39,11 +41,16 @@ public class PanelManager {
 
     public void init() {
         if (!SystemTray.isSupported()) {
-            Core.getLogger().ERROR_LOG(Core.getRes().getString("javafx.error.not.support"));
+            System.err.println(Core.getRes().getString("javafx.error.not.support"));
             return;
         }
 
-        URL url = Core.class.getResource("/visual/img/icon.png");
+        URL url = null;
+        try {
+            url = getURL("https://i.ibb.co/VB8Bkmq/icon.png");
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
         Image image = Toolkit.getDefaultToolkit().getImage(url);
 
         final PopupMenu popup = new PopupMenu();
@@ -85,7 +92,7 @@ public class PanelManager {
         try {
             tray.add(trayIcon);
         } catch (AWTException e) {
-            Core.getLogger().ERROR_LOG(Core.getRes().getString("javafx.error.tray.icon"));
+            System.err.println(Core.getRes().getString("javafx.error.tray.icon"));
         }
 
         Platform.setImplicitExit(false);
@@ -102,7 +109,10 @@ public class PanelManager {
         this.stage.show();
 
         this.layout = new GridPane();
-        this.layout.setStyle(AppBackground.setResponsiveBackground("visual/bg.png"));
+        this.layout.setStyle(
+                "-fx-background-image: url('https://i.ibb.co/xMMhgBx/bg.png');"
+                +"-fx-backgound-repeat: skretch;"+"-fx-backgound-position: center center;"
+                +"-fx-background-size: cover;");
         this.stage.setScene(new Scene(this.layout));
 
         RowConstraints topPanelConstrains = new RowConstraints();
@@ -141,4 +151,7 @@ public class PanelManager {
         return trayIcon;
     }
 
+    public URL getURL(String url) throws MalformedURLException {
+        return new URL(url);
+    }
 }

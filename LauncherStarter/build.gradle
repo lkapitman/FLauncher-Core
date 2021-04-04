@@ -5,6 +5,8 @@ plugins {
 
 dependencies {
     implementation project(':LauncherCore')
+    implementation project(':LauncherFileManager')
+
 }
 
 javafx {
