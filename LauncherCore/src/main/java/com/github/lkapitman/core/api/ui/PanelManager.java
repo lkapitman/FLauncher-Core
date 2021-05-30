@@ -59,12 +59,7 @@ public class PanelManager {
 
         final MenuItem exit = new MenuItem(Core.getRes().getString("javafx.menu.item.exit"));
         final SystemTray tray = SystemTray.getSystemTray();
-        ActionListener menuActionListener = new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                System.exit(0);
-            }
-        };
+        ActionListener menuActionListener = e -> System.exit(0);
 
         exit.addActionListener(menuActionListener);
         popup.add(exit);
@@ -73,16 +68,13 @@ public class PanelManager {
             @Override
             public void mouseClicked(MouseEvent event) {
                 if (event.getButton() == MouseEvent.BUTTON1) {
-                    Platform.runLater(new Runnable() {
-                        @Override
-                        public void run() {
-                            if (stateWindow == 1) {
-                                stage.hide();
-                                stateWindow = 0;
-                            } else if (stateWindow == 0) {
-                                stage.show();
-                                stateWindow = 1;
-                            }
+                    Platform.runLater(() -> {
+                        if (stateWindow == 1) {
+                            stage.hide();
+                            stateWindow = 0;
+                        } else if (stateWindow == 0) {
+                            stage.show();
+                            stateWindow = 1;
                         }
                     });
                 }
@@ -138,9 +130,6 @@ public class PanelManager {
         this.centerPanel.getChildren().add(panel.getLayout());
         panel.init(this);
         panel.onShow();
-    }
-    public Stage getStage() {
-        return stage;
     }
 
     public Core getCore() {

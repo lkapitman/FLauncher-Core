@@ -5,6 +5,8 @@ module Launcher.core {
     requires Launcher.visual;
 
     requires javafx.controls;
+    requires javafx.web;
+
     requires java.desktop;
 
     requires com.google.common;

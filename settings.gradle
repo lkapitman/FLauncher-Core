@@ -6,6 +6,7 @@ String[] modules = [
     'LauncherFileManager',
     'LauncherDownloader',
     'LauncherVisual',
+    'LauncherLogger'
 ]
 
 include modules

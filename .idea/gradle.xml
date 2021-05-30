@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/LauncherCore" />
             <option value="$PROJECT_DIR$/LauncherDownloader" />
             <option value="$PROJECT_DIR$/LauncherFileManager" />
+            <option value="$PROJECT_DIR$/LauncherLogger" />
             <option value="$PROJECT_DIR$/LauncherStarter" />
             <option value="$PROJECT_DIR$/LauncherVisual" />
           </set>

@@ -6,12 +6,11 @@ plugins {
 dependencies {
     implementation project(':LauncherCore')
     implementation project(':LauncherFileManager')
-
 }
 
 javafx {
     version = "15.0.1"
-    modules = ['javafx.controls']
+    modules = ['javafx.controls', 'javafx.web']
 }
 
 application {
@@ -22,11 +21,11 @@ application {
 ext.os = org.gradle.internal.os.OperatingSystem.current()
 
 jlink {
-    imageZip = file("$buildDir/image-zip/hellofx.zip")
+    imageZip = file("$buildDir/image-zip/flauncher.zip")
     options = ['--bind-services', '--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
 
     launcher {
-        name = 'helloFX'
+        name = 'Flauncher'
         noConsole = true
     }
     jpackage {

@@ -2,7 +2,6 @@ package com.github.lkapitman.core;
 
 import com.github.lkapitman.core.api.Constants;
 import com.github.lkapitman.core.api.CoreAPI;
-import com.github.lkapitman.core.api.FTPUpload;
 import com.github.lkapitman.core.api.ui.PanelManager;
 import com.github.lkapitman.core.api.ui.panels.PanelLogin;
 import com.github.lkapitman.downloader.download.DownloadManager;
@@ -15,15 +14,13 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.ArrayList;
-import java.util.List;
+
 import java.util.ResourceBundle;
 
 public class Core implements CoreAPI {
 
     private static final FileManager fileManager = new FileManager(Constants.PROJECT_NAME);
 
-    private static final File metaDataFolder = fileManager.getMetaDataFolder();
     private static final File gameFolder = fileManager.getGameFolder();
 
     private PanelManager panelManager;
@@ -71,12 +68,12 @@ public class Core implements CoreAPI {
         return downloaded;
     }
 
-    public static File getGameFolder() {
-        return gameFolder;
+    public static void setDownloaded(boolean downloaded) {
+        Core.downloaded = downloaded;
     }
 
-    public static File getMetaDataFolder() {
-        return metaDataFolder;
+    public static File getGameFolder() {
+        return gameFolder;
     }
 
     public static ResourceBundle getRes() {

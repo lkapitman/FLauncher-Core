@@ -209,6 +209,8 @@ public class PanelLogin extends Panel {
         connectionButton.setOnMouseEntered(e->this.layout.setCursor(Cursor.HAND));
         connectionButton.setOnMouseExited(e->this.layout.setCursor(Cursor.DEFAULT));
         connectionButton.setOnMouseClicked(e-> {
+            panelManager.showPanel(homePanel = new HomePanel());
+            /*
             String pass = Hashing.sha512().hashString(passwordField.getText(), StandardCharsets.UTF_8).toString();
 
             try {
@@ -242,6 +244,7 @@ public class PanelLogin extends Panel {
             } catch (ClassNotFoundException | SQLException ex) {
                 ex.printStackTrace();
             }
+        */
         });
 
         playername = usernameField.getText();
@@ -249,6 +252,7 @@ public class PanelLogin extends Panel {
         mainPanel.getChildren().addAll(connectLabel, connectSeparator, usernameLabel, usernameField, usernameSeparator,
                 passwordLabel, passwordField, passwordSeparator, connectionButton
         );
+
     }
 
     private void openURL() {

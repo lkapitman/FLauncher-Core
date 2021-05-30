@@ -1,4 +1,5 @@
 module Launcher.starter {
+
     requires Launcher.core;
     requires Launcher.fileManager;
 
