@@ -5,9 +5,9 @@ import java.io.File;
 
 public class MinecraftStarter {
 
-  private String arguments;
-  private String playerName;
-  private File gameFolder;
+  private final String arguments;
+  private final String playerName;
+  private final File gameFolder;
 
   public MinecraftStarter(String arguments, File gameFolder, String playerName) {
     this.gameFolder = gameFolder;

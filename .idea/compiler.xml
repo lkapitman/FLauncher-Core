@@ -6,4 +6,9 @@
       <module name="Launcher.LauncherResources.test" target="11" />
     </bytecodeTargetLevel>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Launcher.LauncherCore.main" options="--add-exports javafx.web/com.sun.webkit=Launcher.core --add-exports javafx.web/com.sun.javafx.webkit=Launcher.core" />
+    </option>
+  </component>
 </project>

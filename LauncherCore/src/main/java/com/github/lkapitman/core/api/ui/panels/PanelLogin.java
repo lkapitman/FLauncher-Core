@@ -215,22 +215,21 @@ public class PanelLogin extends Panel {
 
             try {
                 Class.forName("com.mysql.jdbc.Driver");
-                String JdbcURL = "jdbc:mysql://localhost/authme";
-                String Username = "authme";
-                String password = "authme1234";
+
+                String JdbcURL = Constants.DATABASE_HOST;
+                String Username = Constants.DATABASE_USER;
+                String password = Constants.DATABASE_PASSWORD;
                 Connection con = null;
                 PreparedStatement pstmt = null;
                 ResultSet rst = null;
+
                 String myQuery = "select id,realname,password from authme";
                 con = DriverManager.getConnection(JdbcURL, Username, password);
+
                 pstmt = con.prepareStatement(myQuery);
                 rst = pstmt.executeQuery();
-                System.out.println("id\t\trealname\t\tpassword\n");
+
                 while(rst.next()) {
-                    System.out.print(rst.getInt(1));
-                    System.out.print("\t\t"+rst.getString(2));
-                    System.out.print("\t\t"+rst.getString(3));
-                    System.out.println();
                     if (rst.getString(2).equals(usernameField.getText()) && rst.getString(3).equalsIgnoreCase(pass)) {
                         this.panelManager.getTrayIcon().displayMessage(Constants.PROJECT_NAME,Core.getRes().getString("login.goodgame"), TrayIcon.MessageType.INFO);
                         panelManager.showPanel(homePanel = new HomePanel());
@@ -257,7 +256,7 @@ public class PanelLogin extends Panel {
 
     private void openURL() {
         try {
-            Desktop.getDesktop().browse(new URI("https://vk.com/oldroleplayminecraftserver"));
+            Desktop.getDesktop().browse(new URI("http://r95165vv.beget.tech/index.php?do=register"));
         } catch (IOException | URISyntaxException e) {
             e.printStackTrace();
         }

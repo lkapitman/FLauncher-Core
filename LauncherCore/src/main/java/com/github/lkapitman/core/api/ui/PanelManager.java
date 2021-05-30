@@ -2,8 +2,6 @@ package com.github.lkapitman.core.api.ui;
 
 import com.github.lkapitman.core.Core;
 import com.github.lkapitman.core.api.Constants;
-import com.github.lkapitman.filemanager.FileManager;
-import com.github.lkapitman.visual.elements.background.AppBackground;
 import com.github.lkapitman.visual.elements.background.ResizeHelper;
 import com.github.lkapitman.core.api.ui.panel.IPanel;
 import javafx.application.Platform;
@@ -16,7 +14,6 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -27,8 +24,7 @@ public class PanelManager {
 
     private final Core core;
     private final Stage stage;
-    private GridPane layout;
-    private GridPane centerPanel = new GridPane();
+    private final GridPane centerPanel = new GridPane();
 
     private int stateWindow = 1;
 
@@ -100,12 +96,12 @@ public class PanelManager {
 
         this.stage.show();
 
-        this.layout = new GridPane();
-        this.layout.setStyle(
+        GridPane layout = new GridPane();
+        layout.setStyle(
                 "-fx-background-image: url('https://i.ibb.co/xMMhgBx/bg.png');"
                 +"-fx-backgound-repeat: skretch;"+"-fx-backgound-position: center center;"
                 +"-fx-background-size: cover;");
-        this.stage.setScene(new Scene(this.layout));
+        this.stage.setScene(new Scene(layout));
 
         RowConstraints topPanelConstrains = new RowConstraints();
         topPanelConstrains.setValignment(VPos.TOP);
@@ -113,9 +109,9 @@ public class PanelManager {
         topPanelConstrains.setMinHeight(25);
         topPanelConstrains.setMaxHeight(25);
 
-        this.layout.getRowConstraints().addAll(topPanelConstrains, new RowConstraints());
+        layout.getRowConstraints().addAll(topPanelConstrains, new RowConstraints());
 
-        this.layout.add(centerPanel, 0,1);
+        layout.add(centerPanel, 0,1);
 
         GridPane.setVgrow(this.centerPanel, Priority.ALWAYS);
         GridPane.setHgrow(this.centerPanel, Priority.ALWAYS);

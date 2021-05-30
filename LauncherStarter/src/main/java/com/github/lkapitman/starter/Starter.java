@@ -10,16 +10,9 @@ import java.io.File;
 
 public class Starter extends Application {
 
-    public boolean checkMetaFolder(File dir) {
-        // TODO: сделать прорверку.
-        return true;
-    }
-
     @Override
     public void start(Stage stage) {
-        if (checkMetaFolder(Core.getGameFolder())) {
-            new Core().init(stage);
-        }
+        new Core().init(stage);
     }
 
 }

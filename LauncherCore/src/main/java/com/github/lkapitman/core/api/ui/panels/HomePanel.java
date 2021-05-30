@@ -135,7 +135,7 @@ public class HomePanel extends Panel implements DownloadListener {
         projectTitle.setStyle("-fx-font-size: 26px; -fx-text-fill:  #fff; -fx-font-weight: bold;");
         projectTitle.setTranslateY(20);
 
-        Label rolePlay = new Label("RolePlay");
+        Label rolePlay = new Label(Constants.GAME_TYPE);
         GridPane.setVgrow(rolePlay, Priority.ALWAYS);
         GridPane.setHgrow(rolePlay, Priority.ALWAYS);
         GridPane.setValignment(rolePlay, VPos.TOP);
@@ -214,12 +214,12 @@ public class HomePanel extends Panel implements DownloadListener {
         aBigDownloadBar.setForegroundColor(lg);
         aBigDownloadBar.setTranslateY(150);
 
-        webEngine.load("https://google.com");
+        webEngine.load(Constants.NEWS_URL);
 
-        browser.setTranslateY(400);
+        browser.setTranslateY(350);
 
-        browser.setMinSize(700, 390);
-        browser.setMaxSize(700,390);
+        browser.setMinSize(420, 275);
+        browser.setMaxSize(420,275);
 
         pane.getChildren().addAll(projectTitle, rolePlay, complete, desc, bigVideo, resultButton, aBigDownloadBar, browser);
     }
@@ -247,7 +247,7 @@ public class HomePanel extends Panel implements DownloadListener {
         imageViewLogo.setFitHeight(28);
         imageViewLogo.setFitWidth(28);
 
-        Label valkyria = new Label("Heaven");
+        Label valkyria = new Label(Constants.GAME_NAME);
         GridPane.setHgrow(valkyria, Priority.ALWAYS);
         GridPane.setVgrow(valkyria, Priority.ALWAYS);
         GridPane.setValignment(valkyria, VPos.CENTER);

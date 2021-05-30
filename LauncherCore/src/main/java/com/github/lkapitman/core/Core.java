@@ -23,15 +23,14 @@ public class Core implements CoreAPI {
 
     private static final File gameFolder = fileManager.getGameFolder();
 
-    private PanelManager panelManager;
     private PanelLogin panelLogin;
     private static boolean downloaded;
 
-    private static ResourceBundle res = ResourceBundle.getBundle("data");
+    private static final ResourceBundle res = ResourceBundle.getBundle("data");
 
     private static boolean isConnect() {
         try {
-            final URL url = new URL("http://www.google.com");
+            final URL url = new URL(Constants.GAME_URL);
             final URLConnection conn = url.openConnection();
             conn.connect();
             conn.getInputStream().close();
@@ -43,14 +42,14 @@ public class Core implements CoreAPI {
 
     public void init(Stage stage) {
 
-        if (!isConnect()) {
-            System.err.println(getRes().getString("noInternetConnect"));
+        if (isConnect()) {
+            System.err.println("No Internet connection");
             System.exit(1);
         }
 
-        this.panelManager = new PanelManager(this, stage);
-        this.panelManager.init();
-        this.panelManager.showPanel(panelLogin = new PanelLogin());
+        PanelManager panelManager = new PanelManager(this, stage);
+        panelManager.init();
+        panelManager.showPanel(panelLogin = new PanelLogin());
 
     }
 
@@ -58,7 +57,7 @@ public class Core implements CoreAPI {
         Updater updater = new Updater();
         DownloadJob game = new DownloadJob("game", this.panelLogin.getHomePanel());
         game.setExecutorService(5);
-        updater.addJobToDownload(new DownloadManager("http://9dec199635fb.ngrok.io/game/instance.json", game, fileManager.getGameFolder()));
+        updater.addJobToDownload(new DownloadManager(Constants.GAME_URL, game, fileManager.getGameFolder()));
         updater.setFileDeleter(true);
         Thread thread = new Thread(updater::start);
         thread.start();
