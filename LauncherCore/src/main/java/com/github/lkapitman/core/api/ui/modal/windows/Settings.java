@@ -2,9 +2,14 @@ package com.github.lkapitman.core.api.ui.modal.windows;
 
 import com.github.lkapitman.core.Core;
 import com.github.lkapitman.core.api.ui.modal.ModalAPI;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class Settings implements ModalAPI {
 
@@ -16,16 +21,18 @@ public class Settings implements ModalAPI {
 
     public void init() {
         stage.initModality(Modality.WINDOW_MODAL);
-        stage.setTitle("Settings");
+        stage.setTitle(Core.getRes().getString("settings.window"));
         stage.getIcons().add(new Image(Core.class.getResource("/visual/settings.png").toExternalForm()));
 
-        stage.setMinWidth(404);
-        stage.setMinHeight(567);
-        stage.setMaxWidth(404);
-        stage.setMaxHeight(567);
+        Parent root = null;
+        try {
+            root = FXMLLoader.load(getClass().getResource("/settings.fxml"));
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-        // TODO: Добавить разные кнопочки и поля + сделать вывод настроек в конфиг!
-
-        stage.show();
     }
 }

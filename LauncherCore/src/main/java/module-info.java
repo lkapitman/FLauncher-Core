@@ -6,6 +6,7 @@ module Launcher.core {
 
     requires javafx.controls;
     requires javafx.web;
+    requires javafx.fxml;
 
     requires java.desktop;
 
@@ -15,7 +16,6 @@ module Launcher.core {
     requires mysql.connector.java;
 
     requires org.apache.commons.net;
-
 
     exports com.github.lkapitman.core;
 }

@@ -28,8 +28,5 @@ public class FileManager {
     public File getGameFolder() {
         return createGameDir();
     }
-
-    public File getMetaDataFolder() {
-        return new File(createGameDir(), "metadata");
-    }
+    
 }

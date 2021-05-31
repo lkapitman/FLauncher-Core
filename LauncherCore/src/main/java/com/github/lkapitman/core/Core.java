@@ -71,8 +71,8 @@ public class Core implements CoreAPI {
         Core.downloaded = downloaded;
     }
 
-    public static File getGameFolder() {
-        return gameFolder;
+    public static FileManager getFileManager() {
+        return fileManager;
     }
 
     public static ResourceBundle getRes() {
