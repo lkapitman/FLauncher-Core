@@ -36,6 +36,8 @@ public class PanelManager {
     }
 
     public void init() {
+        this.stage.getIcons().add(new javafx.scene.image.Image(Core.class.getResource("/visual/img/icon.png").toExternalForm()));
+
         if (!SystemTray.isSupported()) {
             System.err.println(Core.getRes().getString("javafx.error.not.support"));
             return;

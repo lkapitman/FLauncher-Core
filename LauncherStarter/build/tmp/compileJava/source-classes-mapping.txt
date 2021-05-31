@@ -1,4 +1,4 @@
-com/github/lkapitman/starter/Starter.java
- com.github.lkapitman.starter.Starter
 module-info.java
  module-info
+com/github/lkapitman/starter/Starter.java
+ com.github.lkapitman.starter.Starter
