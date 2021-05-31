@@ -4,7 +4,8 @@ import java.io.File;
 
 public class FileManager {
 
-    private String serverName;
+    private final String serverName;
+    private final String fileSeparator = File.separator;
 
     public FileManager(String serverName) {
         this.serverName = serverName;
@@ -12,7 +13,6 @@ public class FileManager {
 
     public File createGameDir() {
         final String userHome = System.getProperty("user.home");
-        final String fileSeparator = File.separator;
 
         switch (OperatingSystem.getCurrentlyPlatform()) {
             case WINDOWS:
@@ -28,5 +28,21 @@ public class FileManager {
     public File getGameFolder() {
         return createGameDir();
     }
-    
+
+    public File getVersionFolder() {
+        return new File(createGameDir() + fileSeparator + "versions" + fileSeparator + "1.12.2");
+    }
+
+    public File getVersionsFolder() {
+        return new File(createGameDir() + fileSeparator + "versions");
+    }
+
+    public File getLibrariesFolder() {
+        return new File(createGameDir() + fileSeparator + "libraries");
+    }
+
+    public File getAssetsFolder() {
+        return new File(createGameDir() + fileSeparator + "assets");
+    }
+
 }

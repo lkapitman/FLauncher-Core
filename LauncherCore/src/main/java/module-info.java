@@ -18,4 +18,5 @@ module Launcher.core {
     requires org.apache.commons.net;
 
     exports com.github.lkapitman.core;
+    opens com.github.lkapitman.core.api.minecraft to com.google.gson;
 }

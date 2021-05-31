@@ -145,7 +145,7 @@ public class Updater {
         return content.toString();
     }
 
-    public void addJobToDownload(DownloadManager downloadManager){
+    public void addJobToDownload(DownloadManager downloadManager) {
         this.needToDownload.add(downloadManager);
     }
 
