@@ -227,9 +227,32 @@ public class HomePanel extends Panel implements DownloadListener {
         imageViewSettings.setOnMouseExited(e-> this.layout.setCursor(Cursor.DEFAULT));
 
         imageViewSettings.setOnMouseClicked(e-> {
-            Console settings = new Console(new Stage());
+            Settings settings = new Settings(new Stage());
             settings.init();
         });
+
+        // Image open menu console.
+        Image consoleIcon = new Image(Core.class.getResource("/visual/console.png").toExternalForm());
+        ImageView imageViewConsole = new ImageView(consoleIcon);
+
+        GridPane.setHgrow(imageViewConsole, Priority.ALWAYS);
+        GridPane.setVgrow(imageViewConsole, Priority.ALWAYS);
+        GridPane.setValignment(imageViewConsole, VPos.CENTER);
+
+        imageViewConsole.setTranslateX(220);
+        imageViewConsole.setTranslateY(110);
+        imageViewConsole.setFitHeight(28);
+        imageViewConsole.setFitWidth(28);
+
+        imageViewConsole.setOnMouseEntered(e-> this.layout.setCursor(Cursor.HAND));
+        imageViewConsole.setOnMouseExited(e-> this.layout.setCursor(Cursor.DEFAULT));
+
+        imageViewConsole.setOnMouseClicked(e-> {
+            Console console = new Console(new Stage());
+            console.init();
+        });
+
+
 
         Image folderImage = new Image(Core.class.getResource("/visual/folder.png").toExternalForm());
         ImageView imageViewFolder = new ImageView(folderImage);
@@ -274,8 +297,7 @@ public class HomePanel extends Panel implements DownloadListener {
         browser.setMinSize(420, 275);
         browser.setMaxSize(420,275);
 
-
-        pane.getChildren().addAll(projectTitle, rolePlay, complete, desc, bigVideo, resultButton, imageViewFolder, imageViewSettings, aBigDownloadBar, browser);
+        pane.getChildren().addAll(projectTitle, rolePlay, complete, desc, bigVideo, resultButton, imageViewFolder, imageViewSettings,imageViewConsole, aBigDownloadBar, browser);
     }
 
     private void showleftBar(GridPane pane) {

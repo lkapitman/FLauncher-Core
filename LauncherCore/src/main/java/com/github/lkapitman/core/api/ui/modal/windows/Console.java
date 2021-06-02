@@ -27,14 +27,15 @@ public class Console {
      * Init.
      */
     public void init() {
+        stage.setResizable(false);
         stage.initModality(Modality.WINDOW_MODAL);
-        stage.setTitle(Core.getRes().getString("settings.window"));
+        stage.setTitle(Core.getRes().getString("console.window"));
         stage.getIcons().add(new Image(Core.class.getResource("/visual/console.png").toExternalForm()));
 
-        Parent root = null;
+        Parent roots = null;
         try {
-            root = FXMLLoader.load(getClass().getResource("/console.fxml"));
-            Scene scene = new Scene(root);
+            roots = FXMLLoader.load(getClass().getResource("/console.fxml"));
+            Scene scene = new Scene(roots);
             stage.setScene(scene);
             stage.show();
         } catch (IOException e) {

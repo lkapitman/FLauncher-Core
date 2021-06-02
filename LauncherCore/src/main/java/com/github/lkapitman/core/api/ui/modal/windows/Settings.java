@@ -31,13 +31,19 @@ public class Settings implements ModalAPI {
      * Init.
      */
     public void init() {
+        stage.setResizable(false);
         stage.initModality(Modality.WINDOW_MODAL);
         stage.setTitle(Core.getRes().getString("settings.window"));
         stage.getIcons().add(new Image(Core.class.getResource("/visual/settings.png").toExternalForm()));
 
+        stage.setMinWidth(401);
+        stage.setMaxWidth(401);
+        stage.setMinHeight(561);
+        stage.setMaxHeight(561);
+
         Parent root = null;
         try {
-            root = FXMLLoader.load(getClass().getResource("/settings.fxml"));
+            root = FXMLLoader.load(Core.class.getResource("/settings.fxml"));
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();

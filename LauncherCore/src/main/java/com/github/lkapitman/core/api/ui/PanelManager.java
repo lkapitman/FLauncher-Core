@@ -48,6 +48,7 @@ public class PanelManager {
      * Init.
      */
     public void init() {
+        this.stage.setResizable(false);
         this.stage.getIcons().add(new javafx.scene.image.Image(Core.class.getResource("/visual/img/icon.png").toExternalForm()));
 
         if (!SystemTray.isSupported()) {
