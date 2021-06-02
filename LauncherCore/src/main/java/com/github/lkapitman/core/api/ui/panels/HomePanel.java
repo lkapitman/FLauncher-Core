@@ -30,6 +30,8 @@ import javafx.scene.web.WebView;
 import javafx.stage.Stage;
 
 import java.awt.*;
+import java.io.File;
+import java.io.IOException;
 
 
 public class HomePanel extends Panel implements DownloadListener {
@@ -200,14 +202,14 @@ public class HomePanel extends Panel implements DownloadListener {
 
         });
 
-        Image logoImage = new Image(Core.class.getResource("/visual/settings.png").toExternalForm());
-        ImageView imageViewSettings = new ImageView(logoImage);
+        Image settingsIcon = new Image(Core.class.getResource("/visual/settings.png").toExternalForm());
+        ImageView imageViewSettings = new ImageView(settingsIcon);
 
         GridPane.setHgrow(imageViewSettings, Priority.ALWAYS);
         GridPane.setVgrow(imageViewSettings, Priority.ALWAYS);
         GridPane.setValignment(imageViewSettings, VPos.CENTER);
 
-        imageViewSettings.setTranslateX(150);
+        imageViewSettings.setTranslateX(185);
         imageViewSettings.setTranslateY(110);
         imageViewSettings.setFitHeight(28);
         imageViewSettings.setFitWidth(28);
@@ -218,6 +220,30 @@ public class HomePanel extends Panel implements DownloadListener {
         imageViewSettings.setOnMouseClicked(e-> {
             Settings settings = new Settings(new Stage());
             settings.init();
+        });
+
+        Image folderImage = new Image(Core.class.getResource("/visual/folder.png").toExternalForm());
+        ImageView imageViewFolder = new ImageView(folderImage);
+
+        GridPane.setHgrow(imageViewFolder, Priority.ALWAYS);
+        GridPane.setVgrow(imageViewFolder, Priority.ALWAYS);
+        GridPane.setValignment(imageViewFolder, VPos.CENTER);
+
+        imageViewFolder.setTranslateX(150);
+        imageViewFolder.setTranslateY(110);
+        imageViewFolder.setFitHeight(28);
+        imageViewFolder.setFitWidth(28);
+
+        imageViewFolder.setOnMouseEntered(e-> this.layout.setCursor(Cursor.HAND));
+        imageViewFolder.setOnMouseExited(e-> this.layout.setCursor(Cursor.DEFAULT));
+        imageViewFolder.setOnMouseClicked(e-> {
+            File file = new File(Core.getFileManager().getGameFolder().getAbsolutePath());
+            Desktop desktop = Desktop.getDesktop();
+            try {
+                desktop.open(file);
+            } catch (IOException ioException) {
+                ioException.printStackTrace();
+            }
         });
 
         aBigDownloadBar = new AProgressBar(400,20);
@@ -240,7 +266,7 @@ public class HomePanel extends Panel implements DownloadListener {
         browser.setMaxSize(420,275);
 
 
-        pane.getChildren().addAll(projectTitle, rolePlay, complete, desc, bigVideo, resultButton, imageViewSettings, aBigDownloadBar, browser);
+        pane.getChildren().addAll(projectTitle, rolePlay, complete, desc, bigVideo, resultButton, imageViewFolder, imageViewSettings, aBigDownloadBar, browser);
     }
 
     private void showleftBar(GridPane pane) {
@@ -281,7 +307,9 @@ public class HomePanel extends Panel implements DownloadListener {
         leftDownloadBar.setTranslateY(12.0d);
 
         pane.getChildren().addAll(blueLeftSeparator, imageViewLogo, valkyria, leftDownloadBar);
+
     }
+
 
     @Override
     public void onDownloadJobFinished(DownloadJob job) {

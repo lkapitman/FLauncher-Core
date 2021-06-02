@@ -1,6 +1,7 @@
 package com.github.lkapitman.filemanager;
 
 import java.io.File;
+import java.io.IOException;
 
 public class FileManager {
 
@@ -22,15 +23,10 @@ public class FileManager {
             default:
                 return new File(userHome + fileSeparator + this.serverName);
         }
-
     }
 
     public File getGameFolder() {
         return createGameDir();
-    }
-
-    public File getVersionFolder() {
-        return new File(createGameDir() + fileSeparator + "versions" + fileSeparator + "1.12.2");
     }
 
     public File getVersionsFolder() {
@@ -45,4 +41,21 @@ public class FileManager {
         return new File(createGameDir() + fileSeparator + "assets");
     }
 
+    public File getSettingsFolder() {
+        return new File(createGameDir() + fileSeparator + "settings");
+
+    }
+
+    public File createSettingsFile() {
+        if (new File(getSettingsFolder() + File.separator + "settings.properties").exists()) {
+            return new File(getSettingsFolder() + File.separator + "settings.properties");
+        }
+        try {
+            new File(getSettingsFolder() + File.separator + "settings.prpoperties").createNewFile();
+            return createSettingsFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }
