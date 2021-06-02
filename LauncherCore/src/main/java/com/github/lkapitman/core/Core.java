@@ -17,6 +17,9 @@ import java.net.URLConnection;
 import java.nio.file.Files;
 import java.util.ResourceBundle;
 
+/**
+ * The type Core.
+ */
 public class Core implements CoreAPI {
 
     private static final FileManager fileManager = new FileManager(Constants.PROJECT_NAME);
@@ -37,6 +40,11 @@ public class Core implements CoreAPI {
         }
     }
 
+    /**
+     * Init.
+     *
+     * @param stage the stage
+     */
     public void init(Stage stage) {
         initializeFiles();
 
@@ -57,6 +65,11 @@ public class Core implements CoreAPI {
 
     }
 
+    /**
+     * Download manifest.
+     *
+     * @throws IOException the io exception
+     */
     public void downloadManifest() throws IOException {
         if (!new File(fileManager.getVersionsFolder().getAbsolutePath() + File.separator + "version_manifest.json").exists()) {
             URL url = new URL("https://launchermeta.mojang.com/mc/game/version_manifest.json");
@@ -67,6 +80,9 @@ public class Core implements CoreAPI {
         }
     }
 
+    /**
+     * Initialize files.
+     */
     public void initializeFiles() {
         fileManager.getLibrariesFolder().mkdir();
         fileManager.getVersionsFolder().mkdir();
@@ -75,22 +91,47 @@ public class Core implements CoreAPI {
         fileManager.createSettingsFile();
     }
 
+    /**
+     * Is downloaded boolean.
+     *
+     * @return the boolean
+     */
     public static boolean isDownloaded() {
         return downloaded;
     }
 
+    /**
+     * Sets downloaded.
+     *
+     * @param downloaded the downloaded
+     */
     public static void setDownloaded(boolean downloaded) {
         Core.downloaded = downloaded;
     }
 
+    /**
+     * Gets file manager.
+     *
+     * @return the file manager
+     */
     public static FileManager getFileManager() {
         return fileManager;
     }
 
+    /**
+     * Gets res.
+     *
+     * @return the res
+     */
     public static ResourceBundle getRes() {
         return res;
     }
 
+    /**
+     * Gets hello.
+     *
+     * @return the hello
+     */
     @Override
     public String getHello() {
         return this.getClass().getName();

@@ -34,6 +34,9 @@ import java.io.File;
 import java.io.IOException;
 
 
+/**
+ * The type Home panel.
+ */
 public class HomePanel extends Panel implements DownloadListener {
 
     private final GridPane centerPane = new GridPane();
@@ -45,6 +48,11 @@ public class HomePanel extends Panel implements DownloadListener {
     private final WebView browser = new WebView();
     private final WebEngine webEngine = browser.getEngine();
 
+    /**
+     * Init.
+     *
+     * @param panelManager the panel manager
+     */
     @Override
     public void init(PanelManager panelManager) {
         super.init(panelManager);
@@ -311,12 +319,22 @@ public class HomePanel extends Panel implements DownloadListener {
     }
 
 
+    /**
+     * On download job finished.
+     *
+     * @param job the job
+     */
     @Override
     public void onDownloadJobFinished(DownloadJob job) {
         System.out.println(job.getName() + " finished!");
         this.panelManager.getTrayIcon().displayMessage(Constants.PROJECT_NAME, Core.getRes().getString("javafx.download.stop"), TrayIcon.MessageType.INFO);
     }
 
+    /**
+     * On download job progress changed.
+     *
+     * @param job the job
+     */
     @Override
     public void onDownloadJobProgressChanged(DownloadJob job) {
         this.leftDownloadBar.setProgress(job.getAllFiles().size() - job.getRemainingFiles().size(), job.getAllFiles().size());
@@ -324,6 +342,11 @@ public class HomePanel extends Panel implements DownloadListener {
 
     }
 
+    /**
+     * On download job started.
+     *
+     * @param job the job
+     */
     @Override
     public void onDownloadJobStarted(DownloadJob job) {
         System.out.println("'" + job.getName() + "' started to download!");

@@ -16,6 +16,9 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * The type Download job.
+ */
 public class DownloadJob {
 
     private final String name;
@@ -30,11 +33,24 @@ public class DownloadJob {
 
     private boolean started;
 
+    /**
+     * Instantiates a new Download job.
+     *
+     * @param name     the name
+     * @param listener the listener
+     */
     public DownloadJob(String name, DownloadListener listener) {
         this.name = name;
         this.listener = listener;
     }
 
+    /**
+     * Add downloadable.
+     *
+     * @param file       the file
+     * @param serverHash the server hash
+     * @param url        the url
+     */
     public void addDownloadable(File file, String serverHash, String url) {
         if(started)
             throw new IllegalStateException("Cannot add to download job that has already started");
@@ -70,6 +86,11 @@ public class DownloadJob {
         }
     }
 
+    /**
+     * Start downloading.
+     *
+     * @param executor the executor
+     */
     public void startDownloading(final ThreadPoolExecutor executor){
         if (started) {
             throw new IllegalStateException("Cannot start download job that as already started !");
@@ -95,29 +116,65 @@ public class DownloadJob {
         }
     }
 
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * Gets executor service.
+     *
+     * @return the executor service
+     */
     public ThreadPoolExecutor getExecutorService() {
         return executorService;
     }
 
+    /**
+     * Gets remaining files.
+     *
+     * @return the remaining files
+     */
     public Queue<DownloadTask> getRemainingFiles() {
         return remainingFiles;
     }
 
+    /**
+     * Gets failures.
+     *
+     * @return the failures
+     */
     public int getFailures() {
         return failures.size();
     }
 
+    /**
+     * Gets all files.
+     *
+     * @return the all files
+     */
     public List<DownloadTask> getAllFiles() {
         return allFiles;
     }
 
+    /**
+     * Set executor service.
+     *
+     * @param number the number
+     */
     public void setExecutorService(int number){
         executorService = (ThreadPoolExecutor) Executors.newFixedThreadPool(number);
     }
+
+    /**
+     * Is complete boolean.
+     *
+     * @return the boolean
+     */
     public boolean isComplete(){
         return started && remainingFiles.isEmpty() && remainingThreads.get() == 0;
     }}

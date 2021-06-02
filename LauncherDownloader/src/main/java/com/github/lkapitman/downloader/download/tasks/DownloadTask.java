@@ -9,6 +9,9 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+/**
+ * The type Download task.
+ */
 public class DownloadTask {
 
     private final URL url;
@@ -17,12 +20,25 @@ public class DownloadTask {
 
     private int nunAttempts= 0;
 
+    /**
+     * Instantiates a new Download task.
+     *
+     * @param url         the url
+     * @param destination the destination
+     * @param hashServer  the hash server
+     */
     public DownloadTask(URL url, File destination, String hashServer) {
         this.url = url;
         this.destination = destination;
         this.hashServer = hashServer;
     }
 
+    /**
+     * Download string.
+     *
+     * @return the string
+     * @throws IOException the io exception
+     */
     public String download()throws IOException{
         String hashLocal = null;
         nunAttempts++;
@@ -76,18 +92,38 @@ public class DownloadTask {
 
     }
 
+    /**
+     * Gets url.
+     *
+     * @return the url
+     */
     public URL getUrl() {
         return url;
     }
 
+    /**
+     * Gets destination.
+     *
+     * @return the destination
+     */
     public File getDestination() {
         return destination;
     }
 
+    /**
+     * Gets hash server.
+     *
+     * @return the hash server
+     */
     public String getHashServer() {
         return hashServer;
     }
 
+    /**
+     * Gets nun attempts.
+     *
+     * @return the nun attempts
+     */
     public int getNunAttempts() {
         return nunAttempts;
     }

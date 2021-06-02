@@ -14,6 +14,9 @@ import java.net.URLConnection;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * The type Updater.
+ */
 public class Updater {
 
     private static final Gson JSON = new Gson();
@@ -23,6 +26,9 @@ public class Updater {
     private boolean fileDeleter = false;
 
 
+    /**
+     * Start.
+     */
     public void start() {
         int length = this.needToDownload.size();
         for (int i = 0; i < length; i++){
@@ -98,6 +104,11 @@ public class Updater {
         return false;
     }
 
+    /**
+     * Checking files.
+     *
+     * @param dir the dir
+     */
     public void checkingFiles(File dir) {
         ArrayList<File> files = listFiles(dir);
         for(File file : files) {
@@ -145,18 +156,38 @@ public class Updater {
         return content.toString();
     }
 
+    /**
+     * Add job to download.
+     *
+     * @param downloadManager the download manager
+     */
     public void addJobToDownload(DownloadManager downloadManager) {
         this.needToDownload.add(downloadManager);
     }
 
+    /**
+     * Sets file deleter.
+     *
+     * @param fileDeleter the file deleter
+     */
     public void setFileDeleter(boolean fileDeleter) {
         this.fileDeleter = fileDeleter;
     }
 
+    /**
+     * Gets ignored files.
+     *
+     * @return the ignored files
+     */
     public List<String> getIgnoredFiles() {
         return ignoredFiles;
     }
 
+    /**
+     * Gets need to download.
+     *
+     * @return the need to download
+     */
     public Queue<DownloadManager> getNeedToDownload() {
         return needToDownload;
     }

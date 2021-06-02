@@ -11,13 +11,33 @@ import javafx.scene.control.ScrollBar;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
+/**
+ * The type Resize helper.
+ */
 public class ResizeHelper {
+    /**
+     * The Is scrollbar.
+     */
     static boolean isScrollbar = false;
 
+    /**
+     * Add resize listener.
+     *
+     * @param stage the stage
+     */
     public static void addResizeListener(Stage stage) {
         addResizeListener(stage, 1, 1, Double.MAX_VALUE, Double.MAX_VALUE);
     }
 
+    /**
+     * Add resize listener.
+     *
+     * @param stage     the stage
+     * @param minWidth  the min width
+     * @param minHeight the min height
+     * @param maxWidth  the max width
+     * @param maxHeight the max height
+     */
     public static void addResizeListener(Stage stage, double minWidth, double minHeight, double maxWidth, double maxHeight) {
         ResizeListener resizeListener = new ResizeListener(stage);
 
@@ -64,6 +84,9 @@ public class ResizeHelper {
         }
     }
 
+    /**
+     * The type Resize listener.
+     */
     static class ResizeListener implements EventHandler<MouseEvent> {
         private Stage stage;
         private Cursor cursorEvent = Cursor.DEFAULT;
@@ -78,26 +101,56 @@ public class ResizeHelper {
         private double minHeight;
         private double maxHeight;
 
+        /**
+         * Instantiates a new Resize listener.
+         *
+         * @param stage the stage
+         */
         public ResizeListener(Stage stage) {
             this.stage = stage;
         }
 
+        /**
+         * Sets min width.
+         *
+         * @param minWidth the min width
+         */
         public void setMinWidth(double minWidth) {
             this.minWidth = minWidth;
         }
 
+        /**
+         * Sets max width.
+         *
+         * @param maxWidth the max width
+         */
         public void setMaxWidth(double maxWidth) {
             this.maxWidth = maxWidth;
         }
 
+        /**
+         * Sets min height.
+         *
+         * @param minHeight the min height
+         */
         public void setMinHeight(double minHeight) {
             this.minHeight = minHeight;
         }
 
+        /**
+         * Sets max height.
+         *
+         * @param maxHeight the max height
+         */
         public void setMaxHeight(double maxHeight) {
             this.maxHeight = maxHeight;
         }
 
+        /**
+         * Handle.
+         *
+         * @param mouseEvent the mouse event
+         */
         @Override
         public void handle(MouseEvent mouseEvent) {
             EventType<? extends MouseEvent> mouseEventType = mouseEvent.getEventType();

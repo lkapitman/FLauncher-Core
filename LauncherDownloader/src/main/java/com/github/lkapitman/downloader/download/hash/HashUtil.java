@@ -9,8 +9,16 @@ import java.security.DigestInputStream;
 import java.security.MessageDigest;
 
 
+/**
+ * The type Hash util.
+ */
 public class HashUtil {
 
+    /**
+     * Close silently.
+     *
+     * @param closeable the closeable
+     */
     public static void closeSilently(final Closeable closeable) {
         if(closeable != null)
             try {
@@ -21,6 +29,12 @@ public class HashUtil {
             }
     }
 
+    /**
+     * Gets md 5.
+     *
+     * @param file the file
+     * @return the md 5
+     */
     public static String getMD5(final File file) {
         DigestInputStream stream = null;
         try {

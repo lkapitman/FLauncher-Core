@@ -11,14 +11,25 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * The type Settings.
+ */
 public class Settings implements ModalAPI {
 
     private final Stage stage;
 
+    /**
+     * Instantiates a new Settings.
+     *
+     * @param stage the stage
+     */
     public Settings(Stage stage) {
         this.stage = stage;
     }
 
+    /**
+     * Init.
+     */
     public void init() {
         stage.initModality(Modality.WINDOW_MODAL);
         stage.setTitle(Core.getRes().getString("settings.window"));

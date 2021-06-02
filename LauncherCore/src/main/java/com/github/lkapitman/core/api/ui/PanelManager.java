@@ -20,6 +20,9 @@ import java.awt.event.MouseEvent;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+/**
+ * The type Panel manager.
+ */
 public class PanelManager {
 
     private final Core core;
@@ -30,11 +33,20 @@ public class PanelManager {
 
     private TrayIcon trayIcon;
 
+    /**
+     * Instantiates a new Panel manager.
+     *
+     * @param core  the core
+     * @param stage the stage
+     */
     public PanelManager(Core core, Stage stage) {
         this.core = core;
         this.stage = stage;
     }
 
+    /**
+     * Init.
+     */
     public void init() {
         this.stage.getIcons().add(new javafx.scene.image.Image(Core.class.getResource("/visual/img/icon.png").toExternalForm()));
 
@@ -123,6 +135,11 @@ public class PanelManager {
 
     }
 
+    /**
+     * Show panel.
+     *
+     * @param panel the panel
+     */
     public void showPanel(IPanel panel) {
         this.centerPanel.getChildren().clear();
         this.centerPanel.getChildren().add(panel.getLayout());
@@ -130,14 +147,31 @@ public class PanelManager {
         panel.onShow();
     }
 
+    /**
+     * Gets core.
+     *
+     * @return the core
+     */
     public Core getCore() {
         return core;
     }
 
+    /**
+     * Gets tray icon.
+     *
+     * @return the tray icon
+     */
     public TrayIcon getTrayIcon() {
         return trayIcon;
     }
 
+    /**
+     * Gets url.
+     *
+     * @param url the url
+     * @return the url
+     * @throws MalformedURLException the malformed url exception
+     */
     public URL getURL(String url) throws MalformedURLException {
         return new URL(url);
     }

@@ -23,11 +23,19 @@ import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
 import java.sql.*;
 
+/**
+ * The type Panel login.
+ */
 public class PanelLogin extends Panel {
 
     private HomePanel homePanel;
     private static String playername;
 
+    /**
+     * Init.
+     *
+     * @param panelManager the panel manager
+     */
     @Override
     public void init(PanelManager panelManager) {
 
@@ -262,10 +270,20 @@ public class PanelLogin extends Panel {
         }
     }
 
+    /**
+     * Gets home panel.
+     *
+     * @return the home panel
+     */
     public HomePanel getHomePanel() {
         return homePanel;
     }
 
+    /**
+     * Gets player name.
+     *
+     * @return the player name
+     */
     public static String getPlayerName() {
         return playername;
     }
