@@ -2,6 +2,7 @@ package com.github.lkapitman.core.api.ui.panels;
 
 import com.github.lkapitman.core.Core;
 import com.github.lkapitman.core.api.Constants;
+import com.github.lkapitman.core.api.ui.modal.windows.Console;
 import com.github.lkapitman.core.api.ui.modal.windows.Settings;
 import com.github.lkapitman.downloader.download.jobs.DownloadJob;
 import com.github.lkapitman.downloader.download.tasks.DownloadListener;
@@ -226,7 +227,7 @@ public class HomePanel extends Panel implements DownloadListener {
         imageViewSettings.setOnMouseExited(e-> this.layout.setCursor(Cursor.DEFAULT));
 
         imageViewSettings.setOnMouseClicked(e-> {
-            Settings settings = new Settings(new Stage());
+            Console settings = new Console(new Stage());
             settings.init();
         });
 

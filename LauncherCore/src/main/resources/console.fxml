@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="518.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.lkapitman.core.api.ui.controllers.ConsoleController">
+   <children>
+      <TextArea fx:id="Console" prefHeight="438.0" prefWidth="518.0" />
+   </children>
+</AnchorPane>

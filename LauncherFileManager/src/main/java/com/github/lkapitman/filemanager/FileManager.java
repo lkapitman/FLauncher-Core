@@ -84,6 +84,9 @@ public class FileManager {
 
     }
 
+    public File getLogsFolder() {
+        return new File(createGameDir() + File.separator + "logs");
+    }
     /**
      * Create settings file file.
      *
