@@ -1,7 +1,7 @@
 com/github/lkapitman/filemanager/OperatingSystem.java
  com.github.lkapitman.filemanager.OperatingSystem
+module-info.java
+ module-info
 com/github/lkapitman/filemanager/FileManager.java
  com.github.lkapitman.filemanager.FileManager
  com.github.lkapitman.filemanager.FileManager$1
-module-info.java
- module-info

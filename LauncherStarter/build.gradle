@@ -25,12 +25,36 @@ jlink {
     imageZip = file("$buildDir/image-zip/flauncher.zip")
     options = ['--bind-services', '--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
 
+    targetPlatform("linux-s390x") {
+        jdkHome = "/usr/lib/jvm/linux-s390x/jdk-14.0.1_7"
+        addOptions("--endian", "big")
+        addExtraModulePath("/usr/lib/openjfx/linux-s390x/jmods")
+    }
+
+    targetPlatform("win") {
+        jdkHome = jdkDownload("https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-15.0.1%2B7.1/OpenJDK15U-jdk_x64_windows_hotspot_15.0.1_7.zip")
+        addExtraModulePath("/usr/lib/openjfx/win/jmods")
+    }
+
+    targetPlatform("mac") {
+        jdkHome = jdkDownload("https://github.com/AdoptOpenJDK/openjdk14-binaries/releases/download/jdk-15.0.1%2B7/OpenJDK15U-jdk_x64_mac_hotspot_15.0.1_7.tar.gz") {
+            downloadDir = "$buildDir/myMac"
+            archiveName = "my-mac-jdk"
+            archiveExtension = "tar.gz"
+            pathToHome = "jdk-14.0.1+7/Contents/Home"
+            overwrite = true
+        }
+        addExtraModulePath("/usr/lib/openjfx/mac/jmods")
+    }
+
     launcher {
         name = 'Flauncher'
         noConsole = true
     }
+
     jpackage {
         if(os.windows) {
+            installerType = 'msi'
             installerOptions = ['--win-per-user-install', '--win-dir-chooser', '--win-menu']
         }
     }

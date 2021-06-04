@@ -98,10 +98,13 @@ public class FileManager {
         }
         try {
             new File(getSettingsFolder() + File.separator + "settings.prpoperties").createNewFile();
-            return createSettingsFile();
         } catch (IOException e) {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public File getSettingsFile() {
+        return new File(createGameDir() + File.separator + "settings.properties");
     }
 }

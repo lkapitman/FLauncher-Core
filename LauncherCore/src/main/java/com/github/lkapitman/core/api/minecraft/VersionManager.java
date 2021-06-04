@@ -14,20 +14,29 @@ public class VersionManager {
  */
 class VersionInformation {
 
+    //TODO: Arguments
+
+
+    public AssetIndex assetIndex;
+
     /**
      * The Assets.
      */
-//TODO: Arguments
-    //TODO: assetsIdex
+
     public String assets;
+
     /**
      * The Compliance level.
      */
+
     public int complianceLevel;
+
+    public DownloadingInfo downloads;
+
     /**
      * The Id.
      */
-//TODO: downloads
+
     public String id;
 
     /**
@@ -75,6 +84,14 @@ class LoggingInfo {
     public LoggingClient client;
 
 }
+
+class DownloadingInfo {
+    public DownloadingClient client;
+    public DownloadingClientMappings client_mappings;
+    public DownloadingServer server;
+    public DownloadingServerMappings server_mappings;
+}
+
 
 /**
  * The type Library info.
@@ -166,6 +183,38 @@ class LoggingClient {
     public String type;
 }
 
+class DownloadingClient {
+
+    public String sha1;
+    public int size;
+    public String url;
+
+}
+
+class DownloadingClientMappings {
+
+    public String sha1;
+    public int size;
+    public String url;
+
+}
+
+class DownloadingServer {
+
+    public String sha1;
+    public int size;
+    public String url;
+
+}
+
+class DownloadingServerMappings {
+
+    public String sha1;
+    public int size;
+    public String url;
+
+}
+
 /**
  * The type Logging file.
  */
@@ -186,5 +235,14 @@ class LoggingFile {
      * The Url.
      */
     public String url;
+}
+
+class AssetIndex {
+
+        public String id;
+        public String sha1;
+        public int size;
+        public int totalSize;
+        public String url;
 }
 
